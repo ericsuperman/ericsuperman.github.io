@@ -1,0 +1,14 @@
+# robots.txt for https://ericsuperman.github.io
+#
+# Rule 1
+User-agent: *
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /img/
+Disallow: /js/
+
+# Rule 2
+User-agent: *
+Allow: /
+
+Sitemap: https://ericsuperman.github.io/sitemap.xml
