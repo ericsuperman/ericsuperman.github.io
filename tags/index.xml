@@ -7,9 +7,73 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Except where otherwise noted, content on this site is licensed under a [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/).</copyright>
+    <lastBuildDate>Tue, 30 Apr 2019 21:06:37 +0800</lastBuildDate>
     
 	<atom:link href="https://ericsuperman.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>chinese food</title>
+      <link>https://ericsuperman.github.io/tags/chinese-food/</link>
+      <pubDate>Tue, 30 Apr 2019 21:06:37 +0800</pubDate>
+      
+      <guid>https://ericsuperman.github.io/tags/chinese-food/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hsinchu</title>
+      <link>https://ericsuperman.github.io/tags/hsinchu/</link>
+      <pubDate>Tue, 30 Apr 2019 21:06:37 +0800</pubDate>
+      
+      <guid>https://ericsuperman.github.io/tags/hsinchu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>steak</title>
+      <link>https://ericsuperman.github.io/tags/steak/</link>
+      <pubDate>Thu, 25 Apr 2019 20:37:55 +0800</pubDate>
+      
+      <guid>https://ericsuperman.github.io/tags/steak/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>zhubei</title>
+      <link>https://ericsuperman.github.io/tags/zhubei/</link>
+      <pubDate>Thu, 25 Apr 2019 20:37:55 +0800</pubDate>
+      
+      <guid>https://ericsuperman.github.io/tags/zhubei/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ubuntu</title>
+      <link>https://ericsuperman.github.io/tags/ubuntu/</link>
+      <pubDate>Sun, 21 Apr 2019 21:51:33 +0800</pubDate>
+      
+      <guid>https://ericsuperman.github.io/tags/ubuntu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>virtual box</title>
+      <link>https://ericsuperman.github.io/tags/virtual-box/</link>
+      <pubDate>Sun, 21 Apr 2019 21:51:33 +0800</pubDate>
+      
+      <guid>https://ericsuperman.github.io/tags/virtual-box/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>murmur</title>
+      <link>https://ericsuperman.github.io/tags/murmur/</link>
+      <pubDate>Sun, 21 Apr 2019 15:59:57 +0800</pubDate>
+      
+      <guid>https://ericsuperman.github.io/tags/murmur/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
