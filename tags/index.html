@@ -10,7 +10,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ericsuperman.github.io/tags/" />
 
-<meta property="og:updated_time" content="2019-04-30T21:06:37&#43;08:00"/>
+<meta property="og:updated_time" content="2019-05-04T10:52:52&#43;08:00"/>
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Tags"/>
@@ -29,8 +29,8 @@
     "@type": "Person",
     "name": "Eric Chang"
   },
-  "dateModified": "2019-04-30T21:06:37\x2b08:00",
-  "keywords": "computer-science,gourmet,personal,chinese-food,hsinchu,murmur,steak,ubuntu,virtual-box,zhubei,",
+  "dateModified": "2019-05-04T10:52:52\x2b08:00",
+  "keywords": "computer,gourmet,personal,chinese-food,hsinchu,linux,murmur,steak,virtual-box,zhubei,",
   "description": "Everything is my own murmur."
 }
 </script>
@@ -104,12 +104,38 @@ if (!doNotTrack) {
 
 <article class="blog-post">
   <header>
+    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/ub19/">Ubuntu 19.04 開箱</a></h2>
+    <p class="blog-post-meta"><time datetime="2019-05-04T10:52:52&#43;08:00">Sat May 04, 2019</time> by Eric Chang in 
+<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/computer" rel="category tag">Computer</a>
+
+
+<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/linux" rel="tag">Linux</a>
+
+</p>
+  </header>
+  Ubuntu 19.04 正式推出了，這一版不是 Long Term Support 版， 不過還是用 VirtualBox 玩玩看 Ubuntu Server好了， 看看那些東西進步了。
+先新增一台虛擬PC，我的Host PC裝了很多ram， 所以這裡就很大方地給這台虛擬PC 4GB ram。
+硬碟則是配了 128GB，反正VirtualBox對虛擬硬碟是 實際用多少才配置多少，一開始不會太大。如果想要玩 編譯 Linux Kernel 或 OpenWRT 的話，預設的10GB是不夠的。
+再來，反正是在家裡隨便玩玩，我習慣模擬兩張網卡， 都用Bridge方式接到內網，
+Ubuntu 安裝後，一張網卡配 191.168.1.x 的IP， 另一張網卡配 10.10.10.x 的IP， 如果要測試 NAT 功能，或是其他 gateway的功能， 兩張網卡才能做。
+最後，虛擬光碟機要接到 ubuntu-19.04-live-server-amd64.iso 檔案，就能開機了。 第一次開機，從虛擬光碟boot，進入安裝程式， 安裝步驟雖然有14步，大部分預設值都沒問題， 通常都直接按Enter進到下一步。
+第0步，選英文，直接按下去。 第1步，安裝程式 在 GitHub 有新版，問要不要換。 這個安裝光碟在開機時就利用DHCP連上網路了， 所以可以去GitHub看看有無新版， 網路都連好了，安裝程式也不大，當然就換新的安裝程式啊! Enter按下去。 第2步，是否確認是英文鍵盤， Enter按下去。 第3步，Enter按下去。 第4步，兩張網卡預設為用 DHCP 。這個我要改 &hellip;&hellip; 我玩這份 Ubuntu 就是要當 Server ，必須是固定IP。 選 Manual 進入 static IP 設定頁。 如下圖，把每個欄位都填一填。 第二張網卡也如法炮製，但是就不要跟第一張網卡同網段了， 未來利用這兩張網卡，兩個網段，可以來玩一些閘道器的功能。 第5步，Enter直接按下去，除非你的網路需要 proxy 才能連到 Internet。 第6步，Enter直接按下去，除非你知道有更快的 Ubuntu Mirror 站台。 我目前的設定，讓安裝程式跳過第7步了，我也不知道那是啥。
+  <a href='https://ericsuperman.github.io/posts/ub19/'>Read more →</a>
+</article> 
+
+
+
+
+
+
+<article class="blog-post">
+  <header>
     <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/hsinchu_iing/">[新竹] 伊尹小築主廚私房料理</a></h2>
     <p class="blog-post-meta"><time datetime="2019-04-30T21:06:37&#43;08:00">Tue Apr 30, 2019</time> by Eric Chang in 
-<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/gourmet" rel="category tag">gourmet</a>
+<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/gourmet" rel="category tag">Gourmet</a>
 
 
-<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/hsinchu" rel="tag">hsinchu</a>, <a href="/tags/chinese-food" rel="tag">chinese food</a>
+<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/hsinchu" rel="tag">Hsinchu</a>, <a href="/tags/chinese-food" rel="tag">Chinese food</a>
 
 </p>
   </header>
@@ -129,10 +155,10 @@ if (!doNotTrack) {
   <header>
     <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/zhubei-bbq-house/">[竹北] The BBQ House 竹北店</a></h2>
     <p class="blog-post-meta"><time datetime="2019-04-25T20:37:55&#43;08:00">Thu Apr 25, 2019</time> by Eric Chang in 
-<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/gourmet" rel="category tag">gourmet</a>
+<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/gourmet" rel="category tag">Gourmet</a>
 
 
-<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/zhubei" rel="tag">zhubei</a>, <a href="/tags/steak" rel="tag">steak</a>
+<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/zhubei" rel="tag">Zhubei</a>, <a href="/tags/steak" rel="tag">Steak</a>
 
 </p>
   </header>
@@ -158,10 +184,10 @@ if (!doNotTrack) {
   <header>
     <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/virtualbox-shared-folder/">VirtualBox 6.x Shared Folder</a></h2>
     <p class="blog-post-meta"><time datetime="2019-04-21T21:51:33&#43;08:00">Sun Apr 21, 2019</time> by Eric Chang in 
-<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/computer-science" rel="category tag">computer science</a>
+<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/computer" rel="category tag">Computer</a>
 
 
-<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/virtual-box" rel="tag">virtual box</a>, <a href="/tags/ubuntu" rel="tag">ubuntu</a>
+<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/virtual-box" rel="tag">Virtual Box</a>, <a href="/tags/linux" rel="tag">Linux</a>
 
 </p>
   </header>
@@ -185,7 +211,7 @@ Ubuntu 18.04 LTS 問世之後，它的 virtualbox-dkms 套件 是針對 VirtualB
 <i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/personal" rel="category tag">Personal</a>
 
 
-<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/murmur" rel="tag">murmur</a>
+<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/murmur" rel="tag">Murmur</a>
 
 </p>
   </header>
@@ -224,13 +250,13 @@ CodeBlock
 
 <li><a href="/posts/">Posts</a></li>
 
+<li><a href="/posts/ub19/">Ubuntu 19.04 開箱</a></li>
+
 <li><a href="/posts/hsinchu_iing/">[新竹] 伊尹小築主廚私房料理</a></li>
 
 <li><a href="/posts/zhubei-bbq-house/">[竹北] The BBQ House 竹北店</a></li>
 
 <li><a href="/posts/virtualbox-shared-folder/">VirtualBox 6.x Shared Folder</a></li>
-
-<li><a href="/posts/hello/">Hello</a></li>
 
     </ol>
   </section>
