@@ -10,7 +10,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ericsuperman.github.io/categories/" />
 
-<meta property="og:updated_time" content="2019-05-04T20:42:17&#43;08:00"/>
+<meta property="og:updated_time" content="2019-05-05T00:07:47&#43;08:00"/>
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Categories"/>
@@ -29,8 +29,8 @@
     "@type": "Person",
     "name": "Eric Chang"
   },
-  "dateModified": "2019-05-04T20:42:17\x2b08:00",
-  "keywords": "computer,gourmet,personal,chinese-food,hsinchu,linux,mediterranean-food,murmur,steak,virtual-box,zhubei,",
+  "dateModified": "2019-05-05T00:07:47\x2b08:00",
+  "keywords": "computer,gourmet,personal,chinese-food,french-food,hsinchu,linux,mediterranean-food,murmur,steak,virtual-box,zhubei,",
   "description": "Everything is my own murmur."
 }
 </script>
@@ -104,6 +104,30 @@ if (!doNotTrack) {
 
 <article class="blog-post">
   <header>
+    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/virtualbox-shared-folder/">VirtualBox 6.x Shared Folder</a></h2>
+    <p class="blog-post-meta"><time datetime="2019-04-21T21:51:33&#43;08:00">Sun Apr 21, 2019</time> by Eric Chang in 
+<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/computer" rel="category tag">Computer</a>
+
+
+<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/virtual-box" rel="tag">Virtual Box</a>, <a href="/tags/linux" rel="tag">Linux</a>
+
+</p>
+  </header>
+  前一版的 Ubuntu 16.04 LTS，它當 VirtualBox Guest OS 的時候， 可以安裝一個現成 virtualbox-dkms 套件，裝好之後， shared folder 就自動生效了，非常方便。
+Ubuntu 18.04 LTS 問世之後，它的 virtualbox-dkms 套件 是針對 VirtualBox 5.2.18 及之後版本，當時 VirtualBox 也 是 5.2x 左右，一切也沒問題。
+突然間，2018年12月 VirtualBox 6.0 降臨了，我直接將 VirtualBox 5.x 升級到 VirtualBox 6.0 ，跑一樣的 guest image， Shared Folder 就失效了。
+查了很久，才發現是 virtualbox-dkms 套件只支援 VirtualBox 5.x 的關係，等了一陣子，看起來 Ubuntu 18.04 是沒打算升級 dkms 套件了， 那只好回到老方法，讓 VirtualBox Host 這邊插入虛擬的 Guest Additions 光碟片。
+在 VirtualBox Host 這邊的 Menu Bar ，有一個 &ldquo;裝置&rdquo; 選項，裡面 有一個 &ldquo;插入 Guest Additions CD 映像&rdquo;。
+  <a href='https://ericsuperman.github.io/posts/virtualbox-shared-folder/'>Read more →</a>
+</article> 
+
+
+
+
+
+
+<article class="blog-post">
+  <header>
     <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/hello/">Hello</a></h2>
     <p class="blog-post-meta"><time datetime="2019-04-21T15:59:57&#43;08:00">Sun Apr 21, 2019</time> by Eric Chang in 
 <i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/personal" rel="category tag">Personal</a>
@@ -158,13 +182,13 @@ CodeBlock
 
 <li><a href="/posts/">Posts</a></li>
 
-<li><a href="/posts/pita/">[竹北] 皮塔地中海料理 The Pita Bar Taipei 竹北店</a></li>
+<li><a href="/posts/history/">[竹北] HiStory 故事小館</a></li>
+
+<li><a href="/posts/pita/">[竹北] 皮塔地中海料理</a></li>
 
 <li><a href="/posts/ub19/">Ubuntu 19.04 開箱</a></li>
 
 <li><a href="/posts/hsinchu_iing/">[新竹] 伊尹小築主廚私房料理</a></li>
-
-<li><a href="/posts/zhubei-bbq-house/">[竹北] The BBQ House 竹北店</a></li>
 
     </ol>
   </section>
