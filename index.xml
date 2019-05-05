@@ -140,13 +140,13 @@ Ubuntu 18.04 LTS 問世之後，它的 virtualbox-dkms 套件 是針對 VirtualB
       <pubDate>Sun, 21 Apr 2019 15:59:57 +0800</pubDate>
       
       <guid>https://ericsuperman.github.io/posts/hello/</guid>
-      <description> 懶惰好久了，要開始寫Blog囉!
+      <description>懶惰好久了，要開始寫Blog囉!
 以下為測試 Markdown 語法 -
-   Name Age     Bob 27   Alice 23    Heading Level 1 Some test
+  Name Age     John 27   Mary 23       Name Age     Bob 27   Alice 23    Heading Level 1 Some test
 Heading Level 2 Some more test
 Regular Paragraph!
-CodeBlock
-#include &amp;lt;stdio.h&amp;gt; int main() { printf(&amp;#34;Hello,World!\n&amp;#34;); } </description>
+Definition List
+ Cat Fluffy animal everyone likes Internet Vector of transmission for pictures of cats  This is a footnote.</description>
     </item>
     
   </channel>

@@ -6,13 +6,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <meta property="og:title" content="Hello" />
-<meta property="og:description" content=" 懶惰好久了，要開始寫Blog囉!
+<meta property="og:description" content="懶惰好久了，要開始寫Blog囉!
 以下為測試 Markdown 語法 -
-   Name Age     Bob 27   Alice 23    Heading Level 1 Some test
+  Name Age     John 27   Mary 23       Name Age     Bob 27   Alice 23    Heading Level 1 Some test
 Heading Level 2 Some more test
 Regular Paragraph!
-CodeBlock
-#include &lt;stdio.h&gt; int main() { printf(&#34;Hello,World!\n&#34;); } " />
+Definition List
+ Cat Fluffy animal everyone likes Internet Vector of transmission for pictures of cats  This is a footnote." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ericsuperman.github.io/posts/hello/" />
 <meta property="article:published_time" content="2019-04-21T15:59:57&#43;08:00"/>
@@ -20,13 +20,13 @@ CodeBlock
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Hello"/>
-<meta name="twitter:description" content=" 懶惰好久了，要開始寫Blog囉!
+<meta name="twitter:description" content="懶惰好久了，要開始寫Blog囉!
 以下為測試 Markdown 語法 -
-   Name Age     Bob 27   Alice 23    Heading Level 1 Some test
+  Name Age     John 27   Mary 23       Name Age     Bob 27   Alice 23    Heading Level 1 Some test
 Heading Level 2 Some more test
 Regular Paragraph!
-CodeBlock
-#include &lt;stdio.h&gt; int main() { printf(&#34;Hello,World!\n&#34;); } "/>
+Definition List
+ Cat Fluffy animal everyone likes Internet Vector of transmission for pictures of cats  This is a footnote."/>
 <meta name="generator" content="Hugo 0.55.3" />
 
 
@@ -37,7 +37,7 @@ CodeBlock
   "@type": "BlogPosting",
   "headline": "Hello",
   "url": "https:\/\/ericsuperman.github.io\/posts\/hello\/",
-  "wordCount": "32",
+  "wordCount": "68",
   "datePublished": "2019-04-21T15:59:57\x2b08:00",
   "dateModified": "2019-04-21T15:59:57\x2b08:00",
   "author": {
@@ -129,6 +129,29 @@ if (!doNotTrack) {
 
 <hr />
 
+<table class="table table-bordered">
+<thead>
+<tr>
+<th>Name</th>
+<th>Age</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>John</td>
+<td>27</td>
+</tr>
+
+<tr>
+<td>Mary</td>
+<td>23</td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
 <table>
 <thead>
 <tr>
@@ -168,6 +191,21 @@ if (!doNotTrack) {
 
 <hr />
 
+<p>Definition List</p>
+
+<dl>
+<dt>Cat</dt>
+<dd>Fluffy animal everyone likes</dd>
+<dt>Internet</dt>
+<dd>Vector of transmission for pictures of cats</dd>
+</dl>
+
+<hr />
+
+<p>This is a footnote.<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup></p>
+
+<hr />
+
 <p>CodeBlock</p>
 
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
@@ -178,6 +216,22 @@ if (!doNotTrack) {
 }</code></pre></div>
 
 <hr />
+
+<pre><code class="language-go">func getTrue() bool {
+    return true
+}
+</code></pre>
+
+<hr />
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">the footnote text.
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+</ol>
+</div>
 
 
   
