@@ -14,10 +14,10 @@
     
     <item>
       <title>VirtualBox 6.x Shared Folder</title>
-      <link>https://ericsuperman.github.io/posts/virtualbox-shared-folder/</link>
+      <link>https://ericsuperman.github.io/posts/vbox/</link>
       <pubDate>Sun, 21 Apr 2019 21:51:33 +0800</pubDate>
       
-      <guid>https://ericsuperman.github.io/posts/virtualbox-shared-folder/</guid>
+      <guid>https://ericsuperman.github.io/posts/vbox/</guid>
       <description>前一版的 Ubuntu 16.04 LTS，它當 VirtualBox Guest OS 的時候， 可以安裝一個現成 virtualbox-dkms 套件，裝好之後， shared folder 就自動生效了，非常方便。
 Ubuntu 18.04 LTS 問世之後，它的 virtualbox-dkms 套件 是針對 VirtualBox 5.2.18 及之後版本，當時 VirtualBox 也 是 5.2x 左右，一切也沒問題。
 突然間，2018年12月 VirtualBox 6.0 降臨了，我直接將 VirtualBox 5.x 升級到 VirtualBox 6.0 ，跑一樣的 guest image， Shared Folder 就失效了。
