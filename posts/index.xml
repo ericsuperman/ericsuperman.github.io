@@ -7,10 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Except where otherwise noted, content on this site is licensed under a [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/).</copyright>
-    <lastBuildDate>Thu, 09 May 2019 14:50:29 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 09 May 2019 19:35:20 +0800</lastBuildDate>
     
 	<atom:link href="https://ericsuperman.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ubuntu 19.04 as a NAT Router</title>
+      <link>https://ericsuperman.github.io/posts/ub19nat/</link>
+      <pubDate>Thu, 09 May 2019 19:35:20 +0800</pubDate>
+      
+      <guid>https://ericsuperman.github.io/posts/ub19nat/</guid>
+      <description>之前，在用VirtualBox 開箱 Ubuntu 19.04 的時候， 就刻意弄成兩張網卡，這次來玩一下 NAT Router ， 紀錄整個過程。
+首先 /etc/sysctl.conf 找到下面這行，把 # 拿掉。
+net.ipv4.ip_forward=1 現在 Linux 網路卡都不叫 eth0, eth1 了， 反而是 &amp;ldquo;enp0s3&amp;rdquo; ， &amp;ldquo;enp0s8&amp;rdquo; 這些怪名字， 這是因為 一致性網路設備命名規則 所規範的。 簡單地說，就是 Linux 原本是根據找到網卡的先後順序，命名為 eth0、 eth1 等。 可是一旦多插一張網卡，可能會導致 原本叫 eth1 的網卡，改名為 eth2 ， 萬一許多系統的script 寫死 eth0, eth1 ，那就會非常困擾。
+所以改成 &amp;ldquo;enp0s3&amp;rdquo; ， &amp;ldquo;enp0s8&amp;rdquo; 這些名字，再多插幾張網路卡，名字也不會變。
+假設 enp0s3 是對外的網路， enp0s8 是對內的網路，
+Ubuntu 19.04 Server 剛裝好時，沒有 /etc/rc.local 。 所以就叫出文字編輯器，編輯 /etc/rc.local 如下， 最後用 exit 0 結尾。</description>
+    </item>
     
     <item>
       <title>[CMD Tutorial 4/4] Batch Files</title>

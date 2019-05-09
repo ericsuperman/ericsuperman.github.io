@@ -10,7 +10,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ericsuperman.github.io/categories/computer/" />
 
-<meta property="og:updated_time" content="2019-05-09T14:50:29&#43;08:00"/>
+<meta property="og:updated_time" content="2019-05-09T19:35:20&#43;08:00"/>
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Computer"/>
@@ -81,6 +81,31 @@ if (!doNotTrack) {
         <div class="col-sm-8 blog-main">
 
           
+
+
+
+
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/ub19nat/">Ubuntu 19.04 as a NAT Router</a></h2>
+    <p class="blog-post-meta"><time datetime="2019-05-09T19:35:20&#43;08:00">Thu May 09, 2019</time> by Eric Chang in 
+<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/computer" rel="category tag">Computer</a>
+
+
+<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/linux" rel="tag">Linux</a>
+
+</p>
+  </header>
+  之前，在用VirtualBox 開箱 Ubuntu 19.04 的時候， 就刻意弄成兩張網卡，這次來玩一下 NAT Router ， 紀錄整個過程。
+首先 /etc/sysctl.conf 找到下面這行，把 # 拿掉。
+net.ipv4.ip_forward=1 現在 Linux 網路卡都不叫 eth0, eth1 了， 反而是 &ldquo;enp0s3&rdquo; ， &ldquo;enp0s8&rdquo; 這些怪名字， 這是因為 一致性網路設備命名規則 所規範的。 簡單地說，就是 Linux 原本是根據找到網卡的先後順序，命名為 eth0、 eth1 等。 可是一旦多插一張網卡，可能會導致 原本叫 eth1 的網卡，改名為 eth2 ， 萬一許多系統的script 寫死 eth0, eth1 ，那就會非常困擾。
+所以改成 &ldquo;enp0s3&rdquo; ， &ldquo;enp0s8&rdquo; 這些名字，再多插幾張網路卡，名字也不會變。
+假設 enp0s3 是對外的網路， enp0s8 是對內的網路，
+Ubuntu 19.04 Server 剛裝好時，沒有 /etc/rc.local 。 所以就叫出文字編輯器，編輯 /etc/rc.local 如下， 最後用 exit 0 結尾。
+  <a href='https://ericsuperman.github.io/posts/ub19nat/'>Read more →</a>
+</article> 
 
 
 
@@ -260,6 +285,8 @@ Ubuntu 18.04 LTS 問世之後，它的 virtualbox-dkms 套件 是針對 VirtualB
 
 <li><a href="/posts/">Posts</a></li>
 
+<li><a href="/posts/ub19nat/">Ubuntu 19.04 as a NAT Router</a></li>
+
 <li><a href="/posts/command4/">[CMD Tutorial <sup>4</sup>&frasl;<sub>4</sub>] Batch Files</a></li>
 
 <li><a href="/posts/command3/">[CMD Tutorial <sup>3</sup>&frasl;<sub>4</sub>] Path Environment Variables</a></li>
@@ -275,8 +302,6 @@ Ubuntu 18.04 LTS 問世之後，它的 virtualbox-dkms 套件 是針對 VirtualB
 <li><a href="/posts/hoi/">[竹北] HOI x 山語喃喃</a></li>
 
 <li><a href="/posts/history/">[竹北] HiStory 故事小館</a></li>
-
-<li><a href="/posts/pita/">[竹北] 皮塔地中海料理</a></li>
 
     </ol>
   </section>

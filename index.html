@@ -10,7 +10,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ericsuperman.github.io/" />
 
-<meta property="og:updated_time" content="2019-05-09T14:50:29&#43;08:00"/>
+<meta property="og:updated_time" content="2019-05-09T19:35:20&#43;08:00"/>
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="老艾瑞克的喃喃自語"/>
@@ -29,7 +29,7 @@
     "@type": "Person",
     "name": "Eric Chang"
   },
-  "dateModified": "2019-05-09T14:50:29\x2b08:00",
+  "dateModified": "2019-05-09T19:35:20\x2b08:00",
   "keywords": "computer,gourmet,personal,brunch,chinese-food,command,french-food,guanxi,hsinchu,linux,mediterranean-food,murmur,steak,virtual-box,windows,zhubei,",
   "description": "Everything is my own murmur."
 }
@@ -96,6 +96,31 @@ if (!doNotTrack) {
 
           
 
+
+
+
+
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/ub19nat/">Ubuntu 19.04 as a NAT Router</a></h2>
+    <p class="blog-post-meta"><time datetime="2019-05-09T19:35:20&#43;08:00">Thu May 09, 2019</time> by Eric Chang in 
+<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/computer" rel="category tag">Computer</a>
+
+
+<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/linux" rel="tag">Linux</a>
+
+</p>
+  </header>
+  之前，在用VirtualBox 開箱 Ubuntu 19.04 的時候， 就刻意弄成兩張網卡，這次來玩一下 NAT Router ， 紀錄整個過程。
+首先 /etc/sysctl.conf 找到下面這行，把 # 拿掉。
+net.ipv4.ip_forward=1 現在 Linux 網路卡都不叫 eth0, eth1 了， 反而是 &ldquo;enp0s3&rdquo; ， &ldquo;enp0s8&rdquo; 這些怪名字， 這是因為 一致性網路設備命名規則 所規範的。 簡單地說，就是 Linux 原本是根據找到網卡的先後順序，命名為 eth0、 eth1 等。 可是一旦多插一張網卡，可能會導致 原本叫 eth1 的網卡，改名為 eth2 ， 萬一許多系統的script 寫死 eth0, eth1 ，那就會非常困擾。
+所以改成 &ldquo;enp0s3&rdquo; ， &ldquo;enp0s8&rdquo; 這些名字，再多插幾張網路卡，名字也不會變。
+假設 enp0s3 是對外的網路， enp0s8 是對內的網路，
+Ubuntu 19.04 Server 剛裝好時，沒有 /etc/rc.local 。 所以就叫出文字編輯器，編輯 /etc/rc.local 如下， 最後用 exit 0 結尾。
+  <a href='https://ericsuperman.github.io/posts/ub19nat/'>Read more →</a>
+</article> 
 
 
 
@@ -323,32 +348,6 @@ Anyway，全部都很好吃，推薦大家都去嚐嚐，也祝福老闆，老�
 
 
 
-
-<article class="blog-post">
-  <header>
-    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/ub19/">Ubuntu 19.04 開箱</a></h2>
-    <p class="blog-post-meta"><time datetime="2019-05-04T10:52:52&#43;08:00">Sat May 04, 2019</time> by Eric Chang in 
-<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/computer" rel="category tag">Computer</a>
-
-
-<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/linux" rel="tag">Linux</a>
-
-</p>
-  </header>
-  Ubuntu 19.04 正式推出了，這一版不是 Long Term Support 版， 不過還是用 VirtualBox 玩玩看 Ubuntu Server好了， 看看那些東西進步了。
-先新增一台虛擬PC，我的Host PC裝了很多ram， 所以這裡就很大方地給這台虛擬PC 4GB ram。
-硬碟則是配了 128GB，反正VirtualBox對虛擬硬碟是 實際用多少才配置多少，一開始不會太大。如果想要玩 編譯 Linux Kernel 或 OpenWRT 的話，預設的10GB是不夠的。
-再來，反正是在家裡隨便玩玩，我習慣模擬兩張網卡， 都用Bridge方式接到內網，
-Ubuntu 安裝後，一張網卡配 191.168.1.x 的IP， 另一張網卡配 10.10.10.x 的IP， 如果要測試 NAT 功能，或是其他 gateway的功能， 兩張網卡才能做。
-最後，虛擬光碟機要接到 ubuntu-19.04-live-server-amd64.iso 檔案，就能開機了。 第一次開機，從虛擬光碟boot，進入安裝程式， 安裝步驟雖然有14步，大部分預設值都沒問題， 通常都直接按Enter進到下一步。
-第0步，選英文，直接按下去。 第1步，安裝程式 在 GitHub 有新版，問要不要換。 這個安裝光碟在開機時就利用DHCP連上網路了， 所以可以去GitHub看看有無新版， 網路都連好了，安裝程式也不大，當然就換新的安裝程式啊! Enter按下去。 第2步，是否確認是英文鍵盤， Enter按下去。 第3步，Enter按下去。 第4步，兩張網卡預設為用 DHCP 。這個我要改 &hellip;&hellip; 我玩這份 Ubuntu 就是要當 Server ，必須是固定IP。 選 Manual 進入 static IP 設定頁。 如下圖，把每個欄位都填一填。 第二張網卡也如法炮製，但是就不要跟第一張網卡同網段了， 未來利用這兩張網卡，兩個網段，可以來玩一些閘道器的功能。 第5步，Enter直接按下去，除非你的網路需要 proxy 才能連到 Internet。 第6步，Enter直接按下去，除非你知道有更快的 Ubuntu Mirror 站台。 我目前的設定，讓安裝程式跳過第7步了，我也不知道那是啥。
-  <a href='https://ericsuperman.github.io/posts/ub19/'>Read more →</a>
-</article> 
-
-
-
-
-
 <nav class="blog-pagination">
   
   
@@ -380,6 +379,8 @@ Ubuntu 安裝後，一張網卡配 191.168.1.x 的IP， 另一張網卡配 10.10
 
 <li><a href="/posts/">Posts</a></li>
 
+<li><a href="/posts/ub19nat/">Ubuntu 19.04 as a NAT Router</a></li>
+
 <li><a href="/posts/command4/">[CMD Tutorial <sup>4</sup>&frasl;<sub>4</sub>] Batch Files</a></li>
 
 <li><a href="/posts/command3/">[CMD Tutorial <sup>3</sup>&frasl;<sub>4</sub>] Path Environment Variables</a></li>
@@ -395,8 +396,6 @@ Ubuntu 安裝後，一張網卡配 191.168.1.x 的IP， 另一張網卡配 10.10
 <li><a href="/posts/hoi/">[竹北] HOI x 山語喃喃</a></li>
 
 <li><a href="/posts/history/">[竹北] HiStory 故事小館</a></li>
-
-<li><a href="/posts/pita/">[竹北] 皮塔地中海料理</a></li>
 
     </ol>
   </section>
