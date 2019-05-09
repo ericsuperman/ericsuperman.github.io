@@ -4,37 +4,50 @@
   
   <url>
     <loc>https://ericsuperman.github.io/categories/</loc>
-    <lastmod>2019-05-09T14:50:23+08:00</lastmod>
+    <lastmod>2019-05-09T14:50:29+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ericsuperman.github.io/tags/command/</loc>
-    <lastmod>2019-05-09T14:50:23+08:00</lastmod>
+    <lastmod>2019-05-09T14:50:29+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ericsuperman.github.io/categories/computer/</loc>
-    <lastmod>2019-05-09T14:50:23+08:00</lastmod>
+    <lastmod>2019-05-09T14:50:29+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ericsuperman.github.io/posts/</loc>
-    <lastmod>2019-05-09T14:50:23+08:00</lastmod>
+    <lastmod>2019-05-09T14:50:29+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ericsuperman.github.io/tags/</loc>
-    <lastmod>2019-05-09T14:50:23+08:00</lastmod>
+    <lastmod>2019-05-09T14:50:29+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ericsuperman.github.io/tags/windows/</loc>
-    <lastmod>2019-05-09T14:50:23+08:00</lastmod>
+    <lastmod>2019-05-09T14:50:29+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/posts/command4/</loc>
+    <lastmod>2019-05-09T14:50:29+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/</loc>
+    <lastmod>2019-05-09T14:50:29+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -43,12 +56,6 @@
     <lastmod>2019-05-09T14:50:23+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/</loc>
-    <lastmod>2019-05-09T14:50:23+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>

@@ -10,7 +10,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ericsuperman.github.io/tags/command/" />
 
-<meta property="og:updated_time" content="2019-05-09T14:50:23&#43;08:00"/>
+<meta property="og:updated_time" content="2019-05-09T14:50:29&#43;08:00"/>
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Command"/>
@@ -81,6 +81,28 @@ if (!doNotTrack) {
         <div class="col-sm-8 blog-main">
 
           
+
+
+
+
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/command4/">[CMD Tutorial <sup>4</sup>&frasl;<sub>4</sub>] Batch Files</a></h2>
+    <p class="blog-post-meta"><time datetime="2019-05-09T14:50:29&#43;08:00">Thu May 09, 2019</time> by Eric Chang in 
+<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/computer" rel="category tag">Computer</a>
+
+
+<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/windows" rel="tag">Windows</a>, <a href="/tags/command" rel="tag">Command</a>
+
+</p>
+  </header>
+  如果某個任務，需要執行數個命令，都可以用文字檔集結成數行，該文字檔副檔名必須為 .bat ，CMD可以執行 bat 檔案，執行順序就是循序一行執行完成，再換下一行。 我們利用之前介紹的 CON 系統檔案，產生一個簡單的 bat 檔案，接著執行它，看結果是什麼。
+C:\Users\Eric&gt;copy con a.bat set msg=hello echo %msg% echo world ^Z 複製了 1 個檔案。 C:\Users\Eric&gt;a C:\Users\Eric&gt;set msg=hello C:\Users\Eric&gt;echo hello hello C:\Users\Eric&gt;echo world world C:\Users\Eric&gt; 上面例子就是簡單的三行，第一行設定變數msg，第二行印出msg的內容，第三行印出普通訊息。可以看到，a.bat 執行到第二行的時候，CMD 已經將變數內容都換好了才執行。
+通常在開發程式的時候，需要的工具包括了文字編輯器或是IDE(Integrated Development Environments，整合開發環境)，編譯程式，Make自動化編譯工具&hellip;等，所以即使叫出了 Command Prompt，也許還需要設定一堆環境變數，讓全部的工具程式，都能正確執行。而且每次叫出Command Prompt，執行的內容幾乎沒什麼變化，那當然就是準備好一個設定環境變數的批次檔，叫出Command Prompt的時候執行一次，這樣才比較有效率。
+  <a href='https://ericsuperman.github.io/posts/command4/'>Read more →</a>
+</article> 
 
 
 
@@ -188,6 +210,8 @@ c:\&gt; help dir 顯示檔案清單以列出目錄中的檔案及子目錄。 DI
 
 <li><a href="/posts/">Posts</a></li>
 
+<li><a href="/posts/command4/">[CMD Tutorial <sup>4</sup>&frasl;<sub>4</sub>] Batch Files</a></li>
+
 <li><a href="/posts/command3/">[CMD Tutorial <sup>3</sup>&frasl;<sub>4</sub>] Path Environment Variables</a></li>
 
 <li><a href="/posts/command2/">[CMD Tutorial <sup>2</sup>&frasl;<sub>4</sub>] Command Prompt Basic Commands</a></li>
@@ -203,8 +227,6 @@ c:\&gt; help dir 顯示檔案清單以列出目錄中的檔案及子目錄。 DI
 <li><a href="/posts/history/">[竹北] HiStory 故事小館</a></li>
 
 <li><a href="/posts/pita/">[竹北] 皮塔地中海料理</a></li>
-
-<li><a href="/posts/ub19/">Ubuntu 19.04 開箱</a></li>
 
     </ol>
   </section>
