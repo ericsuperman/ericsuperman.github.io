@@ -5,24 +5,38 @@
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<meta property="og:title" content="Steak" />
+<meta property="og:title" content="Posts" />
 <meta property="og:description" content="Everything is my own murmur." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://ericsuperman.github.io/tags/steak/" />
+<meta property="og:url" content="https://ericsuperman.github.io/posts/" />
 
-<meta property="og:updated_time" content="2019-04-25T20:37:55&#43;08:00"/>
+<meta property="og:updated_time" content="2019-05-09T14:50:23&#43;08:00"/>
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Steak"/>
+<meta name="twitter:title" content="Posts"/>
 <meta name="twitter:description" content="Everything is my own murmur."/>
 <meta name="generator" content="Hugo 0.55.3" />
 
 
     
-      
-    
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Blog",
+  "headline": "老艾瑞克的喃喃自語",
+  "url" : "https:\/\/ericsuperman.github.io\/posts\/",
+  "author": {
+    "@type": "Person",
+    "name": "Eric Chang"
+  },
+  "dateModified": "2019-05-09T14:50:23\x2b08:00",
+  "keywords": "computer,gourmet,personal,brunch,chinese-food,command,french-food,guanxi,hsinchu,linux,mediterranean-food,murmur,steak,virtual-box,windows,zhubei,",
+  "description": "Everything is my own murmur."
+}
+</script>
 
-    <link rel="canonical" href="https://ericsuperman.github.io/tags/steak/">
+
+    <link rel="canonical" href="https://ericsuperman.github.io/posts/">
 
     <title>老艾瑞克的喃喃自語</title>
 
@@ -32,7 +46,7 @@
     
 
     <!-- RSS 2.0 feed -->
-    <link rel="alternate" type="application/rss+xml" href="https://ericsuperman.github.io/tags/steak/index.xml" title="老艾瑞克的喃喃自語" />
+    <link rel="alternate" type="application/rss+xml" href="https://ericsuperman.github.io/posts/index.xml" title="老艾瑞克的喃喃自語" />
     
 <script type="application/javascript">
 var doNotTrack = false;
@@ -87,6 +101,7 @@ if (!doNotTrack) {
 
 
 
+
 <article class="blog-post">
   <header>
     <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/bbq/">[竹北] The BBQ House 竹北店</a></h2>
@@ -113,6 +128,66 @@ if (!doNotTrack) {
 
 
 
+
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/vbox/">VirtualBox 6.x Shared Folder</a></h2>
+    <p class="blog-post-meta"><time datetime="2019-04-21T21:51:33&#43;08:00">Sun Apr 21, 2019</time> by Eric Chang in 
+<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/computer" rel="category tag">Computer</a>
+
+
+<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/virtual-box" rel="tag">Virtual Box</a>, <a href="/tags/linux" rel="tag">Linux</a>
+
+</p>
+  </header>
+  前一版的 Ubuntu 16.04 LTS，它當 VirtualBox Guest OS 的時候， 可以安裝一個現成 virtualbox-dkms 套件，裝好之後， shared folder 就自動生效了，非常方便。
+Ubuntu 18.04 LTS 問世之後，它的 virtualbox-dkms 套件 是針對 VirtualBox 5.2.18 及之後版本，當時 VirtualBox 也 是 5.2x 左右，一切也沒問題。
+突然間，2018年12月 VirtualBox 6.0 降臨了，我直接將 VirtualBox 5.x 升級到 VirtualBox 6.0 ，跑一樣的 guest image， Shared Folder 就失效了。
+查了很久，才發現是 virtualbox-dkms 套件只支援 VirtualBox 5.x 的關係，等了一陣子，看起來 Ubuntu 18.04 是沒打算升級 dkms 套件了， 那只好回到老方法，讓 VirtualBox Host 這邊插入虛擬的 Guest Additions 光碟片。
+在 VirtualBox Host 這邊的 Menu Bar ，有一個 &ldquo;裝置&rdquo; 選項，裡面 有一個 &ldquo;插入 Guest Additions CD 映像&rdquo;。
+  <a href='https://ericsuperman.github.io/posts/vbox/'>Read more →</a>
+</article> 
+
+
+
+
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/hello/">Hello</a></h2>
+    <p class="blog-post-meta"><time datetime="2019-04-21T15:59:57&#43;08:00">Sun Apr 21, 2019</time> by Eric Chang in 
+<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/personal" rel="category tag">Personal</a>
+
+
+<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/murmur" rel="tag">Murmur</a>
+
+</p>
+  </header>
+  懶惰好久了，要開始寫Blog囉!
+以下為測試 Markdown 語法 -
+  Name Age     John 27   Mary 23       Name Age     Bob 27   Alice 23    Heading Level 1 Some test
+Heading Level 2 Some more test
+Regular Paragraph!
+Definition List
+ Cat Fluffy animal everyone likes Internet Vector of transmission for pictures of cats  This is a footnote.
+  <a href='https://ericsuperman.github.io/posts/hello/'>Read more →</a>
+</article> 
+
+
+
+
+
+<nav class="blog-pagination">
+  
+  
+  <a class="btn btn-outline-primary" href="/posts/" rel="prev" role="button">Previous page</a>
+  <a class="btn btn-outline-primary disabled" href="#" role="button" aria-disabled="true">Next page</a>
+  
+  
+</nav>
 
 
 
