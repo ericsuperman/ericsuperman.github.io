@@ -7,10 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Except where otherwise noted, content on this site is licensed under a [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/).</copyright>
-    <lastBuildDate>Thu, 09 May 2019 19:35:20 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 10 May 2019 12:40:23 +0800</lastBuildDate>
     
 	<atom:link href="https://ericsuperman.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ubuntu 19.04 and CloudFlare Free DNS</title>
+      <link>https://ericsuperman.github.io/posts/ub19dns/</link>
+      <pubDate>Fri, 10 May 2019 12:40:23 +0800</pubDate>
+      
+      <guid>https://ericsuperman.github.io/posts/ub19dns/</guid>
+      <description>目前許多公司或個人，在租用ADSL或光纖時，選擇固定IP， 或是去雲端主機商，例如Amazon, Linode, Digital Ocean 租 一台 VPS (Virtual Private Server)，也會有固定IP。 有了固定IP，通常會去申請一個自己的 domain name，好做 一些個人網站或電子商務等。
+所使用的 domain 註冊公司，不外乎是 namecheap.com 或是 Godaddy.com 為大宗，因為通常他們兩家最便宜。 然後就需要處理專屬於自己的 domain 的 Master DNS Server 了。
+Master DNS Server 可以建在自己的固定 IP，但是我想大多數人 大概就是開個小網站，不會租超大頻寬。所以還是使用知名的 Free DNS Hosting Providers 服務，不但節省頻寬，載入網頁也 因為解析域名超快而整體快一點點。
+Free DNS Hosting Providers 又根據不同的公司有不同的限制。 幾年前， namecheap.com 有提供 Free DNS Server，結果我域名 搬去namecheap.com 時，Free DNS Server 反而不能用，似乎是要 另外花錢買服務才有，(最近 namecheap.com 才推出 basic dns server 選項)，所以當時我就搬到 freedns.afraid.org。可是 麻煩又來了，freedns.afraid.org 會希望使用者贊助，或是半年 登入一次，不然就賣不然就賣給亂七八糟的人增加幾個 hosts。 例如，假設我擁有 example.</description>
+    </item>
     
     <item>
       <title>Ubuntu 19.04 as a NAT Router</title>
