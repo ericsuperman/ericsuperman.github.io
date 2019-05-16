@@ -4,18 +4,55 @@
   
   <url>
     <loc>https://ericsuperman.github.io/categories/</loc>
-    <lastmod>2019-05-15T23:05:32+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/tags/chinese-food/</loc>
-    <lastmod>2019-05-15T23:05:32+08:00</lastmod>
+    <lastmod>2019-05-16T21:16:30+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ericsuperman.github.io/categories/gourmet/</loc>
+    <lastmod>2019-05-16T21:16:30+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/posts/</loc>
+    <lastmod>2019-05-16T21:16:30+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/steak/</loc>
+    <lastmod>2019-05-16T21:16:30+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/</loc>
+    <lastmod>2019-05-16T21:16:30+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/zhubei/</loc>
+    <lastmod>2019-05-16T21:16:30+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/posts/stanley/</loc>
+    <lastmod>2019-05-16T21:16:30+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/</loc>
+    <lastmod>2019-05-16T21:16:30+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/chinese-food/</loc>
     <lastmod>2019-05-15T23:05:32+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -33,28 +70,10 @@
   </url>
   
   <url>
-    <loc>https://ericsuperman.github.io/posts/</loc>
-    <lastmod>2019-05-15T23:05:32+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/tags/</loc>
-    <lastmod>2019-05-15T23:05:32+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://ericsuperman.github.io/posts/blackcanteen/</loc>
     <lastmod>2019-05-15T23:05:32+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/</loc>
-    <lastmod>2019-05-15T23:05:32+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -170,12 +189,6 @@
   </url>
   
   <url>
-    <loc>https://ericsuperman.github.io/tags/zhubei/</loc>
-    <lastmod>2019-05-05T11:17:37+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://ericsuperman.github.io/posts/hoi/</loc>
     <lastmod>2019-05-05T11:17:37+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -220,12 +233,6 @@
     <lastmod>2019-04-30T21:06:37+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/tags/steak/</loc>
-    <lastmod>2019-04-25T20:37:55+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
