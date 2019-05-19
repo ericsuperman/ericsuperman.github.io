@@ -89,7 +89,7 @@ if (!doNotTrack) {
 
 <article class="blog-post">
   <header>
-    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/command4/">[CMD Tutorial <sup>4</sup>&frasl;<sub>4</sub>] Batch Files</a></h2>
+    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/computer/command4/">[CMD Tutorial <sup>4</sup>&frasl;<sub>4</sub>] Batch Files</a></h2>
     <p class="blog-post-meta"><time datetime="2019-05-09T14:50:29&#43;08:00">Thu May 09, 2019</time> by Eric Chang in 
 <i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/computer" rel="category tag">Computer</a>
 
@@ -101,7 +101,7 @@ if (!doNotTrack) {
   如果某個任務，需要執行數個命令，都可以用文字檔集結成數行，該文字檔副檔名必須為 .bat ，CMD可以執行 bat 檔案，執行順序就是循序一行執行完成，再換下一行。 我們利用之前介紹的 CON 系統檔案，產生一個簡單的 bat 檔案，接著執行它，看結果是什麼。
 C:\Users\Eric&gt;copy con a.bat set msg=hello echo %msg% echo world ^Z 複製了 1 個檔案。 C:\Users\Eric&gt;a C:\Users\Eric&gt;set msg=hello C:\Users\Eric&gt;echo hello hello C:\Users\Eric&gt;echo world world C:\Users\Eric&gt; 上面例子就是簡單的三行，第一行設定變數msg，第二行印出msg的內容，第三行印出普通訊息。可以看到，a.bat 執行到第二行的時候，CMD 已經將變數內容都換好了才執行。
 通常在開發程式的時候，需要的工具包括了文字編輯器或是IDE(Integrated Development Environments，整合開發環境)，編譯程式，Make自動化編譯工具&hellip;等，所以即使叫出了 Command Prompt，也許還需要設定一堆環境變數，讓全部的工具程式，都能正確執行。而且每次叫出Command Prompt，執行的內容幾乎沒什麼變化，那當然就是準備好一個設定環境變數的批次檔，叫出Command Prompt的時候執行一次，這樣才比較有效率。
-  <a href='https://ericsuperman.github.io/posts/command4/'>Read more →</a>
+  <a href='https://ericsuperman.github.io/posts/computer/command4/'>Read more →</a>
 </article> 
 
 
@@ -111,7 +111,7 @@ C:\Users\Eric&gt;copy con a.bat set msg=hello echo %msg% echo world ^Z 複製了
 
 <article class="blog-post">
   <header>
-    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/command3/">[CMD Tutorial <sup>3</sup>&frasl;<sub>4</sub>] Path Environment Variables</a></h2>
+    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/computer/command3/">[CMD Tutorial <sup>3</sup>&frasl;<sub>4</sub>] Path Environment Variables</a></h2>
     <p class="blog-post-meta"><time datetime="2019-05-09T14:50:23&#43;08:00">Thu May 09, 2019</time> by Eric Chang in 
 <i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/computer" rel="category tag">Computer</a>
 
@@ -131,7 +131,7 @@ C:\Users\Eric&gt;echo %ENV_AAA% &#34;c:\aaa d:\bbb&#34; echo 也能印普通訊�
 C:\Users\Eric&gt;echo Hello, World! Hello, World! PATH 當然，有一些名稱，被保留給系統使用，例如 PATH ，就是代表系統搜尋外部命令的路徑順序，每個路徑都必須以分號隔開。這個PATH環境變數因為太常用了，所以Microsoft乾脆開發一個PATH命令，專門負責顯示及修改PATH環境變數。
 d:\&gt; path 執行結果如下:
 d:\&gt;path PATH=C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Git\cmd;C:\Users\Eric\AppData\Local\Microsoft\WindowsApps; 上面Path變數的內容，其意義為 - 假設使用者想要執行 aaa.
-  <a href='https://ericsuperman.github.io/posts/command3/'>Read more →</a>
+  <a href='https://ericsuperman.github.io/posts/computer/command3/'>Read more →</a>
 </article> 
 
 
@@ -141,7 +141,7 @@ d:\&gt;path PATH=C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Wind
 
 <article class="blog-post">
   <header>
-    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/command2/">[CMD Tutorial <sup>2</sup>&frasl;<sub>4</sub>] Command Prompt Basic Commands</a></h2>
+    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/computer/command2/">[CMD Tutorial <sup>2</sup>&frasl;<sub>4</sub>] Command Prompt Basic Commands</a></h2>
     <p class="blog-post-meta"><time datetime="2019-05-09T14:50:20&#43;08:00">Thu May 09, 2019</time> by Eric Chang in 
 <i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/computer" rel="category tag">Computer</a>
 
@@ -157,7 +157,7 @@ c:\&gt;d: d:\&gt;cd prj d:\prj&gt; 以前DOS沒下列語法，但在Windows 10 C
 複製檔案 d:\prj&gt; copy a1.txt a2.txt 上面例子中，a1.txt 是來源檔，必須已經存在於目前目錄，不然會有錯誤訊息。 a2.txt 是目的地檔，如果已經存在，會被蓋掉，a1.txt 不會有任何變更。 命令執行完成後，a1.txt與a2.txt 同時存在，兩個檔案內容也是一樣。 簡易建立檔案
 Windows 保留一些特殊檔名，例如 con 代表 Console。有時候想要產生一個新檔案，打幾個字，叫出文字編輯器，打幾個字，存檔，實在太慢，不如用在 Command Prompt 利用 con 檔案就能輕鬆解決 -
 d:\prj&gt; copy con test.txt abc ^z 複製了 1 個檔案。 d:\prj&gt; 上面例子中，先打了abc三個字母代表內容，之後 ^Z 這個字是按了 Ctrl-Z，這是Windows 規定好的 EOF(End of File)字元，Windows看到這個字，等同於檔案結尾，因此確定了整個檔案，接著開始複製整個檔案，一個新的test.
-  <a href='https://ericsuperman.github.io/posts/command2/'>Read more →</a>
+  <a href='https://ericsuperman.github.io/posts/computer/command2/'>Read more →</a>
 </article> 
 
 
@@ -167,7 +167,7 @@ d:\prj&gt; copy con test.txt abc ^z 複製了 1 個檔案。 d:\prj&gt; 上面�
 
 <article class="blog-post">
   <header>
-    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/command1/">[CMD Tutorial <sup>1</sup>&frasl;<sub>4</sub>] What is Windows Command Prompt?</a></h2>
+    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/computer/command1/">[CMD Tutorial <sup>1</sup>&frasl;<sub>4</sub>] What is Windows Command Prompt?</a></h2>
     <p class="blog-post-meta"><time datetime="2019-05-09T14:50:16&#43;08:00">Thu May 09, 2019</time> by Eric Chang in 
 <i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/computer" rel="category tag">Computer</a>
 
@@ -182,7 +182,7 @@ d:\prj&gt; copy con test.txt abc ^z 複製了 1 個檔案。 d:\prj&gt; 上面�
 進入 Command Prompt 後，通常會先打個 DIR ，看看有哪些檔案，位於什麼路徑。
 c:\&gt; dir DIR 其實有很多參數可做變化，例如列出隱藏檔、用別的欄位排序顯示等，詳細用法可以用 Help DIR 來看。其他命令也可以用 &ldquo;HELP &ldquo;來看該命令的詳細說明。
 c:\&gt; help dir 顯示檔案清單以列出目錄中的檔案及子目錄。 DIR [drive:][path][filename] [/A[[:]attributes]] [/B] [/C] [/D] [/L] [/N] [/O[[:]sortorder]] [/P] [/Q] [/R] [/S] [/T[[:]timefield]] [/W] [/X] [/4] [drive:][path][filename] 指定要顯示的磁碟機、目錄或檔案。 /A 顯示具有指定之屬性的檔案。 attributes D 目錄 R 唯讀檔案 H 隱藏檔案 A 待封存檔案 S 系統檔案 I 非內容索引檔案 L 重新分析點 O 離線檔案 - 首碼表示否定 /B 使用單純格式 (沒有標頭資訊或摘要)。 /C 在檔案大小中顯示千位分隔符號。這是預設值。使用 /-C 可停用 分隔符號的顯示。 /D 與寬的列表格式相同，但是依照欄來排序。 /L 使用小寫顯示。 /N 使用新的長列表格式，檔名會顯示在最右方。 /O 依照指定的排序順序來列出檔案。 sortorder N 依名稱 (英文字母) S 依大小 (最小的在前) E 依副檔名 (英文字母) D 依日期/時間 (日期較早的在前) G 先列出子目錄 - 首碼表示相反的順序 /P 當資料填滿整個螢幕時暫停顯示。 /Q 顯示檔案擁有者。 /R 顯示檔案的替代資料流。 /S 顯示指定目錄及所有子目錄中的檔案。 /T 控制用來顯示或排序的時間欄位 timefield C 建立 A 上次檔案存取時間 W 上次寫入檔案時間 /W 使用寬的列表格式。 /X 顯示對非 8.
-  <a href='https://ericsuperman.github.io/posts/command1/'>Read more →</a>
+  <a href='https://ericsuperman.github.io/posts/computer/command1/'>Read more →</a>
 </article> 
 
 
@@ -210,23 +210,23 @@ c:\&gt; help dir 顯示檔案清單以列出目錄中的檔案及子目錄。 DI
 
 <li><a href="/posts/">Posts</a></li>
 
-<li><a href="/posts/stanley/">[竹北] STANLEY&rsquo;s Steakhouse ChuPei City 史坦利美式牛排 竹北店</a></li>
+<li><a href="/posts/gourmet/catchplane/">[竹北] 抓飛機早安食堂</a></li>
 
-<li><a href="/posts/blackcanteen/">[新竹] 黑食堂經國店</a></li>
+<li><a href="/posts/gourmet/triangle/">[新竹] 三角窗麵食</a></li>
 
-<li><a href="/posts/sixchef/">[台北] 六廚川客料理</a></li>
+<li><a href="/posts/gourmet/stanley/">[竹北] STANLEY&rsquo;s Steakhouse ChuPei City 史坦利美式牛排 竹北店</a></li>
 
-<li><a href="/posts/flatnoodle/">[關西] 振興關西扁麵 輕慢食</a></li>
+<li><a href="/posts/gourmet/blackcanteen/">[新竹] 黑食堂經國店</a></li>
 
-<li><a href="/posts/ub19dns/">Ubuntu 19.04 and CloudFlare Free DNS</a></li>
+<li><a href="/posts/gourmet/sixchef/">[台北] 六廚川客料理</a></li>
 
-<li><a href="/posts/ub19nat/">Ubuntu 19.04 as a NAT Router</a></li>
+<li><a href="/posts/gourmet/flatnoodle/">[關西] 振興關西扁麵 輕慢食</a></li>
 
-<li><a href="/posts/command4/">[CMD Tutorial <sup>4</sup>&frasl;<sub>4</sub>] Batch Files</a></li>
+<li><a href="/posts/computer/ub19dns/">Ubuntu 19.04 and CloudFlare Free DNS</a></li>
 
-<li><a href="/posts/command3/">[CMD Tutorial <sup>3</sup>&frasl;<sub>4</sub>] Path Environment Variables</a></li>
+<li><a href="/posts/computer/ub19nat/">Ubuntu 19.04 as a NAT Router</a></li>
 
-<li><a href="/posts/command2/">[CMD Tutorial <sup>2</sup>&frasl;<sub>4</sub>] Command Prompt Basic Commands</a></li>
+<li><a href="/posts/computer/command4/">[CMD Tutorial <sup>4</sup>&frasl;<sub>4</sub>] Batch Files</a></li>
 
     </ol>
   </section>

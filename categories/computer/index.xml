@@ -14,10 +14,10 @@
     
     <item>
       <title>Ubuntu 19.04 and CloudFlare Free DNS</title>
-      <link>https://ericsuperman.github.io/posts/ub19dns/</link>
+      <link>https://ericsuperman.github.io/posts/computer/ub19dns/</link>
       <pubDate>Fri, 10 May 2019 12:40:23 +0800</pubDate>
       
-      <guid>https://ericsuperman.github.io/posts/ub19dns/</guid>
+      <guid>https://ericsuperman.github.io/posts/computer/ub19dns/</guid>
       <description>目前許多公司或個人，在租用ADSL或光纖時，選擇固定IP， 或是去雲端主機商，例如Amazon, Linode, Digital Ocean 租 一台 VPS (Virtual Private Server)，也會有固定IP。 有了固定IP，通常會去申請一個自己的 domain name，好做 一些個人網站或電子商務等。
 所使用的 domain 註冊公司，不外乎是 namecheap.com 或是 Godaddy.com 為大宗，因為通常他們兩家最便宜。 然後就需要處理專屬於自己的 domain 的 Master DNS Server 了。
 Master DNS Server 可以建在自己的固定 IP，但是我想大多數人 大概就是開個小網站，不會租超大頻寬。所以還是使用知名的 Free DNS Hosting Providers 服務，不但節省頻寬，載入網頁也 因為解析域名超快而整體快一點點。
@@ -26,10 +26,10 @@ Free DNS Hosting Providers 又根據不同的公司有不同的限制。 幾年�
     
     <item>
       <title>Ubuntu 19.04 as a NAT Router</title>
-      <link>https://ericsuperman.github.io/posts/ub19nat/</link>
+      <link>https://ericsuperman.github.io/posts/computer/ub19nat/</link>
       <pubDate>Thu, 09 May 2019 19:35:20 +0800</pubDate>
       
-      <guid>https://ericsuperman.github.io/posts/ub19nat/</guid>
+      <guid>https://ericsuperman.github.io/posts/computer/ub19nat/</guid>
       <description>之前，在用VirtualBox 開箱 Ubuntu 19.04 的時候， 就刻意弄成兩張網卡，這次來玩一下 NAT Router ， 紀錄整個過程。
 首先 /etc/sysctl.conf 找到下面這行，把 # 拿掉。
 net.ipv4.ip_forward=1 現在 Linux 網路卡都不叫 eth0, eth1 了， 反而是 &amp;ldquo;enp0s3&amp;rdquo; ， &amp;ldquo;enp0s8&amp;rdquo; 這些怪名字， 這是因為 一致性網路設備命名規則 所規範的。 簡單地說，就是 Linux 原本是根據找到網卡的先後順序，命名為 eth0、 eth1 等。 可是一旦多插一張網卡，可能會導致 原本叫 eth1 的網卡，改名為 eth2 ， 萬一許多系統的script 寫死 eth0, eth1 ，那就會非常困擾。
@@ -40,10 +40,10 @@ Ubuntu 19.04 Server 剛裝好時，沒有 /etc/rc.local 。 所以就叫出文�
     
     <item>
       <title>[CMD Tutorial 4/4] Batch Files</title>
-      <link>https://ericsuperman.github.io/posts/command4/</link>
+      <link>https://ericsuperman.github.io/posts/computer/command4/</link>
       <pubDate>Thu, 09 May 2019 14:50:29 +0800</pubDate>
       
-      <guid>https://ericsuperman.github.io/posts/command4/</guid>
+      <guid>https://ericsuperman.github.io/posts/computer/command4/</guid>
       <description>如果某個任務，需要執行數個命令，都可以用文字檔集結成數行，該文字檔副檔名必須為 .bat ，CMD可以執行 bat 檔案，執行順序就是循序一行執行完成，再換下一行。 我們利用之前介紹的 CON 系統檔案，產生一個簡單的 bat 檔案，接著執行它，看結果是什麼。
 C:\Users\Eric&amp;gt;copy con a.bat set msg=hello echo %msg% echo world ^Z 複製了 1 個檔案。 C:\Users\Eric&amp;gt;a C:\Users\Eric&amp;gt;set msg=hello C:\Users\Eric&amp;gt;echo hello hello C:\Users\Eric&amp;gt;echo world world C:\Users\Eric&amp;gt; 上面例子就是簡單的三行，第一行設定變數msg，第二行印出msg的內容，第三行印出普通訊息。可以看到，a.bat 執行到第二行的時候，CMD 已經將變數內容都換好了才執行。
 通常在開發程式的時候，需要的工具包括了文字編輯器或是IDE(Integrated Development Environments，整合開發環境)，編譯程式，Make自動化編譯工具&amp;hellip;等，所以即使叫出了 Command Prompt，也許還需要設定一堆環境變數，讓全部的工具程式，都能正確執行。而且每次叫出Command Prompt，執行的內容幾乎沒什麼變化，那當然就是準備好一個設定環境變數的批次檔，叫出Command Prompt的時候執行一次，這樣才比較有效率。</description>
@@ -51,10 +51,10 @@ C:\Users\Eric&amp;gt;copy con a.bat set msg=hello echo %msg% echo world ^Z 複�
     
     <item>
       <title>[CMD Tutorial 3/4] Path Environment Variables</title>
-      <link>https://ericsuperman.github.io/posts/command3/</link>
+      <link>https://ericsuperman.github.io/posts/computer/command3/</link>
       <pubDate>Thu, 09 May 2019 14:50:23 +0800</pubDate>
       
-      <guid>https://ericsuperman.github.io/posts/command3/</guid>
+      <guid>https://ericsuperman.github.io/posts/computer/command3/</guid>
       <description>環境變數 Windows Command Prompt 也有變數的觀念，命令在執行的時候，可以讀取特定變數，然後就像執行命令時帶參數一樣，以不同的模式執行。 例如你可以開發一個aaa程式，執行時需要兩個參數，也可以使用ENV_AAA環境變數，
 d:\&amp;gt; aaa c:\aaa d:\bbb 以上例子，兩個參數都是路徑，如果執行很多次會打字打個很累，正好aaa的開發人員寫成也可使用ENV_AAA 環境變數，所以下列方式也可以
 d:\&amp;gt; set ENV_AAA=&amp;#34;c:\aaa d:\bbb&amp;#34; 環境變數設定完成後，執行執行 aaa 就可以了，不需要打參數了。 d:\&amp;gt; aaa
@@ -70,10 +70,10 @@ d:\&amp;gt;path PATH=C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\
     
     <item>
       <title>[CMD Tutorial 2/4] Command Prompt Basic Commands</title>
-      <link>https://ericsuperman.github.io/posts/command2/</link>
+      <link>https://ericsuperman.github.io/posts/computer/command2/</link>
       <pubDate>Thu, 09 May 2019 14:50:20 +0800</pubDate>
       
-      <guid>https://ericsuperman.github.io/posts/command2/</guid>
+      <guid>https://ericsuperman.github.io/posts/computer/command2/</guid>
       <description>切換工作磁碟機與路徑 Windows 沿襲DOS傳統，可將一顆硬碟切割成數個 Paritition，每一個Partition分配一個磁碟機代碼，由A到Z，最多26個磁碟，A磁碟的名稱為A:，B磁碟的名稱為B:，A磁碟與B磁碟是保留給軟碟機，雖然現在已經很難看到軟碟機了。硬碟則是C:開始，開機用的 Windows 目錄也通常位於C:。
 假設使用者規劃了一個D磁碟機，專門放資料，其中工作的目錄規劃為d:\prj 目錄，則可用下列方式切換磁碟機與路徑 -
 c:\&amp;gt;d: d:\&amp;gt;cd prj d:\prj&amp;gt; 以前DOS沒下列語法，但在Windows 10 Command Prompt，可以合併為下列方式 - c:\&amp;gt;cd d:\prj d:\prj&amp;gt;
@@ -85,10 +85,10 @@ d:\prj&amp;gt; copy con test.txt abc ^z 複製了 1 個檔案。 d:\prj&amp;gt; 
     
     <item>
       <title>[CMD Tutorial 1/4] What is Windows Command Prompt?</title>
-      <link>https://ericsuperman.github.io/posts/command1/</link>
+      <link>https://ericsuperman.github.io/posts/computer/command1/</link>
       <pubDate>Thu, 09 May 2019 14:50:16 +0800</pubDate>
       
-      <guid>https://ericsuperman.github.io/posts/command1/</guid>
+      <guid>https://ericsuperman.github.io/posts/computer/command1/</guid>
       <description>Windows Command Prompt 在Windows被發明之前，當時主流的電腦作業系統是 MS-DOS (Microsoft Disk Operating System)，以文字下命令的方式跟電腦溝通。雖然沒有圖形化介面友善，但其實主流的電腦作業系統熟悉MS-DOS命令的人，能夠飛快地打字，迅速地做很多事情。例如刪除一個檔案，Windows 需要叫出檔案管理員，用滑鼠找到該檔案，按右鍵，選刪除，如果在 DOS 環境，敲鍵盤 &amp;ldquo;del &amp;ldquo;，同時利用鍵自動補齊檔名的功能，很快地就能刪除檔案。所以Windows發展了這麼多代，都還是保留一個類似的介面。
 到現在，大部分使用者偏好這種幾乎不用學習的圖形化介面，日常生活操作也幾乎都能用圖形化介面完成，文字介面就很少人用了。大概只剩下少數場合，例如學習程式設計，撰寫程式碼仍然利用圖形化介面的文字編輯器，可是編譯程式碼、執行，使用 Command Prompt 會比較方便。
 那在Windows 10環境，如何執行 Command Prompt呢? 在左下角搜尋功能裡面打 &amp;ldquo;CMD&amp;rdquo; ，系統會找出&amp;rdquo;命令提示字元&amp;rdquo; ，執行該命令，就進入了command line模式了。如果近期內會常用 CMD，可以釘選到工具列，比較方便。
@@ -99,10 +99,10 @@ c:\&amp;gt; help dir 顯示檔案清單以列出目錄中的檔案及子目錄�
     
     <item>
       <title>Ubuntu 19.04 開箱</title>
-      <link>https://ericsuperman.github.io/posts/ub19/</link>
+      <link>https://ericsuperman.github.io/posts/computer/ub19/</link>
       <pubDate>Sat, 04 May 2019 10:52:52 +0800</pubDate>
       
-      <guid>https://ericsuperman.github.io/posts/ub19/</guid>
+      <guid>https://ericsuperman.github.io/posts/computer/ub19/</guid>
       <description>Ubuntu 19.04 正式推出了，這一版不是 Long Term Support 版， 不過還是用 VirtualBox 玩玩看 Ubuntu Server好了， 看看那些東西進步了。
 先新增一台虛擬PC，我的Host PC裝了很多ram， 所以這裡就很大方地給這台虛擬PC 4GB ram。
 硬碟則是配了 128GB，反正VirtualBox對虛擬硬碟是 實際用多少才配置多少，一開始不會太大。如果想要玩 編譯 Linux Kernel 或 OpenWRT 的話，預設的10GB是不夠的。
@@ -114,10 +114,10 @@ Ubuntu 安裝後，一張網卡配 191.168.1.x 的IP， 另一張網卡配 10.10
     
     <item>
       <title>VirtualBox 6.x Shared Folder</title>
-      <link>https://ericsuperman.github.io/posts/vbox/</link>
+      <link>https://ericsuperman.github.io/posts/computer/vbox/</link>
       <pubDate>Sun, 21 Apr 2019 21:51:33 +0800</pubDate>
       
-      <guid>https://ericsuperman.github.io/posts/vbox/</guid>
+      <guid>https://ericsuperman.github.io/posts/computer/vbox/</guid>
       <description>前一版的 Ubuntu 16.04 LTS，它當 VirtualBox Guest OS 的時候， 可以安裝一個現成 virtualbox-dkms 套件，裝好之後， shared folder 就自動生效了，非常方便。
 Ubuntu 18.04 LTS 問世之後，它的 virtualbox-dkms 套件 是針對 VirtualBox 5.2.18 及之後版本，當時 VirtualBox 也 是 5.2x 左右，一切也沒問題。
 突然間，2018年12月 VirtualBox 6.0 降臨了，我直接將 VirtualBox 5.x 升級到 VirtualBox 6.0 ，跑一樣的 guest image， Shared Folder 就失效了。

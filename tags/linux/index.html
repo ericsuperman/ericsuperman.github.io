@@ -89,7 +89,7 @@ if (!doNotTrack) {
 
 <article class="blog-post">
   <header>
-    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/ub19dns/">Ubuntu 19.04 and CloudFlare Free DNS</a></h2>
+    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/computer/ub19dns/">Ubuntu 19.04 and CloudFlare Free DNS</a></h2>
     <p class="blog-post-meta"><time datetime="2019-05-10T12:40:23&#43;08:00">Fri May 10, 2019</time> by Eric Chang in 
 <i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/computer" rel="category tag">Computer</a>
 
@@ -102,7 +102,7 @@ if (!doNotTrack) {
 所使用的 domain 註冊公司，不外乎是 namecheap.com 或是 Godaddy.com 為大宗，因為通常他們兩家最便宜。 然後就需要處理專屬於自己的 domain 的 Master DNS Server 了。
 Master DNS Server 可以建在自己的固定 IP，但是我想大多數人 大概就是開個小網站，不會租超大頻寬。所以還是使用知名的 Free DNS Hosting Providers 服務，不但節省頻寬，載入網頁也 因為解析域名超快而整體快一點點。
 Free DNS Hosting Providers 又根據不同的公司有不同的限制。 幾年前， namecheap.com 有提供 Free DNS Server，結果我域名 搬去namecheap.com 時，Free DNS Server 反而不能用，似乎是要 另外花錢買服務才有，(最近 namecheap.com 才推出 basic dns server 選項)，所以當時我就搬到 freedns.afraid.org。可是 麻煩又來了，freedns.afraid.org 會希望使用者贊助，或是半年 登入一次，不然就賣不然就賣給亂七八糟的人增加幾個 hosts。 例如，假設我擁有 example.
-  <a href='https://ericsuperman.github.io/posts/ub19dns/'>Read more →</a>
+  <a href='https://ericsuperman.github.io/posts/computer/ub19dns/'>Read more →</a>
 </article> 
 
 
@@ -112,7 +112,7 @@ Free DNS Hosting Providers 又根據不同的公司有不同的限制。 幾年�
 
 <article class="blog-post">
   <header>
-    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/ub19nat/">Ubuntu 19.04 as a NAT Router</a></h2>
+    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/computer/ub19nat/">Ubuntu 19.04 as a NAT Router</a></h2>
     <p class="blog-post-meta"><time datetime="2019-05-09T19:35:20&#43;08:00">Thu May 09, 2019</time> by Eric Chang in 
 <i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/computer" rel="category tag">Computer</a>
 
@@ -127,7 +127,7 @@ net.ipv4.ip_forward=1 現在 Linux 網路卡都不叫 eth0, eth1 了， 反而�
 所以改成 &ldquo;enp0s3&rdquo; ， &ldquo;enp0s8&rdquo; 這些名字，再多插幾張網路卡，名字也不會變。
 假設 enp0s3 是對外的網路， enp0s8 是對內的網路，
 Ubuntu 19.04 Server 剛裝好時，沒有 /etc/rc.local 。 所以就叫出文字編輯器，編輯 /etc/rc.local 如下， 最後用 exit 0 結尾。
-  <a href='https://ericsuperman.github.io/posts/ub19nat/'>Read more →</a>
+  <a href='https://ericsuperman.github.io/posts/computer/ub19nat/'>Read more →</a>
 </article> 
 
 
@@ -137,7 +137,7 @@ Ubuntu 19.04 Server 剛裝好時，沒有 /etc/rc.local 。 所以就叫出文�
 
 <article class="blog-post">
   <header>
-    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/ub19/">Ubuntu 19.04 開箱</a></h2>
+    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/computer/ub19/">Ubuntu 19.04 開箱</a></h2>
     <p class="blog-post-meta"><time datetime="2019-05-04T10:52:52&#43;08:00">Sat May 04, 2019</time> by Eric Chang in 
 <i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/computer" rel="category tag">Computer</a>
 
@@ -153,7 +153,7 @@ Ubuntu 19.04 Server 剛裝好時，沒有 /etc/rc.local 。 所以就叫出文�
 Ubuntu 安裝後，一張網卡配 191.168.1.x 的IP， 另一張網卡配 10.10.10.x 的IP， 如果要測試 NAT 功能，或是其他 gateway的功能， 兩張網卡才能做。
 最後，虛擬光碟機要接到 ubuntu-19.04-live-server-amd64.iso 檔案，就能開機了。 第一次開機，從虛擬光碟boot，進入安裝程式， 安裝步驟雖然有14步，大部分預設值都沒問題， 通常都直接按Enter進到下一步。
 第0步，選英文，直接按下去。 第1步，安裝程式 在 GitHub 有新版，問要不要換。 這個安裝光碟在開機時就利用DHCP連上網路了， 所以可以去GitHub看看有無新版， 網路都連好了，安裝程式也不大，當然就換新的安裝程式啊! Enter按下去。 第2步，是否確認是英文鍵盤， Enter按下去。 第3步，Enter按下去。 第4步，兩張網卡預設為用 DHCP 。這個我要改 &hellip;&hellip; 我玩這份 Ubuntu 就是要當 Server ，必須是固定IP。 選 Manual 進入 static IP 設定頁。 如下圖，把每個欄位都填一填。 第二張網卡也如法炮製，但是就不要跟第一張網卡同網段了， 未來利用這兩張網卡，兩個網段，可以來玩一些閘道器的功能。 第5步，Enter直接按下去，除非你的網路需要 proxy 才能連到 Internet。 第6步，Enter直接按下去，除非你知道有更快的 Ubuntu Mirror 站台。 我目前的設定，讓安裝程式跳過第7步了，我也不知道那是啥。
-  <a href='https://ericsuperman.github.io/posts/ub19/'>Read more →</a>
+  <a href='https://ericsuperman.github.io/posts/computer/ub19/'>Read more →</a>
 </article> 
 
 
@@ -163,7 +163,7 @@ Ubuntu 安裝後，一張網卡配 191.168.1.x 的IP， 另一張網卡配 10.10
 
 <article class="blog-post">
   <header>
-    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/vbox/">VirtualBox 6.x Shared Folder</a></h2>
+    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/computer/vbox/">VirtualBox 6.x Shared Folder</a></h2>
     <p class="blog-post-meta"><time datetime="2019-04-21T21:51:33&#43;08:00">Sun Apr 21, 2019</time> by Eric Chang in 
 <i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/computer" rel="category tag">Computer</a>
 
@@ -177,7 +177,7 @@ Ubuntu 18.04 LTS 問世之後，它的 virtualbox-dkms 套件 是針對 VirtualB
 突然間，2018年12月 VirtualBox 6.0 降臨了，我直接將 VirtualBox 5.x 升級到 VirtualBox 6.0 ，跑一樣的 guest image， Shared Folder 就失效了。
 查了很久，才發現是 virtualbox-dkms 套件只支援 VirtualBox 5.x 的關係，等了一陣子，看起來 Ubuntu 18.04 是沒打算升級 dkms 套件了， 那只好回到老方法，讓 VirtualBox Host 這邊插入虛擬的 Guest Additions 光碟片。
 在 VirtualBox Host 這邊的 Menu Bar ，有一個 &ldquo;裝置&rdquo; 選項，裡面 有一個 &ldquo;插入 Guest Additions CD 映像&rdquo;。
-  <a href='https://ericsuperman.github.io/posts/vbox/'>Read more →</a>
+  <a href='https://ericsuperman.github.io/posts/computer/vbox/'>Read more →</a>
 </article> 
 
 
@@ -205,23 +205,23 @@ Ubuntu 18.04 LTS 問世之後，它的 virtualbox-dkms 套件 是針對 VirtualB
 
 <li><a href="/posts/">Posts</a></li>
 
-<li><a href="/posts/stanley/">[竹北] STANLEY&rsquo;s Steakhouse ChuPei City 史坦利美式牛排 竹北店</a></li>
+<li><a href="/posts/gourmet/catchplane/">[竹北] 抓飛機早安食堂</a></li>
 
-<li><a href="/posts/blackcanteen/">[新竹] 黑食堂經國店</a></li>
+<li><a href="/posts/gourmet/triangle/">[新竹] 三角窗麵食</a></li>
 
-<li><a href="/posts/sixchef/">[台北] 六廚川客料理</a></li>
+<li><a href="/posts/gourmet/stanley/">[竹北] STANLEY&rsquo;s Steakhouse ChuPei City 史坦利美式牛排 竹北店</a></li>
 
-<li><a href="/posts/flatnoodle/">[關西] 振興關西扁麵 輕慢食</a></li>
+<li><a href="/posts/gourmet/blackcanteen/">[新竹] 黑食堂經國店</a></li>
 
-<li><a href="/posts/ub19dns/">Ubuntu 19.04 and CloudFlare Free DNS</a></li>
+<li><a href="/posts/gourmet/sixchef/">[台北] 六廚川客料理</a></li>
 
-<li><a href="/posts/ub19nat/">Ubuntu 19.04 as a NAT Router</a></li>
+<li><a href="/posts/gourmet/flatnoodle/">[關西] 振興關西扁麵 輕慢食</a></li>
 
-<li><a href="/posts/command4/">[CMD Tutorial <sup>4</sup>&frasl;<sub>4</sub>] Batch Files</a></li>
+<li><a href="/posts/computer/ub19dns/">Ubuntu 19.04 and CloudFlare Free DNS</a></li>
 
-<li><a href="/posts/command3/">[CMD Tutorial <sup>3</sup>&frasl;<sub>4</sub>] Path Environment Variables</a></li>
+<li><a href="/posts/computer/ub19nat/">Ubuntu 19.04 as a NAT Router</a></li>
 
-<li><a href="/posts/command2/">[CMD Tutorial <sup>2</sup>&frasl;<sub>4</sub>] Command Prompt Basic Commands</a></li>
+<li><a href="/posts/computer/command4/">[CMD Tutorial <sup>4</sup>&frasl;<sub>4</sub>] Batch Files</a></li>
 
     </ol>
   </section>

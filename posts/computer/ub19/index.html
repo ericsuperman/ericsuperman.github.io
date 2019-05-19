@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta property="og:title" content="Ubuntu 19.04 開箱" />
+<meta property="og:description" content="Ubuntu 19.04 正式推出了，這一版不是 Long Term Support 版， 不過還是用 VirtualBox 玩玩看 Ubuntu Server好了， 看看那些東西進步了。
+先新增一台虛擬PC，我的Host PC裝了很多ram， 所以這裡就很大方地給這台虛擬PC 4GB ram。
+硬碟則是配了 128GB，反正VirtualBox對虛擬硬碟是 實際用多少才配置多少，一開始不會太大。如果想要玩 編譯 Linux Kernel 或 OpenWRT 的話，預設的10GB是不夠的。
+再來，反正是在家裡隨便玩玩，我習慣模擬兩張網卡， 都用Bridge方式接到內網，
+Ubuntu 安裝後，一張網卡配 191.168.1.x 的IP， 另一張網卡配 10.10.10.x 的IP， 如果要測試 NAT 功能，或是其他 gateway的功能， 兩張網卡才能做。
+最後，虛擬光碟機要接到 ubuntu-19.04-live-server-amd64.iso 檔案，就能開機了。 第一次開機，從虛擬光碟boot，進入安裝程式， 安裝步驟雖然有14步，大部分預設值都沒問題， 通常都直接按Enter進到下一步。
+第0步，選英文，直接按下去。 第1步，安裝程式 在 GitHub 有新版，問要不要換。 這個安裝光碟在開機時就利用DHCP連上網路了， 所以可以去GitHub看看有無新版， 網路都連好了，安裝程式也不大，當然就換新的安裝程式啊! Enter按下去。 第2步，是否確認是英文鍵盤， Enter按下去。 第3步，Enter按下去。 第4步，兩張網卡預設為用 DHCP 。這個我要改 &hellip;&hellip; 我玩這份 Ubuntu 就是要當 Server ，必須是固定IP。 選 Manual 進入 static IP 設定頁。 如下圖，把每個欄位都填一填。 第二張網卡也如法炮製，但是就不要跟第一張網卡同網段了， 未來利用這兩張網卡，兩個網段，可以來玩一些閘道器的功能。 第5步，Enter直接按下去，除非你的網路需要 proxy 才能連到 Internet。 第6步，Enter直接按下去，除非你知道有更快的 Ubuntu Mirror 站台。 我目前的設定，讓安裝程式跳過第7步了，我也不知道那是啥。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ericsuperman.github.io/posts/computer/ub19/" />
+<meta property="article:published_time" content="2019-05-04T10:52:52&#43;08:00"/>
+<meta property="article:modified_time" content="2019-05-04T10:52:52&#43;08:00"/>
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Ubuntu 19.04 開箱"/>
+<meta name="twitter:description" content="Ubuntu 19.04 正式推出了，這一版不是 Long Term Support 版， 不過還是用 VirtualBox 玩玩看 Ubuntu Server好了， 看看那些東西進步了。
+先新增一台虛擬PC，我的Host PC裝了很多ram， 所以這裡就很大方地給這台虛擬PC 4GB ram。
+硬碟則是配了 128GB，反正VirtualBox對虛擬硬碟是 實際用多少才配置多少，一開始不會太大。如果想要玩 編譯 Linux Kernel 或 OpenWRT 的話，預設的10GB是不夠的。
+再來，反正是在家裡隨便玩玩，我習慣模擬兩張網卡， 都用Bridge方式接到內網，
+Ubuntu 安裝後，一張網卡配 191.168.1.x 的IP， 另一張網卡配 10.10.10.x 的IP， 如果要測試 NAT 功能，或是其他 gateway的功能， 兩張網卡才能做。
+最後，虛擬光碟機要接到 ubuntu-19.04-live-server-amd64.iso 檔案，就能開機了。 第一次開機，從虛擬光碟boot，進入安裝程式， 安裝步驟雖然有14步，大部分預設值都沒問題， 通常都直接按Enter進到下一步。
+第0步，選英文，直接按下去。 第1步，安裝程式 在 GitHub 有新版，問要不要換。 這個安裝光碟在開機時就利用DHCP連上網路了， 所以可以去GitHub看看有無新版， 網路都連好了，安裝程式也不大，當然就換新的安裝程式啊! Enter按下去。 第2步，是否確認是英文鍵盤， Enter按下去。 第3步，Enter按下去。 第4步，兩張網卡預設為用 DHCP 。這個我要改 &hellip;&hellip; 我玩這份 Ubuntu 就是要當 Server ，必須是固定IP。 選 Manual 進入 static IP 設定頁。 如下圖，把每個欄位都填一填。 第二張網卡也如法炮製，但是就不要跟第一張網卡同網段了， 未來利用這兩張網卡，兩個網段，可以來玩一些閘道器的功能。 第5步，Enter直接按下去，除非你的網路需要 proxy 才能連到 Internet。 第6步，Enter直接按下去，除非你知道有更快的 Ubuntu Mirror 站台。 我目前的設定，讓安裝程式跳過第7步了，我也不知道那是啥。"/>
+<meta name="generator" content="Hugo 0.55.3" />
+
+
+    
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Ubuntu 19.04 開箱",
+  "url": "https:\/\/ericsuperman.github.io\/posts\/computer\/ub19\/",
+  "wordCount": "907",
+  "datePublished": "2019-05-04T10:52:52\x2b08:00",
+  "dateModified": "2019-05-04T10:52:52\x2b08:00",
+  "author": {
+    "@type": "Person",
+    "name": "Eric Chang"
+  },
+  "keywords": "Computer, Linux"
+}
+</script>
+
+
+
+    <link rel="canonical" href="https://ericsuperman.github.io/posts/computer/ub19/">
+
+    <title>Ubuntu 19.04 開箱 | 老艾瑞克的喃喃自語</title>
+
+    
+    <!-- combined, minified CSS -->
+    <link href="https://ericsuperman.github.io/css/style.css" rel="stylesheet" integrity="sha384-G5B34w7DFTumWTswxYzTX7NWfbvQEg1HbFFEg6ItN03uTAAoS2qkPS/fu3LhuuSA" crossorigin="anonymous">
+    
+
+    <!-- RSS 2.0 feed -->
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-139365265-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    
+
+    
+
+  </head>
+
+  <body>
+
+    
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="nav blog-nav">
+          <a class="nav-link " href="https://ericsuperman.github.io/">Home</a>
+        </nav>
+      </div>
+    </div>
+    
+
+    
+    
+    <header class="blog-header">
+      <div class="container">
+        <h1 class="blog-title" dir="auto"><a href="https://ericsuperman.github.io/" rel="home">老艾瑞克的喃喃自語</a></h1>
+        <p class="lead blog-description" dir="auto">Everything is my own murmur.</p>
+      </div>
+    </header>
+    
+    
+
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 blog-main">
+
+          
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/computer/ub19/">Ubuntu 19.04 開箱</a></h2>
+    <p class="blog-post-meta"><time datetime="2019-05-04T10:52:52&#43;08:00">Sat May 04, 2019</time> by Eric Chang in 
+<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/computer" rel="category tag">Computer</a>
+
+
+<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/linux" rel="tag">Linux</a>
+
+</p>
+  </header>
+  <p>Ubuntu 19.04 正式推出了，這一版不是 Long Term Support 版，
+不過還是用 VirtualBox 玩玩看 Ubuntu Server好了，
+看看那些東西進步了。</p>
+
+<p>先新增一台虛擬PC，我的Host PC裝了很多ram，
+所以這裡就很大方地給這台虛擬PC 4GB ram。</p>
+
+<p>硬碟則是配了 128GB，反正VirtualBox對虛擬硬碟是
+實際用多少才配置多少，一開始不會太大。如果想要玩
+編譯 Linux Kernel 或 OpenWRT 的話，預設的10GB是不夠的。</p>
+
+<p>再來，反正是在家裡隨便玩玩，我習慣模擬兩張網卡，
+都用Bridge方式接到內網，</p>
+
+<p>Ubuntu 安裝後，一張網卡配 191.168.1.x 的IP，
+另一張網卡配 10.10.10.x 的IP，
+如果要測試 NAT 功能，或是其他 gateway的功能，
+兩張網卡才能做。</p>
+
+<p><img src="vb_net1.png" alt="" title="VirtualBox Net1" />
+<img src="vb_net2.png" alt="" title="VirtualBox Net2" /></p>
+
+<p>最後，虛擬光碟機要接到 ubuntu-19.04-live-server-amd64.iso 檔案，就能開機了。
+<img src="vb_cdrom.png" alt="" /></p>
+
+<p>第一次開機，從虛擬光碟boot，進入安裝程式，
+安裝步驟雖然有14步，大部分預設值都沒問題，
+通常都直接按Enter進到下一步。</p>
+
+<p>第0步，選英文，直接按下去。
+<img src="ub19_step0.png" alt="" /></p>
+
+<p>第1步，安裝程式 在 GitHub 有新版，問要不要換。
+這個安裝光碟在開機時就利用DHCP連上網路了，
+所以可以去GitHub看看有無新版，
+網路都連好了，安裝程式也不大，當然就換新的安裝程式啊!
+Enter按下去。
+<img src="ub19_step1.png" alt="" /></p>
+
+<p>第2步，是否確認是英文鍵盤，
+Enter按下去。
+<img src="ub19_step2.png" alt="" /></p>
+
+<p>第3步，Enter按下去。
+<img src="ub19_step3.png" alt="" /></p>
+
+<p>第4步，兩張網卡預設為用 DHCP 。這個我要改 &hellip;&hellip;
+<img src="ub19_step4.png" alt="" /></p>
+
+<p>我玩這份 Ubuntu 就是要當 Server ，必須是固定IP。
+<img src="ub19_step4b.png" alt="" /></p>
+
+<p>選 Manual 進入 static IP 設定頁。
+<img src="ub19_step4d.png" alt="" /></p>
+
+<p>如下圖，把每個欄位都填一填。
+<img src="ub19_step4e.png" alt="" /></p>
+
+<p>第二張網卡也如法炮製，但是就不要跟第一張網卡同網段了，
+未來利用這兩張網卡，兩個網段，可以來玩一些閘道器的功能。
+<img src="ub19_step4f.png" alt="" /></p>
+
+<p>第5步，Enter直接按下去，除非你的網路需要 proxy 才能連到 Internet。
+<img src="ub19_step5.png" alt="" /></p>
+
+<p>第6步，Enter直接按下去，除非你知道有更快的 Ubuntu Mirror 站台。
+<img src="ub19_step6.png" alt="" /></p>
+
+<p>我目前的設定，讓安裝程式跳過第7步了，我也不知道那是啥。</p>
+
+<p>第8步，因為我是玩一玩而已，&rdquo;Use An Entire Disk&rdquo; 就夠了。
+如果是 Production 環境，應該是要規劃個 LVM 。
+<img src="ub19_step8.png" alt="" /></p>
+
+<p>選即將要格式化的硬碟，雖然說這個步驟要很小心，
+可是這台虛擬PC只看的到這台虛擬硬碟啊，
+沒別台了。 如果能看到 Host PC 的硬碟，那才奇怪。
+<img src="ub19_step8b.png" alt="" /></p>
+
+<p>在 &ldquo;Done&rdquo; 按下Enter，就照上面顯示的Partition分法去格式化了，
+這個步驟仍然要很小心。
+<img src="ub19_step8c.png" alt="" /></p>
+
+<p>怕出錯，再確認一次，因為一旦格式化，資料是救不回來的。</p>
+
+<p>沒問題的話，選Continue，按下Enter。
+<img src="ub19_step8d.png" alt="" /></p>
+
+<p>因為格式化之後，直接就開始安裝了，所以還有幾個問題要先問，</p>
+
+<p>第一個問題，就是決定這個系統的第一個 user。
+因為Ubuntu 預設不能直接使用root，很多事都需要這個 user 用 sudo 去做。
+<img src="ub19_step8e_user.png" alt="" /></p>
+
+<p>第二個問題，裝Secure Shell Server，當然要，這樣我才能在 Host PC
+用 ssh client 連進Server 設定東西，都用Console 不方便。
+<img src="ub19_step8f_ssh.png" alt="" /></p>
+
+<p>第三個問題， Ubuntu 整理了很多 Server 常用的套件組，用這個安裝
+會非常省事。不過這個未來可以再選，這次就什麼都不選。
+<img src="ub19_step8g_snap.png" alt="" /></p>
+
+<p>以上問題都答了，就開始格式化，開始安裝全部的檔案。過程需要好幾分鐘。
+<img src="ub19_step12.png" alt="" /></p>
+
+<p>裝好了，就出現下面畫面，等你按Reboot。
+<img src="ub19_step13_reboot.png" alt="" /></p>
+
+<p>一份安裝好的 Ubuntu 19.04 Server，開機成功，可以開始用了。</p>
+
+<p>新的Linux Distribution大部分開機都很快，其實這是高手們分析了開機過程，
+某些工作放在等候Login訊息之後做也沒關係，
+所以看到 login: 後，一些boot訊息還是慢慢跑出來，
+但無所謂，就登入，開始做事吧。
+<img src="ub19_boot_ok.png" alt="" /></p>
+
+<p>用ssh client 登入</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">login as: eric
+eric@192.168.1.252<span style="color:#960050;background-color:#1e0010">&#39;</span>s password: ********
+Welcome to Ubuntu <span style="color:#ae81ff">19</span>.04 <span style="color:#f92672">(</span>GNU/Linux <span style="color:#ae81ff">5</span>.0.0-13-generic x86_64<span style="color:#f92672">)</span>
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Sat May  <span style="color:#ae81ff">4</span> <span style="color:#ae81ff">01</span>:21:04 UTC <span style="color:#ae81ff">2019</span>
+
+  System load:  <span style="color:#ae81ff">0</span>.06               Processes:             <span style="color:#ae81ff">105</span>
+  Usage of /:   <span style="color:#ae81ff">4</span>.6% of <span style="color:#ae81ff">125</span>.49GB   Users logged in:       <span style="color:#ae81ff">1</span>
+  Memory usage: <span style="color:#ae81ff">4</span>%                 IP address <span style="color:#66d9ef">for</span> enp0s3: <span style="color:#ae81ff">192</span>.168.1.252
+  Swap usage:   <span style="color:#ae81ff">0</span>%                 IP address <span style="color:#66d9ef">for</span> enp0s8: <span style="color:#ae81ff">10</span>.10.10.254
+
+
+<span style="color:#ae81ff">0</span> updates can be installed immediately.
+<span style="color:#ae81ff">0</span> of these updates are security updates.
+
+
+Last login: Sat May  <span style="color:#ae81ff">4</span> <span style="color:#ae81ff">01</span>:19:38 <span style="color:#ae81ff">2019</span>
+To run a command as administrator <span style="color:#f92672">(</span>user <span style="color:#e6db74">&#34;root&#34;</span><span style="color:#f92672">)</span>, use <span style="color:#e6db74">&#34;sudo &lt;command&gt;&#34;</span>.
+See <span style="color:#e6db74">&#34;man sudo_root&#34;</span> <span style="color:#66d9ef">for</span> details.
+
+eric@www:~$</code></pre></div>
+
+<p>使用者eric 的權限就是一般的使用者，安裝套件需要root，
+這台只是個人把玩而已，我就違反安全規定一下，
+設定root密碼，直接用root 去調整系統，小朋友不要學，</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">eric@www:~$ sudo passwd
+<span style="color:#f92672">[</span>sudo<span style="color:#f92672">]</span> password <span style="color:#66d9ef">for</span> eric:
+New password:
+Retype new password:
+passwd: password updated successfully
+eric@www:~$ su -
+Password:</code></pre></div>
+
+<p>當了root的第一件事，當然就是看已安裝的套件有沒有新版，</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">root@www:~# apt update
+Hit:1 http://tw.archive.ubuntu.com/ubuntu disco InRelease
+Hit:2 http://tw.archive.ubuntu.com/ubuntu disco-updates InRelease
+Hit:3 http://tw.archive.ubuntu.com/ubuntu disco-backports InRelease
+Hit:4 http://tw.archive.ubuntu.com/ubuntu disco-security InRelease
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+<span style="color:#ae81ff">5</span> packages can be upgraded. Run <span style="color:#e6db74">&#39;apt list --upgradable&#39;</span> to see them.
+root@www:~# apt upgrade
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+Calculating upgrade... Done
+The following packages will be upgraded:
+  console-setup console-setup-linux keyboard-configuration python3-distupgrade
+  ubuntu-release-upgrader-core
+<span style="color:#ae81ff">5</span> upgraded, <span style="color:#ae81ff">0</span> newly installed, <span style="color:#ae81ff">0</span> to remove and <span style="color:#ae81ff">0</span> not upgraded.
+Need to get <span style="color:#ae81ff">1</span>,581 kB of archives.
+After this operation, <span style="color:#ae81ff">6</span>,144 B of additional disk space will be used.
+Do you want to <span style="color:#66d9ef">continue</span>? <span style="color:#f92672">[</span>Y/n<span style="color:#f92672">]</span> y
+Get:1 http://tw.archive.ubuntu.com/ubuntu disco-updates/main amd64 console-setup-linux all <span style="color:#ae81ff">1</span>.178ubuntu12.1 <span style="color:#f92672">[</span><span style="color:#ae81ff">982</span> kB<span style="color:#f92672">]</span>
+Get:2 http://tw.archive.ubuntu.com/ubuntu disco-updates/main amd64 console-setup all <span style="color:#ae81ff">1</span>.178ubuntu12.1 <span style="color:#f92672">[</span><span style="color:#ae81ff">105</span> kB<span style="color:#f92672">]</span>
+Get:3 http://tw.archive.ubuntu.com/ubuntu disco-updates/main amd64 keyboard-configuration all <span style="color:#ae81ff">1</span>.178ubuntu12.1 <span style="color:#f92672">[</span><span style="color:#ae81ff">370</span> kB<span style="color:#f92672">]</span>
+Get:4 http://tw.archive.ubuntu.com/ubuntu disco-updates/main amd64 ubuntu-release-upgrader-core all <span style="color:#ae81ff">1</span>:19.04.16.2 <span style="color:#f92672">[</span><span style="color:#ae81ff">23</span>.6 kB<span style="color:#f92672">]</span>
+Get:5 http://tw.archive.ubuntu.com/ubuntu disco-updates/main amd64 python3-distupgrade all <span style="color:#ae81ff">1</span>:19.04.16.2 <span style="color:#f92672">[</span><span style="color:#ae81ff">101</span> kB<span style="color:#f92672">]</span>
+Fetched <span style="color:#ae81ff">1</span>,581 kB in 3s <span style="color:#f92672">(</span><span style="color:#ae81ff">590</span> kB/s<span style="color:#f92672">)</span>
+Preconfiguring packages ...
+<span style="color:#f92672">(</span>Reading database ... <span style="color:#ae81ff">67272</span> files and directories currently installed.<span style="color:#f92672">)</span>
+Preparing to unpack .../console-setup-linux_1.178ubuntu12.1_all.deb ...
+Unpacking console-setup-linux <span style="color:#f92672">(</span><span style="color:#ae81ff">1</span>.178ubuntu12.1<span style="color:#f92672">)</span> over <span style="color:#f92672">(</span><span style="color:#ae81ff">1</span>.178ubuntu12<span style="color:#f92672">)</span> ...
+Preparing to unpack .../console-setup_1.178ubuntu12.1_all.deb ...
+Unpacking console-setup <span style="color:#f92672">(</span><span style="color:#ae81ff">1</span>.178ubuntu12.1<span style="color:#f92672">)</span> over <span style="color:#f92672">(</span><span style="color:#ae81ff">1</span>.178ubuntu12<span style="color:#f92672">)</span> ...
+Preparing to unpack .../keyboard-configuration_1.178ubuntu12.1_all.deb ...
+Unpacking keyboard-configuration <span style="color:#f92672">(</span><span style="color:#ae81ff">1</span>.178ubuntu12.1<span style="color:#f92672">)</span> over <span style="color:#f92672">(</span><span style="color:#ae81ff">1</span>.178ubuntu12<span style="color:#f92672">)</span> ...
+Preparing to unpack .../ubuntu-release-upgrader-core_1%3a19.04.16.2_all.deb ...
+Unpacking ubuntu-release-upgrader-core <span style="color:#f92672">(</span><span style="color:#ae81ff">1</span>:19.04.16.2<span style="color:#f92672">)</span> over <span style="color:#f92672">(</span><span style="color:#ae81ff">1</span>:19.04.16<span style="color:#f92672">)</span> ...
+Preparing to unpack .../python3-distupgrade_1%3a19.04.16.2_all.deb ...
+Unpacking python3-distupgrade <span style="color:#f92672">(</span><span style="color:#ae81ff">1</span>:19.04.16.2<span style="color:#f92672">)</span> over <span style="color:#f92672">(</span><span style="color:#ae81ff">1</span>:19.04.16<span style="color:#f92672">)</span> ...
+Setting up python3-distupgrade <span style="color:#f92672">(</span><span style="color:#ae81ff">1</span>:19.04.16.2<span style="color:#f92672">)</span> ...
+Setting up ubuntu-release-upgrader-core <span style="color:#f92672">(</span><span style="color:#ae81ff">1</span>:19.04.16.2<span style="color:#f92672">)</span> ...
+Setting up keyboard-configuration <span style="color:#f92672">(</span><span style="color:#ae81ff">1</span>.178ubuntu12.1<span style="color:#f92672">)</span> ...
+Your console font configuration will be updated the next time your system
+boots. If you want to update it now, run <span style="color:#e6db74">&#39;setupcon&#39;</span> from a virtual console.
+update-initramfs: deferring update <span style="color:#f92672">(</span>trigger activated<span style="color:#f92672">)</span>
+Setting up console-setup-linux <span style="color:#f92672">(</span><span style="color:#ae81ff">1</span>.178ubuntu12.1<span style="color:#f92672">)</span> ...
+Setting up console-setup <span style="color:#f92672">(</span><span style="color:#ae81ff">1</span>.178ubuntu12.1<span style="color:#f92672">)</span> ...
+update-initramfs: deferring update <span style="color:#f92672">(</span>trigger activated<span style="color:#f92672">)</span>
+Processing triggers <span style="color:#66d9ef">for</span> man-db <span style="color:#f92672">(</span><span style="color:#ae81ff">2</span>.8.5-2<span style="color:#f92672">)</span> ...
+Processing triggers <span style="color:#66d9ef">for</span> systemd <span style="color:#f92672">(</span><span style="color:#ae81ff">240</span>-6ubuntu5<span style="color:#f92672">)</span> ...
+Processing triggers <span style="color:#66d9ef">for</span> initramfs-tools <span style="color:#f92672">(</span><span style="color:#ae81ff">0</span>.131ubuntu19<span style="color:#f92672">)</span> ...
+update-initramfs: Generating /boot/initrd.img-5.0.0-13-generic
+cryptsetup: WARNING: The initramfs image may not contain cryptsetup binaries
+    nor crypto modules. If that<span style="color:#e6db74">&#39;s on purpose, you may want to uninstall the
+</span><span style="color:#e6db74">    &#39;</span>cryptsetup-initramfs<span style="color:#960050;background-color:#1e0010">&#39;</span> package in order to disable the cryptsetup initramfs
+    integration and avoid this warning.
+root@www:~#</code></pre></div>
+
+<p>通常 Server 需要裝個 LAMP (Linux, Apache, Mysql, PHP)，
+Ubuntu 有一個很簡便的方法裝 LAMP，
+就是用 tasksel</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">root@www:~# tasksel
+
+Command <span style="color:#e6db74">&#39;tasksel&#39;</span> not found, but can be installed with:
+
+apt install tasksel
+
+root@www:~# apt install tasksel
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following additional packages will be installed:
+  laptop-detect tasksel-data
+The following NEW packages will be installed:
+  laptop-detect tasksel tasksel-data
+<span style="color:#ae81ff">0</span> upgraded, <span style="color:#ae81ff">3</span> newly installed, <span style="color:#ae81ff">0</span> to remove and <span style="color:#ae81ff">0</span> not upgraded.
+Need to get <span style="color:#ae81ff">40</span>.0 kB of archives.
+After this operation, <span style="color:#ae81ff">309</span> kB of additional disk space will be used.
+Do you want to <span style="color:#66d9ef">continue</span>? <span style="color:#f92672">[</span>Y/n<span style="color:#f92672">]</span> y
+Get:1 http://tw.archive.ubuntu.com/ubuntu disco/main amd64 tasksel-data all <span style="color:#ae81ff">3</span>.34ubuntu16 <span style="color:#f92672">[</span><span style="color:#ae81ff">5</span>,340 B<span style="color:#f92672">]</span>
+Get:2 http://tw.archive.ubuntu.com/ubuntu disco/main amd64 tasksel all <span style="color:#ae81ff">3</span>.34ubuntu16 <span style="color:#f92672">[</span><span style="color:#ae81ff">28</span>.6 kB<span style="color:#f92672">]</span>
+Get:3 http://tw.archive.ubuntu.com/ubuntu disco/main amd64 laptop-detect all <span style="color:#ae81ff">0</span>.16 <span style="color:#f92672">[</span><span style="color:#ae81ff">6</span>,016 B<span style="color:#f92672">]</span>
+Fetched <span style="color:#ae81ff">40</span>.0 kB in 0s <span style="color:#f92672">(</span><span style="color:#ae81ff">155</span> kB/s<span style="color:#f92672">)</span>
+Preconfiguring packages ...
+Selecting previously unselected package tasksel-data.
+<span style="color:#f92672">(</span>Reading database ... <span style="color:#ae81ff">67272</span> files and directories currently installed.<span style="color:#f92672">)</span>
+Preparing to unpack .../tasksel-data_3.34ubuntu16_all.deb ...
+Unpacking tasksel-data <span style="color:#f92672">(</span><span style="color:#ae81ff">3</span>.34ubuntu16<span style="color:#f92672">)</span> ...
+Selecting previously unselected package tasksel.
+Preparing to unpack .../tasksel_3.34ubuntu16_all.deb ...
+Unpacking tasksel <span style="color:#f92672">(</span><span style="color:#ae81ff">3</span>.34ubuntu16<span style="color:#f92672">)</span> ...
+Selecting previously unselected package laptop-detect.
+Preparing to unpack .../laptop-detect_0.16_all.deb ...
+Unpacking laptop-detect <span style="color:#f92672">(</span><span style="color:#ae81ff">0</span>.16<span style="color:#f92672">)</span> ...
+Setting up laptop-detect <span style="color:#f92672">(</span><span style="color:#ae81ff">0</span>.16<span style="color:#f92672">)</span> ...
+Setting up tasksel-data <span style="color:#f92672">(</span><span style="color:#ae81ff">3</span>.34ubuntu16<span style="color:#f92672">)</span> ...
+Setting up tasksel <span style="color:#f92672">(</span><span style="color:#ae81ff">3</span>.34ubuntu16<span style="color:#f92672">)</span> ...
+Processing triggers <span style="color:#66d9ef">for</span> man-db <span style="color:#f92672">(</span><span style="color:#ae81ff">2</span>.8.5-2<span style="color:#f92672">)</span> ...
+root@www:~#</code></pre></div>
+
+<p>裝好 tasksel 後，執行它，
+LAMP Server 打上星號，按OK，幾分鐘就裝好了。
+<img src="taslsel.png" alt="" /></p>
+
+<p>如果是 tasksel 沒包括的，那當然就是用 apt 一個一個裝了。
+例如: gcc, g++, gnu make</p>
+
+<p>前一篇技術文章提到的 VirtualBox Shared Folder ，需要插入
+VirtualBox 開發的一個 Linux Kernel Module，
+這個模組的安裝程式與原始碼，都放在VirtualBox自備的 Guest Additions 虛擬光碟。</p>
+
+<p>但安裝程式需要gcc 等工具，去編譯這個模組，
+所以Ubuntu Server 還是得安裝這些基本的開發套件。
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">root@www:~# apt install gcc g++ make</code></pre></div></p>
+
+<p>還有一個 snap 格式，有些package的最新版是用snap格式包的，
+例如: golang 。 Server類型的程式用 golang 開發有許多好處。
+Ubuntu自己的 Golang package 不會瘋狂追逐新版，可是 Golang 還
+在積極開發中，不用新版的話，有點沒意思。</p>
+
+<p>可以看到下圖用snap裝的話，版本為 1.12.2 ，在此時是蠻新的。
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">root@www:~# snap install --classic go
+go <span style="color:#ae81ff">1</span>.12.2 from Michael Hudson-Doyle <span style="color:#f92672">(</span>mwhudson<span style="color:#f92672">)</span> installed
+root@www:~#</code></pre></div></p>
+
+<p>以上，先裝到這裡。</p>
+
+
+  
+
+  
+  <hr>
+  <footer>
+
+  
+    <section>
+    <h4>Share</h4>
+    <nav class="nav sharing-icons">
+      <a class="nav-item" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fericsuperman.github.io%2fposts%2fcomputer%2fub19%2f" title="Share on Facebook"><span class="fa fa-facebook fa-2x" aria-hidden="true"></span></a>
+      <a class="nav-item" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fericsuperman.github.io%2fposts%2fcomputer%2fub19%2f" title="Share on LinkedIn"><span class="fa fa-linkedin fa-2x" aria-hidden="true"></span></a>
+      <a class="nav-item" href="https://twitter.com/home?status=https%3a%2f%2fericsuperman.github.io%2fposts%2fcomputer%2fub19%2f" title="Tweet this"><span class="fa fa-twitter fa-2x"></span></a>
+    </nav>
+  </section>
+
+  
+
+  
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ericchangblog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  
+  </footer>
+  
+
+</article> 
+
+
+
+        </div> <!-- /.blog-main -->
+
+        <aside class="col-sm-3 ml-auto blog-sidebar">
+  
+  <section class="sidebar-module sidebar-module-inset">
+    <h4>About</h4>
+    <p dir="auto">I am highly interested in Computer Science and Gourmet.</p>
+  </section>
+  
+
+  
+        <section class="sidebar-module">
+    <h4>Recent Posts</h4>
+    <ol class="list-unstyled">
+
+
+<li><a href="/posts/">Posts</a></li>
+
+<li><a href="/posts/gourmet/catchplane/">[竹北] 抓飛機早安食堂</a></li>
+
+<li><a href="/posts/gourmet/triangle/">[新竹] 三角窗麵食</a></li>
+
+<li><a href="/posts/gourmet/stanley/">[竹北] STANLEY&rsquo;s Steakhouse ChuPei City 史坦利美式牛排 竹北店</a></li>
+
+<li><a href="/posts/gourmet/blackcanteen/">[新竹] 黑食堂經國店</a></li>
+
+<li><a href="/posts/gourmet/sixchef/">[台北] 六廚川客料理</a></li>
+
+<li><a href="/posts/gourmet/flatnoodle/">[關西] 振興關西扁麵 輕慢食</a></li>
+
+<li><a href="/posts/computer/ub19dns/">Ubuntu 19.04 and CloudFlare Free DNS</a></li>
+
+<li><a href="/posts/computer/ub19nat/">Ubuntu 19.04 as a NAT Router</a></li>
+
+<li><a href="/posts/computer/command4/">[CMD Tutorial <sup>4</sup>&frasl;<sub>4</sub>] Batch Files</a></li>
+
+    </ol>
+  </section>
+
+  
+
+  
+  <section class="sidebar-module">
+    <h4>Links</h4>
+    <ol class="list-unstyled">
+      
+      <li><a href="https://ericsuperman.github.io/categories/computer/">Computer</a></li>
+      
+      <li><a href="https://ericsuperman.github.io/categories/gourmet/">Gourment</a></li>
+      
+      <li><a href="https://ericsuperman.github.io/categories/personal/">Personal</a></li>
+      
+    </ol>
+  </section>
+  
+</aside>
+
+
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+    
+
+    
+    <footer class="blog-footer">
+      <p dir="auto">
+      
+      Except where otherwise noted, content on this site is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution 4.0 International license</a>.
+      
+      </p>
+      <p>
+      <a href="#">Back to top</a>
+      </p>
+    </footer>
+    
+
+  </body>
+
+</html>
