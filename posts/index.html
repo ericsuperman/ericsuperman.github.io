@@ -10,7 +10,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ericsuperman.github.io/posts/" />
 
-<meta property="og:updated_time" content="2019-05-19T19:57:50&#43;08:00"/>
+<meta property="og:updated_time" content="2019-05-19T19:58:14&#43;08:00"/>
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Posts"/>
@@ -29,8 +29,8 @@
     "@type": "Person",
     "name": "Eric Chang"
   },
-  "dateModified": "2019-05-19T19:57:50\x2b08:00",
-  "keywords": "computer,gourmet,personal,brunch,chinese-food,command,french-food,guanxi,hsinchu,linux,mediterranean-food,midnight-snack,murmur,steak,taipei,virtual-box,windows,zhubei,",
+  "dateModified": "2019-05-19T19:58:14\x2b08:00",
+  "keywords": "computer,gourmet,personal,brunch,chinese-food,command,french-food,guanxi,hsinchu,italian-food,linux,mediterranean-food,midnight-snack,murmur,steak,taipei,virtual-box,windows,zhubei,",
   "description": "Everything is my own murmur."
 }
 </script>
@@ -96,6 +96,29 @@ if (!doNotTrack) {
 
           
 
+
+
+
+
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/gourmet/meattime/">[新竹] MEAT TIME 歐式羅馬料理</a></h2>
+    <p class="blog-post-meta"><time datetime="2019-05-19T19:58:14&#43;08:00">Sun May 19, 2019</time> by Eric Chang in 
+<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/gourmet" rel="category tag">Gourmet</a>
+
+
+<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/hsinchu" rel="tag">Hsinchu</a>, <a href="/tags/italian-food" rel="tag">Italian food</a>
+
+</p>
+  </header>
+  來新竹辦點事，已經下午兩點了，北大路中正路這邊意外地不好停車。 本來還以為這種時段，應該很多人吃飽走了，最後去府後停車場， 雖然客滿，但離場的車也很踴躍，排隊了10來分鐘，終於可以停了。
+停好車後，用Google Map 搜尋評分高的餐廳，找到這一間下午有營業，分數又不錯的餐廳 -
+餐廳名稱: MEAT TIME 歐式羅馬料理 地 址: 新竹市東區東門街112巷8號
+東門街112巷原來是文昌雞旁邊的小巷子，真是隱密啊， 室內裝潢還不錯， 下午兩點，我們竟然是店裡唯一的一組客人。 白醬烤雞肉義大利麵 加 B套餐，也就是湯跟飲料。先上沙拉。 今天的附湯，算牛肉清湯吧。味道也還可以。 白醬烤雞肉義大利麵，雞肉確實是烤的，時間花很久，烤的香氣也有出來，白醬義大利麵部分很正常。 烤牛肉三明治吧，用料很大方，這點很好，味道也不錯。但是時間花更多，義大利麵吃完了，這道菜才上來。 整個過程，服務非常親切，沒什麼好挑剔的。就是做菜非常久，久到快受不了。服務生希望我們去 Google 留下好評，下次可以打九折，唉，原來我就是這樣被影響來的，服務態度這麼好，我也不忍留負評，也確實 優點很多，只是被上菜時間抵銷的差不多了。罷了，罷了，還是祝福這間店，改善上菜速度，食物繼續 加強，整個台灣有很多專業義大利菜餐廳，至少台灣去年有4間得到義大利紅蝦評鑑認證，應該很容易參考， 希望他們繼續提升品質賺大錢。
+  <a href='https://ericsuperman.github.io/posts/gourmet/meattime/'>Read more →</a>
+</article> 
 
 
 
@@ -304,36 +327,6 @@ C:\Users\Eric&gt;copy con a.bat set msg=hello echo %msg% echo world ^Z 複製了
 
 
 
-
-<article class="blog-post">
-  <header>
-    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/computer/command3/">[CMD Tutorial <sup>3</sup>&frasl;<sub>4</sub>] Path Environment Variables</a></h2>
-    <p class="blog-post-meta"><time datetime="2019-05-09T14:50:23&#43;08:00">Thu May 09, 2019</time> by Eric Chang in 
-<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/computer" rel="category tag">Computer</a>
-
-
-<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/windows" rel="tag">Windows</a>, <a href="/tags/command" rel="tag">Command</a>
-
-</p>
-  </header>
-  環境變數 Windows Command Prompt 也有變數的觀念，命令在執行的時候，可以讀取特定變數，然後就像執行命令時帶參數一樣，以不同的模式執行。 例如你可以開發一個aaa程式，執行時需要兩個參數，也可以使用ENV_AAA環境變數，
-d:\&gt; aaa c:\aaa d:\bbb 以上例子，兩個參數都是路徑，如果執行很多次會打字打個很累，正好aaa的開發人員寫成也可使用ENV_AAA 環境變數，所以下列方式也可以
-d:\&gt; set ENV_AAA=&#34;c:\aaa d:\bbb&#34; 環境變數設定完成後，執行執行 aaa 就可以了，不需要打參數了。 d:\&gt; aaa
-蠻多命令，都將不常變動的參數規劃放在環境變數，省下頻繁地打一堆字。 執行一份CMD的時候，作業系統會將全部的環境變數複製一份，這些環境變數專屬於該份CMD ，結束時會自動清掉。也就是說，如果同時執行兩份CMD，Windows 是複製出兩份系統的環境變數給這兩個CMD，兩邊各改了什麼，也不會影響對方，結束時也不會影響Windows系統的環境變數。 如果不小心改壞了什麼環境變數，可以關掉CMD，重新執行一次即可。
-SET 想要看總共有哪些環境變數，可用set不帶任何參數
-d:\&gt; set set 加上參數，就是設定環境變數了，語法為 set =
-d:\&gt; set ENV_AAA=&#34;c:\aaa d:\bbb&#34; ECHO set一執行，舊式列出全部環境變數，如果只是想要看一個變數，可以用 echo 來顯示訊息。 C:\Users\Eric&gt;set ENV_AAA=&ldquo;c:\aaa d:\bbb&rdquo;
-C:\Users\Eric&gt;echo %ENV_AAA% &#34;c:\aaa d:\bbb&#34; echo 也能印普通訊息，例如印個經典的 &ldquo;Hello, World!&rdquo;
-C:\Users\Eric&gt;echo Hello, World! Hello, World! PATH 當然，有一些名稱，被保留給系統使用，例如 PATH ，就是代表系統搜尋外部命令的路徑順序，每個路徑都必須以分號隔開。這個PATH環境變數因為太常用了，所以Microsoft乾脆開發一個PATH命令，專門負責顯示及修改PATH環境變數。
-d:\&gt; path 執行結果如下:
-d:\&gt;path PATH=C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Git\cmd;C:\Users\Eric\AppData\Local\Microsoft\WindowsApps; 上面Path變數的內容，其意義為 - 假設使用者想要執行 aaa.
-  <a href='https://ericsuperman.github.io/posts/computer/command3/'>Read more →</a>
-</article> 
-
-
-
-
-
 <nav class="blog-pagination">
   
   
@@ -365,6 +358,8 @@ d:\&gt;path PATH=C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Wind
 
 <li><a href="/posts/">Posts</a></li>
 
+<li><a href="/posts/gourmet/meattime/">[新竹] MEAT TIME 歐式羅馬料理</a></li>
+
 <li><a href="/posts/gourmet/catchplane/">[竹北] 抓飛機早安食堂</a></li>
 
 <li><a href="/posts/gourmet/triangle/">[新竹] 三角窗麵食</a></li>
@@ -380,8 +375,6 @@ d:\&gt;path PATH=C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Wind
 <li><a href="/posts/computer/ub19dns/">Ubuntu 19.04 and CloudFlare Free DNS</a></li>
 
 <li><a href="/posts/computer/ub19nat/">Ubuntu 19.04 as a NAT Router</a></li>
-
-<li><a href="/posts/computer/command4/">[CMD Tutorial <sup>4</sup>&frasl;<sub>4</sub>] Batch Files</a></li>
 
     </ol>
   </section>
