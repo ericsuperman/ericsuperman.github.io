@@ -2,10 +2,11 @@
 #
 # Rule 1
 User-agent: *
-Disallow: /css/
 Disallow: /fonts/
 Disallow: /img/
-Disallow: /js/
+Disallow: /resources/
+Disallow: /categories/
+Disallow: /tags/
 
 # Rule 2
 User-agent: *
