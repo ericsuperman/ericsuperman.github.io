@@ -7,15 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Except where otherwise noted, content on this site is licensed under a [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/).</copyright>
-    <lastBuildDate>Sun, 19 May 2019 19:58:28 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 19 May 2019 19:58:56 +0800</lastBuildDate>
     
 	<atom:link href="https://ericsuperman.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Personal</title>
+      <link>https://ericsuperman.github.io/categories/personal/</link>
+      <pubDate>Sun, 19 May 2019 19:58:56 +0800</pubDate>
+      
+      <guid>https://ericsuperman.github.io/categories/personal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Gourmet</title>
       <link>https://ericsuperman.github.io/categories/gourmet/</link>
-      <pubDate>Sun, 19 May 2019 19:58:28 +0800</pubDate>
+      <pubDate>Sun, 19 May 2019 19:58:37 +0800</pubDate>
       
       <guid>https://ericsuperman.github.io/categories/gourmet/</guid>
       <description></description>
@@ -27,15 +36,6 @@
       <pubDate>Fri, 10 May 2019 12:40:23 +0800</pubDate>
       
       <guid>https://ericsuperman.github.io/categories/computer/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Personal</title>
-      <link>https://ericsuperman.github.io/categories/personal/</link>
-      <pubDate>Sun, 21 Apr 2019 15:59:57 +0800</pubDate>
-      
-      <guid>https://ericsuperman.github.io/categories/personal/</guid>
       <description></description>
     </item>
     
