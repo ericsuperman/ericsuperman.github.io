@@ -3,10 +3,7 @@
 # Rule 1
 User-agent: *
 Disallow: /fonts/
-Disallow: /img/
 Disallow: /resources/
-Disallow: /categories/
-Disallow: /tags/
 
 # Rule 2
 User-agent: *
