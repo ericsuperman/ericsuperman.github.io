@@ -2,8 +2,7 @@
 #
 # Rule 1
 User-agent: *
-Disallow: /fonts/
-Disallow: /resources/
+Disallow: /tags/
 
 # Rule 2
 User-agent: *
