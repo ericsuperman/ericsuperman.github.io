@@ -4,25 +4,50 @@
   
   <url>
     <loc>https://ericsuperman.github.io/categories/</loc>
-    <lastmod>2019-05-23T19:38:45+08:00</lastmod>
+    <lastmod>2019-05-24T17:38:07+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ericsuperman.github.io/tags/chinese-food/</loc>
-    <lastmod>2019-05-23T19:38:45+08:00</lastmod>
+    <lastmod>2019-05-24T17:38:07+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ericsuperman.github.io/categories/gourmet/</loc>
-    <lastmod>2019-05-23T19:38:45+08:00</lastmod>
+    <lastmod>2019-05-24T17:38:07+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ericsuperman.github.io/tags/hsinchu/</loc>
-    <lastmod>2019-05-23T19:38:45+08:00</lastmod>
+    <lastmod>2019-05-24T17:38:07+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/posts/</loc>
+    <lastmod>2019-05-24T17:38:07+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/</loc>
+    <lastmod>2019-05-24T17:38:07+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/posts/gourmet/yangnoodle/</loc>
+    <lastmod>2019-05-24T17:38:07+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/</loc>
+    <lastmod>2019-05-24T17:38:07+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -33,28 +58,10 @@
   </url>
   
   <url>
-    <loc>https://ericsuperman.github.io/posts/</loc>
-    <lastmod>2019-05-23T19:38:45+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/tags/</loc>
-    <lastmod>2019-05-23T19:38:45+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://ericsuperman.github.io/posts/gourmet/chicken_grandpa/</loc>
     <lastmod>2019-05-23T19:38:45+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/</loc>
-    <lastmod>2019-05-23T19:38:45+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
