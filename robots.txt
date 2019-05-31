@@ -1,10 +1,5 @@
 # robots.txt for https://ericsuperman.github.io
 #
-# Rule 1
-User-agent: *
-Disallow: /tags/
-
-# Rule 2
 User-agent: *
 Allow: /
 
