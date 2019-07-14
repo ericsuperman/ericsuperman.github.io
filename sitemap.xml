@@ -3,14 +3,51 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ericsuperman.github.io/tags/brunch/</loc>
+    <lastmod>2019-07-14T16:05:25+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://ericsuperman.github.io/categories/</loc>
-    <lastmod>2019-07-07T20:31:24+08:00</lastmod>
+    <lastmod>2019-07-14T16:05:25+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ericsuperman.github.io/categories/gourmet/</loc>
-    <lastmod>2019-07-07T20:31:24+08:00</lastmod>
+    <lastmod>2019-07-14T16:05:25+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/posts/</loc>
+    <lastmod>2019-07-14T16:05:25+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/</loc>
+    <lastmod>2019-07-14T16:05:25+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/taoyuan/</loc>
+    <lastmod>2019-07-14T16:05:25+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/posts/gourmet/taoyuan/rightu/</loc>
+    <lastmod>2019-07-14T16:05:25+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/</loc>
+    <lastmod>2019-07-14T16:05:25+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -27,19 +64,7 @@
   </url>
   
   <url>
-    <loc>https://ericsuperman.github.io/posts/</loc>
-    <lastmod>2019-07-07T20:31:24+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://ericsuperman.github.io/tags/sanxia/</loc>
-    <lastmod>2019-07-07T20:31:24+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/tags/</loc>
     <lastmod>2019-07-07T20:31:24+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -49,12 +74,6 @@
     <lastmod>2019-07-07T20:31:24+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/</loc>
-    <lastmod>2019-07-07T20:31:24+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -251,12 +270,6 @@
     <lastmod>2019-05-19T19:58:14+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/tags/brunch/</loc>
-    <lastmod>2019-05-19T19:57:50+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
