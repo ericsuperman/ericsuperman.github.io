@@ -3,31 +3,56 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ericsuperman.github.io/tags/brunch/</loc>
+    <lastmod>2019-07-27T09:58:12+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://ericsuperman.github.io/categories/</loc>
-    <lastmod>2019-07-14T21:31:59+08:00</lastmod>
+    <lastmod>2019-07-27T09:58:12+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ericsuperman.github.io/categories/gourmet/</loc>
-    <lastmod>2019-07-14T21:31:59+08:00</lastmod>
+    <lastmod>2019-07-27T09:58:12+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ericsuperman.github.io/posts/</loc>
-    <lastmod>2019-07-14T21:31:59+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/tags/steak/</loc>
-    <lastmod>2019-07-14T21:31:59+08:00</lastmod>
+    <lastmod>2019-07-27T09:58:12+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ericsuperman.github.io/tags/</loc>
+    <lastmod>2019-07-27T09:58:12+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/zhubei/</loc>
+    <lastmod>2019-07-27T09:58:12+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/posts/gourmet/zhubei/71rice/</loc>
+    <lastmod>2019-07-27T09:58:12+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/</loc>
+    <lastmod>2019-07-27T09:58:12+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/steak/</loc>
     <lastmod>2019-07-14T21:31:59+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -43,18 +68,6 @@
     <lastmod>2019-07-14T21:31:59+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/</loc>
-    <lastmod>2019-07-14T21:31:59+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/tags/brunch/</loc>
-    <lastmod>2019-07-14T16:05:25+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -129,12 +142,6 @@
   
   <url>
     <loc>https://ericsuperman.github.io/tags/japanese-food/</loc>
-    <lastmod>2019-06-25T22:47:35+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/tags/zhubei/</loc>
     <lastmod>2019-06-25T22:47:35+08:00</lastmod>
     <priority>0</priority>
   </url>
