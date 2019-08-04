@@ -3,31 +3,56 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://ericsuperman.github.io/categories/</loc>
-    <lastmod>2019-08-04T12:32:00+08:00</lastmod>
+    <loc>https://ericsuperman.github.io/tags/brunch/</loc>
+    <lastmod>2019-08-04T17:51:23+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ericsuperman.github.io/tags/chinese-food/</loc>
-    <lastmod>2019-08-04T12:32:00+08:00</lastmod>
+    <loc>https://ericsuperman.github.io/categories/</loc>
+    <lastmod>2019-08-04T17:51:23+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ericsuperman.github.io/categories/gourmet/</loc>
-    <lastmod>2019-08-04T12:32:00+08:00</lastmod>
+    <lastmod>2019-08-04T17:51:23+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ericsuperman.github.io/posts/</loc>
-    <lastmod>2019-08-04T12:32:00+08:00</lastmod>
+    <lastmod>2019-08-04T17:51:23+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ericsuperman.github.io/tags/</loc>
+    <lastmod>2019-08-04T17:51:23+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/tamsui/</loc>
+    <lastmod>2019-08-04T17:51:23+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/posts/gourmet/tamsui/5y3c/</loc>
+    <lastmod>2019-08-04T17:51:23+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/</loc>
+    <lastmod>2019-08-04T17:51:23+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/chinese-food/</loc>
     <lastmod>2019-08-04T12:32:00+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -43,18 +68,6 @@
     <lastmod>2019-08-04T12:32:00+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/</loc>
-    <lastmod>2019-08-04T12:32:00+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/tags/brunch/</loc>
-    <lastmod>2019-08-03T22:04:23+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
