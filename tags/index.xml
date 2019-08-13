@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Except where otherwise noted, content on this site is licensed under a [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/).</copyright>
-    <lastBuildDate>Sun, 11 Aug 2019 11:36:34 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 13 Aug 2019 21:24:53 +0800</lastBuildDate>
     
 	<atom:link href="https://ericsuperman.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Italian Food</title>
+      <link>https://ericsuperman.github.io/tags/italian-food/</link>
+      <pubDate>Tue, 13 Aug 2019 21:24:53 +0800</pubDate>
+      
+      <guid>https://ericsuperman.github.io/tags/italian-food/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Zhubei</title>
+      <link>https://ericsuperman.github.io/tags/zhubei/</link>
+      <pubDate>Tue, 13 Aug 2019 21:24:53 +0800</pubDate>
+      
+      <guid>https://ericsuperman.github.io/tags/zhubei/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Japanese Food</title>
@@ -103,15 +121,6 @@
     </item>
     
     <item>
-      <title>Zhubei</title>
-      <link>https://ericsuperman.github.io/tags/zhubei/</link>
-      <pubDate>Sun, 04 Aug 2019 12:32:00 +0800</pubDate>
-      
-      <guid>https://ericsuperman.github.io/tags/zhubei/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Steak</title>
       <link>https://ericsuperman.github.io/tags/steak/</link>
       <pubDate>Sun, 14 Jul 2019 21:31:59 +0800</pubDate>
@@ -126,15 +135,6 @@
       <pubDate>Sun, 14 Jul 2019 21:31:59 +0800</pubDate>
       
       <guid>https://ericsuperman.github.io/tags/taipei/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Italian food</title>
-      <link>https://ericsuperman.github.io/tags/italian-food/</link>
-      <pubDate>Sun, 07 Jul 2019 20:31:24 +0800</pubDate>
-      
-      <guid>https://ericsuperman.github.io/tags/italian-food/</guid>
       <description></description>
     </item>
     

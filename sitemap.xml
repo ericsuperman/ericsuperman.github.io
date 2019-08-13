@@ -4,30 +4,55 @@
   
   <url>
     <loc>https://ericsuperman.github.io/categories/</loc>
-    <lastmod>2019-08-11T11:36:34+08:00</lastmod>
+    <lastmod>2019-08-13T21:24:53+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ericsuperman.github.io/categories/gourmet/</loc>
-    <lastmod>2019-08-11T11:36:34+08:00</lastmod>
+    <lastmod>2019-08-13T21:24:53+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ericsuperman.github.io/tags/japanese-food/</loc>
-    <lastmod>2019-08-11T11:36:34+08:00</lastmod>
+    <loc>https://ericsuperman.github.io/tags/italian-food/</loc>
+    <lastmod>2019-08-13T21:24:53+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ericsuperman.github.io/posts/</loc>
-    <lastmod>2019-08-11T11:36:34+08:00</lastmod>
+    <lastmod>2019-08-13T21:24:53+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ericsuperman.github.io/tags/</loc>
+    <lastmod>2019-08-13T21:24:53+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/zhubei/</loc>
+    <lastmod>2019-08-13T21:24:53+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/posts/gourmet/zhubei/gd/</loc>
+    <lastmod>2019-08-13T21:24:53+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/</loc>
+    <lastmod>2019-08-13T21:24:53+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/japanese-food/</loc>
     <lastmod>2019-08-11T11:36:34+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -43,12 +68,6 @@
     <lastmod>2019-08-11T11:36:34+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/</loc>
-    <lastmod>2019-08-11T11:36:34+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -128,12 +147,6 @@
   </url>
   
   <url>
-    <loc>https://ericsuperman.github.io/tags/zhubei/</loc>
-    <lastmod>2019-08-04T12:32:00+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://ericsuperman.github.io/posts/gourmet/zhubei/begin/</loc>
     <lastmod>2019-08-04T12:32:00+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -178,12 +191,6 @@
     <lastmod>2019-07-14T16:05:25+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/tags/italian-food/</loc>
-    <lastmod>2019-07-07T20:31:24+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
