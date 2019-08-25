@@ -3,14 +3,51 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ericsuperman.github.io/tags/brunch/</loc>
+    <lastmod>2019-08-25T12:06:25+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://ericsuperman.github.io/categories/</loc>
-    <lastmod>2019-08-13T21:24:53+08:00</lastmod>
+    <lastmod>2019-08-25T12:06:25+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ericsuperman.github.io/categories/gourmet/</loc>
-    <lastmod>2019-08-13T21:24:53+08:00</lastmod>
+    <lastmod>2019-08-25T12:06:25+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/posts/</loc>
+    <lastmod>2019-08-25T12:06:25+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/</loc>
+    <lastmod>2019-08-25T12:06:25+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/zhubei/</loc>
+    <lastmod>2019-08-25T12:06:25+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/posts/gourmet/zhubei/24-1/</loc>
+    <lastmod>2019-08-25T12:06:25+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/</loc>
+    <lastmod>2019-08-25T12:06:25+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -21,34 +58,10 @@
   </url>
   
   <url>
-    <loc>https://ericsuperman.github.io/posts/</loc>
-    <lastmod>2019-08-13T21:24:53+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/tags/</loc>
-    <lastmod>2019-08-13T21:24:53+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/tags/zhubei/</loc>
-    <lastmod>2019-08-13T21:24:53+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://ericsuperman.github.io/posts/gourmet/zhubei/gd/</loc>
     <lastmod>2019-08-13T21:24:53+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/</loc>
-    <lastmod>2019-08-13T21:24:53+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -119,12 +132,6 @@
     <lastmod>2019-08-09T19:51:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/tags/brunch/</loc>
-    <lastmod>2019-08-04T17:51:23+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
