@@ -10,7 +10,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ericsuperman.github.io/" />
 
-<meta property="og:updated_time" content="2019-08-25T12:06:25&#43;08:00"/>
+<meta property="og:updated_time" content="2019-08-28T12:00:01&#43;08:00"/>
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="金牙貓的嘴砲"/>
@@ -29,7 +29,7 @@
     "@type": "Person",
     "name": "Super Cat"
   },
-  "dateModified": "2019-08-25T12:06:25\x2b08:00",
+  "dateModified": "2019-08-28T12:00:01\x2b08:00",
   "keywords": "computer,gourmet,personal,beitou,braised-dishes,brunch,chinese-food,coffee-shop,command,french-food,guanxi,hsinchu,italian-food,japanese-food,linux,mediterranean-food,midnight-snack,murmur,nankang,new-taipei,sanxia,steak,swedish-food,taichung,taipei,tamsui,taoyuan,thailand-food,vietnamese-food,virtual-box,windows,zhubei,zhunan,",
   "description": "Everything is my own murmur."
 }
@@ -104,6 +104,30 @@ if (!doNotTrack) {
 
 <article class="blog-post">
   <header>
+    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/computer/vbox/">VirtualBox 6.x Shared Folder</a></h2>
+    <p class="blog-post-meta"><time datetime="2019-04-21T21:51:33&#43;08:00">Sun Apr 21, 2019</time> by Super Cat in 
+<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/computer" rel="category tag">Computer</a>
+
+
+<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/virtual-box" rel="tag">Virtual Box</a>, <a href="/tags/linux" rel="tag">Linux</a>
+
+</p>
+  </header>
+  前一版的 Ubuntu 16.04 LTS，它當 VirtualBox Guest OS 的時候， 可以安裝一個現成 virtualbox-dkms 套件，裝好之後， shared folder 就自動生效了，非常方便。
+Ubuntu 18.04 LTS 問世之後，它的 virtualbox-dkms 套件 是針對 VirtualBox 5.2.18 及之後版本，當時 VirtualBox 也 是 5.2x 左右，一切也沒問題。
+突然間，2018年12月 VirtualBox 6.0 降臨了，我直接將 VirtualBox 5.x 升級到 VirtualBox 6.0 ，跑一樣的 guest image， Shared Folder 就失效了。
+查了很久，才發現是 virtualbox-dkms 套件只支援 VirtualBox 5.x 的關係，等了一陣子，看起來 Ubuntu 18.04 是沒打算升級 dkms 套件了， 那只好回到老方法，讓 VirtualBox Host 這邊插入虛擬的 Guest Additions 光碟片。
+在 VirtualBox Host 這邊的 Menu Bar ，有一個 &ldquo;裝置&rdquo; 選項，裡面 有一個 &ldquo;插入 Guest Additions CD 映像&rdquo;。
+  <a href='https://ericsuperman.github.io/posts/computer/vbox/'>Read more →</a>
+</article> 
+
+
+
+
+
+
+<article class="blog-post">
+  <header>
     <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/personal/hello/">Hello</a></h2>
     <p class="blog-post-meta"><time datetime="2019-04-21T15:59:57&#43;08:00">Sun Apr 21, 2019</time> by Super Cat in 
 <i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/personal" rel="category tag">Personal</a>
@@ -159,6 +183,8 @@ Definition List
 
 <li><a href="/posts/">Posts</a></li>
 
+<li><a href="/posts/gourmet/hsinchu/katsugyu/">[新竹] 京都勝牛 新竹巨城店</a></li>
+
 <li><a href="/posts/gourmet/zhubei/24-1/">[竹北] 二十四分之一 早午餐 手作麵包</a></li>
 
 <li><a href="/posts/gourmet/zhubei/gd/">[竹北] GD Restaurant</a></li>
@@ -174,8 +200,6 @@ Definition List
 <li><a href="/posts/gourmet/tamsui/5y3c/">[淡水] 找餐五年三班</a></li>
 
 <li><a href="/posts/gourmet/zhubei/begin/">[竹北] 起初無菜單.料理</a></li>
-
-<li><a href="/posts/gourmet/zhubei/digin/">[竹北] Dig in comfort food&amp;coffee 癮 . 舒 .食</a></li>
 
     </ol>
   </section>
