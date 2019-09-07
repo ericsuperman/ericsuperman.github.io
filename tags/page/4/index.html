@@ -10,7 +10,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ericsuperman.github.io/tags/" />
 
-<meta property="og:updated_time" content="2019-09-07T10:45:38&#43;08:00"/>
+<meta property="og:updated_time" content="2019-09-07T14:15:06&#43;08:00"/>
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Tags"/>
@@ -29,8 +29,8 @@
     "@type": "Person",
     "name": "Super Cat"
   },
-  "dateModified": "2019-09-07T10:45:38\x2b08:00",
-  "keywords": "computer,gourmet,personal,beitou,braised-dishes,brunch,chinese-food,coffee-shop,command,french-food,guanxi,hsinchu,italian-food,japanese-food,linux,mediterranean-food,midnight-snack,murmur,nankang,new-taipei,pet,sanxia,steak,swedish-food,taichung,taipei,tamsui,taoyuan,thailand-food,vietnamese-food,virtual-box,windows,zhubei,zhunan,",
+  "dateModified": "2019-09-07T14:15:06\x2b08:00",
+  "keywords": "computer,gourmet,personal,beitou,braised-dishes,brunch,chinese-food,coffee-shop,command,dessert,french-food,guanxi,hsinchu,italian-food,japanese-food,linux,mediterranean-food,midnight-snack,murmur,nankang,new-taipei,pet,sanxia,steak,swedish-food,taichung,taipei,tamsui,taoyuan,thailand-food,vietnamese-food,virtual-box,windows,zhubei,zhunan,",
   "description": "Everything is my own murmur."
 }
 </script>
@@ -96,6 +96,27 @@ if (!doNotTrack) {
 
           
 
+
+
+
+
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/gourmet/zhunan/dr.ice/">[竹南] Dr.ice冰博士</a></h2>
+    <p class="blog-post-meta"><time datetime="2019-05-19T19:58:37&#43;08:00">Sun May 19, 2019</time> by Super Cat in 
+<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/gourmet" rel="category tag">Gourmet</a>
+
+
+<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/zhunan" rel="tag">Zhunan</a>, <a href="/tags/chinese-food" rel="tag">Chinese Food</a>
+
+</p>
+  </header>
+  餐廳名稱: Dr.ice冰博士 地 址: 苗栗縣竹南鎮光復路219號 營業時間: 中午11:00 - 晚上9:00
+在 滿意麵食坊 用完晚餐後， 天氣炎熱，對面好幾間冰店，最後覺得似乎很久沒吃 芒果雪花冰 了，就選這家。 牆壁上大大的菜單。 回家查網路，似乎剛開一年，還算新。 芒果雪花冰，意外的比想像中的好吃，覺得甜度夠，芒果塊新鮮，雪花冰很綿密，那球芒果冰淇淋也不錯。 不錯，可以把 滿意麵食坊 與 Dr.ice 組合成一套行程。
+  <a href='https://ericsuperman.github.io/posts/gourmet/zhunan/dr.ice/'>Read more →</a>
+</article> 
 
 
 
@@ -306,31 +327,6 @@ Free DNS Hosting Providers 又根據不同的公司有不同的限制。 幾年�
 
 
 
-
-<article class="blog-post">
-  <header>
-    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/computer/ub19nat/">Ubuntu 19.04 as a NAT Router</a></h2>
-    <p class="blog-post-meta"><time datetime="2019-05-09T19:35:20&#43;08:00">Thu May 09, 2019</time> by Super Cat in 
-<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/computer" rel="category tag">Computer</a>
-
-
-<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/linux" rel="tag">Linux</a>
-
-</p>
-  </header>
-  之前，在用VirtualBox 開箱 Ubuntu 19.04 的時候， 就刻意弄成兩張網卡，這次來玩一下 NAT Router ， 紀錄整個過程。
-首先 /etc/sysctl.conf 找到下面這行，把 # 拿掉。
-net.ipv4.ip_forward=1 現在 Linux 網路卡都不叫 eth0, eth1 了， 反而是 &ldquo;enp0s3&rdquo; ， &ldquo;enp0s8&rdquo; 這些怪名字， 這是因為 一致性網路設備命名規則 所規範的。 簡單地說，就是 Linux 原本是根據找到網卡的先後順序，命名為 eth0、 eth1 等。 可是一旦多插一張網卡，可能會導致 原本叫 eth1 的網卡，改名為 eth2 ， 萬一許多系統的script 寫死 eth0, eth1 ，那就會非常困擾。
-所以改成 &ldquo;enp0s3&rdquo; ， &ldquo;enp0s8&rdquo; 這些名字，再多插幾張網路卡，名字也不會變。
-假設 enp0s3 是對外的網路， enp0s8 是對內的網路，
-Ubuntu 19.04 Server 剛裝好時，沒有 /etc/rc.local 。 所以就叫出文字編輯器，編輯 /etc/rc.local 如下， 最後用 exit 0 結尾。
-  <a href='https://ericsuperman.github.io/posts/computer/ub19nat/'>Read more →</a>
-</article> 
-
-
-
-
-
 <nav class="blog-pagination">
   
   <a class="btn btn-outline-primary" href="/tags/page/3/" rel="prev" role="button">Previous page</a>
@@ -363,6 +359,8 @@ Ubuntu 19.04 Server 剛裝好時，沒有 /etc/rc.local 。 所以就叫出文�
 
 <li><a href="/posts/">Posts</a></li>
 
+<li><a href="/posts/gourmet/taichung/flip/">[台中] 翻轉甜點台中店</a></li>
+
 <li><a href="/posts/gourmet/taichung/wumitsang2/">[台中] 無米藏 和洋食 二訪</a></li>
 
 <li><a href="/posts/gourmet/taichung/langlangdontcry/">[台中] 浪浪別哭 台中店</a></li>
@@ -378,8 +376,6 @@ Ubuntu 19.04 Server 剛裝好時，沒有 /etc/rc.local 。 所以就叫出文�
 <li><a href="/posts/gourmet/taoyuan/ikea/">[桃園] IKEA桃園店 餐廳</a></li>
 
 <li><a href="/posts/gourmet/hsinchu/23cafe/">[新竹] 貳參咖啡</a></li>
-
-<li><a href="/posts/gourmet/hsinchu/chang_braised/">[新竹] 張家老滷味</a></li>
 
     </ol>
   </section>
