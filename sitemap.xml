@@ -4,7 +4,50 @@
   
   <url>
     <loc>https://ericsuperman.github.io/categories/</loc>
-    <lastmod>2019-09-07T18:21:43+08:00</lastmod>
+    <lastmod>2019-09-07T19:39:34+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/categories/gourmet/</loc>
+    <lastmod>2019-09-07T19:39:34+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/japanese-food/</loc>
+    <lastmod>2019-09-07T19:39:34+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/posts/</loc>
+    <lastmod>2019-09-07T19:39:34+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/</loc>
+    <lastmod>2019-09-07T19:39:34+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/taoyuan/</loc>
+    <lastmod>2019-09-07T19:39:34+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/posts/gourmet/taoyuan/southwoodcho/</loc>
+    <lastmod>2019-09-07T19:39:34+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/</loc>
+    <lastmod>2019-09-07T19:39:34+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -21,18 +64,6 @@
   </url>
   
   <url>
-    <loc>https://ericsuperman.github.io/posts/</loc>
-    <lastmod>2019-09-07T18:21:43+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/tags/</loc>
-    <lastmod>2019-09-07T18:21:43+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://ericsuperman.github.io/posts/personal/glasscontainer/</loc>
     <lastmod>2019-09-07T18:21:43+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -40,19 +71,7 @@
   </url>
   
   <url>
-    <loc>https://ericsuperman.github.io/</loc>
-    <lastmod>2019-09-07T18:21:43+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://ericsuperman.github.io/tags/chinese-food/</loc>
-    <lastmod>2019-09-07T17:12:52+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/categories/gourmet/</loc>
     <lastmod>2019-09-07T17:12:52+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -87,12 +106,6 @@
     <lastmod>2019-09-07T14:15:06+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/tags/japanese-food/</loc>
-    <lastmod>2019-09-07T10:45:38+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -163,12 +176,6 @@
   
   <url>
     <loc>https://ericsuperman.github.io/tags/swedish-food/</loc>
-    <lastmod>2019-08-10T15:23:10+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/tags/taoyuan/</loc>
     <lastmod>2019-08-10T15:23:10+08:00</lastmod>
     <priority>0</priority>
   </url>
