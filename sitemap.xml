@@ -3,31 +3,62 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ericsuperman.github.io/tags/breakfast/</loc>
+    <lastmod>2019-09-21T19:58:50+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://ericsuperman.github.io/categories/</loc>
-    <lastmod>2019-09-21T15:16:55+08:00</lastmod>
+    <lastmod>2019-09-21T19:58:50+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/daan-strict/</loc>
+    <lastmod>2019-09-21T19:58:50+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ericsuperman.github.io/categories/gourmet/</loc>
-    <lastmod>2019-09-21T15:16:55+08:00</lastmod>
+    <lastmod>2019-09-21T19:58:50+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ericsuperman.github.io/posts/</loc>
-    <lastmod>2019-09-21T15:16:55+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/tags/roast/</loc>
-    <lastmod>2019-09-21T15:16:55+08:00</lastmod>
+    <lastmod>2019-09-21T19:58:50+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ericsuperman.github.io/tags/</loc>
+    <lastmod>2019-09-21T19:58:50+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/taipei/</loc>
+    <lastmod>2019-09-21T19:58:50+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/posts/gourmet/daan/thehousebreakfast/</loc>
+    <lastmod>2019-09-21T19:58:50+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/</loc>
+    <lastmod>2019-09-21T19:58:50+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/roast/</loc>
     <lastmod>2019-09-21T15:16:55+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -43,12 +74,6 @@
     <lastmod>2019-09-21T15:16:55+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/</loc>
-    <lastmod>2019-09-21T15:16:55+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -314,12 +339,6 @@
   </url>
   
   <url>
-    <loc>https://ericsuperman.github.io/tags/taipei/</loc>
-    <lastmod>2019-07-14T21:31:59+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://ericsuperman.github.io/posts/gourmet/xinyi/yuancafe/</loc>
     <lastmod>2019-07-14T21:31:59+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -380,7 +399,7 @@
   </url>
   
   <url>
-    <loc>https://ericsuperman.github.io/tags/nankang/</loc>
+    <loc>https://ericsuperman.github.io/tags/nankang-district/</loc>
     <lastmod>2019-06-07T13:35:19+08:00</lastmod>
     <priority>0</priority>
   </url>

@@ -10,7 +10,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ericsuperman.github.io/posts/" />
 
-<meta property="og:updated_time" content="2019-09-21T15:16:55&#43;08:00"/>
+<meta property="og:updated_time" content="2019-09-21T19:58:50&#43;08:00"/>
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Posts"/>
@@ -29,8 +29,8 @@
     "@type": "Person",
     "name": "Super Cat"
   },
-  "dateModified": "2019-09-21T15:16:55\x2b08:00",
-  "keywords": "computer,gourmet,personal,beitou,braised-dishes,brunch,chinese-food,coffee-shop,command,dessert,french-food,guanxi,hot-pot,hsinchu,italian-food,japanese-food,linux,mediterranean-food,midnight-snack,murmur,nankang,new-taipei,pet,roast,sanxia,sichuan-cuisine,steak,swedish-food,taichung,taipei,tamsui,taoyuan,thailand-food,vietnamese-food,virtual-box,windows,zhubei,zhunan,",
+  "dateModified": "2019-09-21T19:58:50\x2b08:00",
+  "keywords": "computer,gourmet,personal,beitou,braised-dishes,breakfast,brunch,chinese-food,coffee-shop,command,daan-strict,dessert,french-food,guanxi,hot-pot,hsinchu,italian-food,japanese-food,linux,mediterranean-food,midnight-snack,murmur,nankang-district,new-taipei,pet,roast,sanxia,sichuan-cuisine,steak,swedish-food,taichung,taipei,tamsui,taoyuan,thailand-food,vietnamese-food,virtual-box,windows,zhubei,zhunan,",
   "description": "Everything is my own murmur."
 }
 </script>
@@ -96,6 +96,28 @@ if (!doNotTrack) {
 
           
 
+
+
+
+
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/computer/command4/">[CMD Tutorial <sup>4</sup>&frasl;<sub>4</sub>] Batch Files</a></h2>
+    <p class="blog-post-meta"><time datetime="2019-05-09T14:50:29&#43;08:00">Thu May 09, 2019</time> by Super Cat in 
+<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/computer" rel="category tag">Computer</a>
+
+
+<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/windows" rel="tag">Windows</a>, <a href="/tags/command" rel="tag">Command</a>
+
+</p>
+  </header>
+  如果某個任務，需要執行數個命令，都可以用文字檔集結成數行，該文字檔副檔名必須為 .bat ，CMD可以執行 bat 檔案，執行順序就是循序一行執行完成，再換下一行。 我們利用之前介紹的 CON 系統檔案，產生一個簡單的 bat 檔案，接著執行它，看結果是什麼。
+C:\Users\Eric&gt;copy con a.bat set msg=hello echo %msg% echo world ^Z 複製了 1 個檔案。 C:\Users\Eric&gt;a C:\Users\Eric&gt;set msg=hello C:\Users\Eric&gt;echo hello hello C:\Users\Eric&gt;echo world world C:\Users\Eric&gt; 上面例子就是簡單的三行，第一行設定變數msg，第二行印出msg的內容，第三行印出普通訊息。可以看到，a.bat 執行到第二行的時候，CMD 已經將變數內容都換好了才執行。
+通常在開發程式的時候，需要的工具包括了文字編輯器或是IDE(Integrated Development Environments，整合開發環境)，編譯程式，Make自動化編譯工具&hellip;等，所以即使叫出了 Command Prompt，也許還需要設定一堆環境變數，讓全部的工具程式，都能正確執行。而且每次叫出Command Prompt，執行的內容幾乎沒什麼變化，那當然就是準備好一個設定環境變數的批次檔，叫出Command Prompt的時候執行一次，這樣才比較有效率。
+  <a href='https://ericsuperman.github.io/posts/computer/command4/'>Read more →</a>
+</article> 
 
 
 
@@ -323,30 +345,6 @@ Ubuntu 安裝後，一張網卡配 191.168.1.x 的IP， 另一張網卡配 10.10
 
 
 
-
-<article class="blog-post">
-  <header>
-    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/gourmet/hsinchu/iing/">[新竹] 伊尹小築主廚私房料理</a></h2>
-    <p class="blog-post-meta"><time datetime="2019-04-30T21:06:37&#43;08:00">Tue Apr 30, 2019</time> by Super Cat in 
-<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/gourmet" rel="category tag">Gourmet</a>
-
-
-<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/hsinchu" rel="tag">Hsinchu</a>, <a href="/tags/chinese-food" rel="tag">Chinese Food</a>
-
-</p>
-  </header>
-  餐廳名稱: 伊尹小築主廚私房料理 地 址: 新竹市東區綠水里園後街4號 營業時間: 9:00-17:00 17:30-21:00 週二公休
-伊尹小築主廚私房料理 很多年前開在金山街，那時叫 阿拉牧原住民餐廳， 除了常見的熱炒弄得很好吃以外，還有原住民料理如炸蟋蟀，炸蜂蛹等， 生意還不錯，但不知怎麼了，改作素菜，然後又變回原來的熱炒， 生意也還是不錯，然後很奇怪，有天就收攤了，原地點變成美術教室的樣子。
-知道伊尹小築在東園路這邊復出江湖 已經一陣子了， 今天就再來探一下，看手藝有無退步。
-到了之後，才知道，原來可以把車停在東園國小，他們有特約。 不過我老婆已經找到一個絕佳的合法停車點，非常近，超厲害的， 幫伊尹小築省下停車費了。
-裡面有很多原住民的擺設，挺有特色的， 用竹筒做成的茶壺，很能代表山上的生活， 伊尹小築 的菜單，其實蠻多常見的台式熱炒， 特色菜只有4道，但我今天沒勇氣吃蟋蟀跟蜂蛹， 阿拉牧拌菜，靈感應該是來自松柏長青，調味不錯， 照理說松柏長青是用大白菜，不過他改用高麗菜， 加入豬耳朵等，拌在一起，蠻好吃的。 西檸雞球，靈感應該是來自橙汁排骨，橙汁雞球等，這種新的調味風格也不錯。 金沙排骨，這是道蠻流行的菜，許多餐館都有，不過我覺得鹹蛋裹太少了，稍微遜色一點。 蟹黃三鮮，其實真正的蟹黃很貴，全台灣的餐廳幾乎都是用紅蘿蔔泥跟鹹蛋黃去模擬了， 我只有七、八年前在台北南京東路吃到是真正蟹黃做的，價格偏貴但值得，不過幾年後 經過，那餐廳也不見了，所以想吃真正的蟹黃豆腐煲是非常難的。 伊尹小築的蟹黃三鮮，當然也是沒蟹黃的那種，只是老闆啊，不要叫它蟹黃三鮮吧， 一些餐廳都改口海鮮豆腐煲了，您也盡快改名吧。 Anyway, 伊尹小築的蟹黃三鮮 算是好吃。 選了不常見的酒釀蝦球，蝦仁很大顆，跟蟹黃三鮮的蝦仁不同大小，主廚有講究，讚! 味道不錯。 最後，店家送個甜點。 離開伊尹小築的時候，發現一隻貓，我女兒堅持要拍照，說它很可愛， 各位看這一團黑可不可愛吧! 
-  <a href='https://ericsuperman.github.io/posts/gourmet/hsinchu/iing/'>Read more →</a>
-</article> 
-
-
-
-
-
 <nav class="blog-pagination">
   
   <a class="btn btn-outline-primary" href="/posts/page/5/" rel="prev" role="button">Previous page</a>
@@ -378,6 +376,8 @@ Ubuntu 安裝後，一張網卡配 191.168.1.x 的IP， 另一張網卡配 10.10
 
 
 <li><a href="/posts/">Posts</a></li>
+
+<li><a href="/posts/gourmet/daan/thehousebreakfast/">[台北] 好食Breakfast</a></li>
 
 <li><a href="/posts/gourmet/zhubei/crazyroast/">[竹北] 瘋燒熱血貨櫃燒烤-crazy roast</a></li>
 
@@ -414,8 +414,6 @@ Ubuntu 安裝後，一張網卡配 191.168.1.x 的IP， 另一張網卡配 10.10
 <li><a href="/posts/gourmet/hsinchu/23cafe/">[新竹] 貳參咖啡</a></li>
 
 <li><a href="/posts/gourmet/hsinchu/chang_braised/">[新竹] 張家老滷味</a></li>
-
-<li><a href="/posts/gourmet/tamsui/5y3c/">[淡水] 找餐五年三班</a></li>
 
     </ol>
   </section>
