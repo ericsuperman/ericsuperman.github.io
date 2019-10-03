@@ -3,13 +3,56 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://ericsuperman.github.io/tags/brunch/</loc>
-    <lastmod>2019-10-04T01:05:19+08:00</lastmod>
+    <loc>https://ericsuperman.github.io/categories/</loc>
+    <lastmod>2019-10-04T02:07:51+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ericsuperman.github.io/categories/</loc>
+    <loc>https://ericsuperman.github.io/categories/gourmet/</loc>
+    <lastmod>2019-10-04T02:07:51+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/posts/</loc>
+    <lastmod>2019-10-04T02:07:51+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/</loc>
+    <lastmod>2019-10-04T02:07:51+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/thailand-food/</loc>
+    <lastmod>2019-10-04T02:07:51+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/zhudong/</loc>
+    <lastmod>2019-10-04T02:07:51+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/posts/gourmet/zhudong/helen/</loc>
+    <lastmod>2019-10-04T02:07:51+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/</loc>
+    <lastmod>2019-10-04T02:07:51+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/brunch/</loc>
     <lastmod>2019-10-04T01:05:19+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -21,25 +64,7 @@
   </url>
   
   <url>
-    <loc>https://ericsuperman.github.io/categories/gourmet/</loc>
-    <lastmod>2019-10-04T01:05:19+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://ericsuperman.github.io/tags/hsinchu/</loc>
-    <lastmod>2019-10-04T01:05:19+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/posts/</loc>
-    <lastmod>2019-10-04T01:05:19+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/tags/</loc>
     <lastmod>2019-10-04T01:05:19+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -49,12 +74,6 @@
     <lastmod>2019-10-04T01:05:19+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/</loc>
-    <lastmod>2019-10-04T01:05:19+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -390,12 +409,6 @@
     <lastmod>2019-07-07T14:33:07+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/tags/thailand-food/</loc>
-    <lastmod>2019-06-26T20:23:45+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
