@@ -4,25 +4,50 @@
   
   <url>
     <loc>https://ericsuperman.github.io/categories/</loc>
-    <lastmod>2019-10-04T02:07:51+08:00</lastmod>
+    <lastmod>2019-10-04T20:34:11+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/chinese-food/</loc>
+    <lastmod>2019-10-04T20:34:11+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ericsuperman.github.io/categories/gourmet/</loc>
-    <lastmod>2019-10-04T02:07:51+08:00</lastmod>
+    <lastmod>2019-10-04T20:34:11+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ericsuperman.github.io/posts/</loc>
-    <lastmod>2019-10-04T02:07:51+08:00</lastmod>
+    <lastmod>2019-10-04T20:34:11+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ericsuperman.github.io/tags/</loc>
-    <lastmod>2019-10-04T02:07:51+08:00</lastmod>
+    <lastmod>2019-10-04T20:34:11+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/zhubei/</loc>
+    <lastmod>2019-10-04T20:34:11+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/posts/gourmet/zhubei/havegoodstuff/</loc>
+    <lastmod>2019-10-04T20:34:11+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/</loc>
+    <lastmod>2019-10-04T20:34:11+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -43,12 +68,6 @@
     <lastmod>2019-10-04T02:07:51+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/</loc>
-    <lastmod>2019-10-04T02:07:51+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -77,19 +96,7 @@
   </url>
   
   <url>
-    <loc>https://ericsuperman.github.io/tags/chinese-food/</loc>
-    <lastmod>2019-10-03T19:55:14+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://ericsuperman.github.io/tags/italian-food/</loc>
-    <lastmod>2019-10-03T19:55:14+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/tags/zhubei/</loc>
     <lastmod>2019-10-03T19:55:14+08:00</lastmod>
     <priority>0</priority>
   </url>
