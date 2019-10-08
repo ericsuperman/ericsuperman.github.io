@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Except where otherwise noted, content on this site is licensed under a [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/).</copyright>
-    <lastBuildDate>Fri, 04 Oct 2019 20:34:11 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 07 Oct 2019 20:01:39 +0800</lastBuildDate>
     
 	<atom:link href="https://ericsuperman.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,9 +15,27 @@
     <item>
       <title>Chinese Food</title>
       <link>https://ericsuperman.github.io/tags/chinese-food/</link>
-      <pubDate>Fri, 04 Oct 2019 20:34:11 +0800</pubDate>
+      <pubDate>Mon, 07 Oct 2019 20:01:39 +0800</pubDate>
       
       <guid>https://ericsuperman.github.io/tags/chinese-food/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Daan Strict</title>
+      <link>https://ericsuperman.github.io/tags/daan-strict/</link>
+      <pubDate>Mon, 07 Oct 2019 20:01:39 +0800</pubDate>
+      
+      <guid>https://ericsuperman.github.io/tags/daan-strict/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Taipei</title>
+      <link>https://ericsuperman.github.io/tags/taipei/</link>
+      <pubDate>Mon, 07 Oct 2019 20:01:39 +0800</pubDate>
+      
+      <guid>https://ericsuperman.github.io/tags/taipei/</guid>
       <description></description>
     </item>
     
@@ -81,24 +99,6 @@
       <pubDate>Thu, 03 Oct 2019 19:55:14 +0800</pubDate>
       
       <guid>https://ericsuperman.github.io/tags/italian-food/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Daan Strict</title>
-      <link>https://ericsuperman.github.io/tags/daan-strict/</link>
-      <pubDate>Sat, 21 Sep 2019 21:12:46 +0800</pubDate>
-      
-      <guid>https://ericsuperman.github.io/tags/daan-strict/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Taipei</title>
-      <link>https://ericsuperman.github.io/tags/taipei/</link>
-      <pubDate>Sat, 21 Sep 2019 21:12:46 +0800</pubDate>
-      
-      <guid>https://ericsuperman.github.io/tags/taipei/</guid>
       <description></description>
     </item>
     
