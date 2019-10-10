@@ -10,7 +10,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ericsuperman.github.io/" />
 
-<meta property="og:updated_time" content="2019-10-10T12:57:00&#43;08:00"/>
+<meta property="og:updated_time" content="2019-10-10T16:01:52&#43;08:00"/>
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="金牙貓的嘴砲"/>
@@ -29,7 +29,7 @@
     "@type": "Person",
     "name": "Super Cat"
   },
-  "dateModified": "2019-10-10T12:57:00\x2b08:00",
+  "dateModified": "2019-10-10T16:01:52\x2b08:00",
   "keywords": "computer,gourmet,personal,beitou-district,braised-dishes,breakfast,brunch,chinese-food,coffee-shop,command,daan-district,dessert,french-food,guanxi,hot-pot,hsinchu,hsinchu-county,italian-food,japanese-food,linux,mediterranean-food,midnight-snack,murmur,nankang-district,new-taipei,pet,roast,sanxia,sichuan-cuisine,steak,swedish-food,taichung,taipei,tamsui,taoyuan,thailand-food,vietnamese-food,virtual-box,windows,xinyi-district,zhubei,zhudong,zhunan,",
   "description": "Everything is my own murmur.\x3cbr\x3e本貓只管好不好吃，C\/P值不大在乎。沒接業配，都是花自己的錢。我行我素，不理酸民。"
 }
@@ -96,6 +96,32 @@ if (!doNotTrack) {
 
           
 
+
+
+
+
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/computer/command2/">[CMD Tutorial <sup>2</sup>&frasl;<sub>4</sub>] Command Prompt Basic Commands</a></h2>
+    <p class="blog-post-meta"><time datetime="2019-05-09T14:50:20&#43;08:00">Thu May 09, 2019</time> by Super Cat in 
+<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/computer" rel="category tag">Computer</a>
+
+
+<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/windows" rel="tag">Windows</a>, <a href="/tags/command" rel="tag">Command</a>
+
+</p>
+  </header>
+  切換工作磁碟機與路徑 Windows 沿襲DOS傳統，可將一顆硬碟切割成數個 Paritition，每一個Partition分配一個磁碟機代碼，由A到Z，最多26個磁碟，A磁碟的名稱為A:，B磁碟的名稱為B:，A磁碟與B磁碟是保留給軟碟機，雖然現在已經很難看到軟碟機了。硬碟則是C:開始，開機用的 Windows 目錄也通常位於C:。
+假設使用者規劃了一個D磁碟機，專門放資料，其中工作的目錄規劃為d:\prj 目錄，則可用下列方式切換磁碟機與路徑 -
+c:\&gt;d: d:\&gt;cd prj d:\prj&gt; 以前DOS沒下列語法，但在Windows 10 Command Prompt，可以合併為下列方式 - c:\&gt;cd d:\prj d:\prj&gt;
+顯示檔案清單 d:\prj&gt; dir 變更檔案名稱 d:\prj&gt; ren a1.txt a2.txt 上面例子中，a1.txt 是變更前的檔名，必須已經存在於目前目錄，不然會有錯誤訊息。 a2.txt 是變更後的檔名，必須不存在。如果已經存在，會有錯誤訊息。 命令執行完成後，a1.txt就不存在了，會有一個a2.txt檔案，內容跟原始的a1.txt 一樣。
+複製檔案 d:\prj&gt; copy a1.txt a2.txt 上面例子中，a1.txt 是來源檔，必須已經存在於目前目錄，不然會有錯誤訊息。 a2.txt 是目的地檔，如果已經存在，會被蓋掉，a1.txt 不會有任何變更。 命令執行完成後，a1.txt與a2.txt 同時存在，兩個檔案內容也是一樣。 簡易建立檔案
+Windows 保留一些特殊檔名，例如 con 代表 Console。有時候想要產生一個新檔案，打幾個字，叫出文字編輯器，打幾個字，存檔，實在太慢，不如用在 Command Prompt 利用 con 檔案就能輕鬆解決 -
+d:\prj&gt; copy con test.txt abc ^z 複製了 1 個檔案。 d:\prj&gt; 上面例子中，先打了abc三個字母代表內容，之後 ^Z 這個字是按了 Ctrl-Z，這是Windows 規定好的 EOF(End of File)字元，Windows看到這個字，等同於檔案結尾，因此確定了整個檔案，接著開始複製整個檔案，一個新的test.
+  <a href='https://ericsuperman.github.io/posts/computer/command2/'>Read more →</a>
+</article> 
 
 
 
@@ -320,30 +346,6 @@ Ubuntu 安裝後，一張網卡配 191.168.1.x 的IP， 另一張網卡配 10.10
 
 
 
-
-<article class="blog-post">
-  <header>
-    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/computer/vbox/">VirtualBox 6.x Shared Folder</a></h2>
-    <p class="blog-post-meta"><time datetime="2019-04-21T21:51:33&#43;08:00">Sun Apr 21, 2019</time> by Super Cat in 
-<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/computer" rel="category tag">Computer</a>
-
-
-<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/virtual-box" rel="tag">Virtual Box</a>, <a href="/tags/linux" rel="tag">Linux</a>
-
-</p>
-  </header>
-  前一版的 Ubuntu 16.04 LTS，它當 VirtualBox Guest OS 的時候， 可以安裝一個現成 virtualbox-dkms 套件，裝好之後， shared folder 就自動生效了，非常方便。
-Ubuntu 18.04 LTS 問世之後，它的 virtualbox-dkms 套件 是針對 VirtualBox 5.2.18 及之後版本，當時 VirtualBox 也 是 5.2x 左右，一切也沒問題。
-突然間，2018年12月 VirtualBox 6.0 降臨了，我直接將 VirtualBox 5.x 升級到 VirtualBox 6.0 ，跑一樣的 guest image， Shared Folder 就失效了。
-查了很久，才發現是 virtualbox-dkms 套件只支援 VirtualBox 5.x 的關係，等了一陣子，看起來 Ubuntu 18.04 是沒打算升級 dkms 套件了， 那只好回到老方法，讓 VirtualBox Host 這邊插入虛擬的 Guest Additions 光碟片。
-在 VirtualBox Host 這邊的 Menu Bar ，有一個 &ldquo;裝置&rdquo; 選項，裡面 有一個 &ldquo;插入 Guest Additions CD 映像&rdquo;。
-  <a href='https://ericsuperman.github.io/posts/computer/vbox/'>Read more →</a>
-</article> 
-
-
-
-
-
 <nav class="blog-pagination">
   
   <a class="btn btn-outline-primary" href="/page/6/" rel="prev" role="button">Previous page</a>
@@ -375,6 +377,8 @@ Ubuntu 18.04 LTS 問世之後，它的 virtualbox-dkms 套件 是針對 VirtualB
 
 
 <li><a href="/posts/">Posts</a></li>
+
+<li><a href="/posts/gourmet/zhubei/zhurenmarket/sunspring/">[竹北][竹仁市場 2] 陽春白雪</a></li>
 
 <li><a href="/posts/gourmet/zhubei/zhurenmarket/seafoodnoodles/">[竹北][竹仁市場 1] 竹北市場海鮮麵</a></li>
 
@@ -411,8 +415,6 @@ Ubuntu 18.04 LTS 問世之後，它的 virtualbox-dkms 套件 是針對 VirtualB
 <li><a href="/posts/gourmet/taichung/flip/">[台中] 翻轉甜點台中店</a></li>
 
 <li><a href="/posts/gourmet/taichung/wumitsang2/">[台中] 無米藏 和洋食 二訪</a></li>
-
-<li><a href="/posts/gourmet/taichung/langlangdontcry/">[台中] 浪浪別哭 台中店</a></li>
 
     </ol>
   </section>
