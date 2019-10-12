@@ -3,44 +3,63 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ericsuperman.github.io/tags/cantonese-cuisine/</loc>
+    <lastmod>2019-10-10T18:39:38+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://ericsuperman.github.io/categories/</loc>
-    <lastmod>2019-10-10T16:01:52+08:00</lastmod>
+    <lastmod>2019-10-10T18:39:38+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ericsuperman.github.io/tags/chinese-food/</loc>
-    <lastmod>2019-10-10T16:01:52+08:00</lastmod>
+    <lastmod>2019-10-10T18:39:38+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ericsuperman.github.io/categories/gourmet/</loc>
-    <lastmod>2019-10-10T16:01:52+08:00</lastmod>
+    <lastmod>2019-10-10T18:39:38+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ericsuperman.github.io/tags/hsinchu-county/</loc>
-    <lastmod>2019-10-10T16:01:52+08:00</lastmod>
+    <lastmod>2019-10-10T18:39:38+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ericsuperman.github.io/posts/</loc>
-    <lastmod>2019-10-10T16:01:52+08:00</lastmod>
+    <lastmod>2019-10-10T18:39:38+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ericsuperman.github.io/tags/</loc>
-    <lastmod>2019-10-10T16:01:52+08:00</lastmod>
+    <lastmod>2019-10-10T18:39:38+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ericsuperman.github.io/tags/zhubei/</loc>
-    <lastmod>2019-10-10T16:01:52+08:00</lastmod>
+    <lastmod>2019-10-10T18:39:38+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/posts/gourmet/zhubei/zhurenmarket/steamedriceroll/</loc>
+    <lastmod>2019-10-10T18:39:38+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/</loc>
+    <lastmod>2019-10-10T18:39:38+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -49,12 +68,6 @@
     <lastmod>2019-10-10T16:01:52+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/</loc>
-    <lastmod>2019-10-10T16:01:52+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -214,6 +227,12 @@
   </url>
   
   <url>
+    <loc>https://ericsuperman.github.io/tags/new-taipei/</loc>
+    <lastmod>2019-09-07T22:18:47+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://ericsuperman.github.io/tags/tamsui/</loc>
     <lastmod>2019-09-07T22:18:47+08:00</lastmod>
     <priority>0</priority>
@@ -369,12 +388,6 @@
     <lastmod>2019-08-09T19:51:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/tags/new-taipei/</loc>
-    <lastmod>2019-08-04T17:51:23+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
