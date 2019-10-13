@@ -3,26 +3,57 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ericsuperman.github.io/tags/brunch/</loc>
+    <lastmod>2019-10-11T14:45:59+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://ericsuperman.github.io/categories/</loc>
-    <lastmod>2019-10-10T20:45:39+08:00</lastmod>
+    <lastmod>2019-10-11T14:45:59+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ericsuperman.github.io/categories/gourmet/</loc>
-    <lastmod>2019-10-10T20:45:39+08:00</lastmod>
+    <lastmod>2019-10-11T14:45:59+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ericsuperman.github.io/tags/hsinchu-county/</loc>
-    <lastmod>2019-10-10T20:45:39+08:00</lastmod>
+    <lastmod>2019-10-11T14:45:59+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ericsuperman.github.io/posts/</loc>
-    <lastmod>2019-10-10T20:45:39+08:00</lastmod>
+    <lastmod>2019-10-11T14:45:59+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/</loc>
+    <lastmod>2019-10-11T14:45:59+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/zhubei/</loc>
+    <lastmod>2019-10-11T14:45:59+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/posts/gourmet/zhubei/24-1b/</loc>
+    <lastmod>2019-10-11T14:45:59+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/</loc>
+    <lastmod>2019-10-11T14:45:59+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -33,28 +64,10 @@
   </url>
   
   <url>
-    <loc>https://ericsuperman.github.io/tags/</loc>
-    <lastmod>2019-10-10T20:45:39+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/tags/zhubei/</loc>
-    <lastmod>2019-10-10T20:45:39+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://ericsuperman.github.io/posts/gourmet/zhubei/littlebali/</loc>
     <lastmod>2019-10-10T20:45:39+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/</loc>
-    <lastmod>2019-10-10T20:45:39+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -133,12 +146,6 @@
     <lastmod>2019-10-04T02:07:51+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/tags/brunch/</loc>
-    <lastmod>2019-10-04T01:05:19+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
