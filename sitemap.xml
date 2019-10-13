@@ -3,13 +3,62 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://ericsuperman.github.io/tags/cantonese-cuisine/</loc>
-    <lastmod>2019-10-10T18:39:38+08:00</lastmod>
+    <loc>https://ericsuperman.github.io/categories/</loc>
+    <lastmod>2019-10-10T20:45:39+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ericsuperman.github.io/categories/</loc>
+    <loc>https://ericsuperman.github.io/categories/gourmet/</loc>
+    <lastmod>2019-10-10T20:45:39+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/hsinchu-county/</loc>
+    <lastmod>2019-10-10T20:45:39+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/posts/</loc>
+    <lastmod>2019-10-10T20:45:39+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/roast/</loc>
+    <lastmod>2019-10-10T20:45:39+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/</loc>
+    <lastmod>2019-10-10T20:45:39+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/zhubei/</loc>
+    <lastmod>2019-10-10T20:45:39+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/posts/gourmet/zhubei/littlebali/</loc>
+    <lastmod>2019-10-10T20:45:39+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/</loc>
+    <lastmod>2019-10-10T20:45:39+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/cantonese-cuisine/</loc>
     <lastmod>2019-10-10T18:39:38+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -21,46 +70,10 @@
   </url>
   
   <url>
-    <loc>https://ericsuperman.github.io/categories/gourmet/</loc>
-    <lastmod>2019-10-10T18:39:38+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/tags/hsinchu-county/</loc>
-    <lastmod>2019-10-10T18:39:38+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/posts/</loc>
-    <lastmod>2019-10-10T18:39:38+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/tags/</loc>
-    <lastmod>2019-10-10T18:39:38+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/tags/zhubei/</loc>
-    <lastmod>2019-10-10T18:39:38+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://ericsuperman.github.io/posts/gourmet/zhubei/zhurenmarket/steamedriceroll/</loc>
     <lastmod>2019-10-10T18:39:38+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/</loc>
-    <lastmod>2019-10-10T18:39:38+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -90,7 +103,7 @@
   </url>
   
   <url>
-    <loc>https://ericsuperman.github.io/posts/gourmet/daan/givehapiness/</loc>
+    <loc>https://ericsuperman.github.io/posts/gourmet/taipei/daan/givehapiness/</loc>
     <lastmod>2019-10-07T20:01:39+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -161,7 +174,7 @@
   </url>
   
   <url>
-    <loc>https://ericsuperman.github.io/posts/gourmet/daan/stoppagetime/</loc>
+    <loc>https://ericsuperman.github.io/posts/gourmet/taipei/daan/stoppagetime/</loc>
     <lastmod>2019-09-21T21:12:46+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -174,16 +187,10 @@
   </url>
   
   <url>
-    <loc>https://ericsuperman.github.io/posts/gourmet/daan/thehousebreakfast/</loc>
+    <loc>https://ericsuperman.github.io/posts/gourmet/taipei/daan/thehousebreakfast/</loc>
     <lastmod>2019-09-21T19:58:50+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/tags/roast/</loc>
-    <lastmod>2019-09-21T15:16:55+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -239,7 +246,7 @@
   </url>
   
   <url>
-    <loc>https://ericsuperman.github.io/posts/gourmet/tamsui/charmingcouple/</loc>
+    <loc>https://ericsuperman.github.io/posts/gourmet/new-taipei/tamsui/charmingcouple/</loc>
     <lastmod>2019-09-07T22:18:47+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -391,7 +398,7 @@
   </url>
   
   <url>
-    <loc>https://ericsuperman.github.io/posts/gourmet/tamsui/5y3c/</loc>
+    <loc>https://ericsuperman.github.io/posts/gourmet/new-taipei/tamsui/5y3c/</loc>
     <lastmod>2019-08-04T17:51:23+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -431,7 +438,7 @@
   </url>
   
   <url>
-    <loc>https://ericsuperman.github.io/posts/gourmet/xinyi/yuancafe/</loc>
+    <loc>https://ericsuperman.github.io/posts/gourmet/taipei/xinyi/yuancafe/</loc>
     <lastmod>2019-07-14T21:31:59+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -451,7 +458,7 @@
   </url>
   
   <url>
-    <loc>https://ericsuperman.github.io/posts/gourmet/sanxia/lacocina29/</loc>
+    <loc>https://ericsuperman.github.io/posts/gourmet/new-taipei/sanxia/lacocina29/</loc>
     <lastmod>2019-07-07T20:31:24+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -485,7 +492,7 @@
   </url>
   
   <url>
-    <loc>https://ericsuperman.github.io/posts/gourmet/nankang/neverland/</loc>
+    <loc>https://ericsuperman.github.io/posts/gourmet/taipei/nankang/neverland/</loc>
     <lastmod>2019-06-07T13:35:19+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -498,7 +505,7 @@
   </url>
   
   <url>
-    <loc>https://ericsuperman.github.io/posts/gourmet/beitou/donburi/</loc>
+    <loc>https://ericsuperman.github.io/posts/gourmet/taipei/beitou/donburi/</loc>
     <lastmod>2019-06-07T07:52:45+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -585,14 +592,14 @@
   </url>
   
   <url>
-    <loc>https://ericsuperman.github.io/posts/gourmet/zhunan/dr.ice/</loc>
+    <loc>https://ericsuperman.github.io/posts/gourmet/miaoli/zhunan/dr.ice/</loc>
     <lastmod>2019-05-19T19:58:37+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://ericsuperman.github.io/posts/gourmet/zhunan/my_eat_house/</loc>
+    <loc>https://ericsuperman.github.io/posts/gourmet/miaoli/zhunan/my_eat_house/</loc>
     <lastmod>2019-05-19T19:58:28+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -634,7 +641,7 @@
   </url>
   
   <url>
-    <loc>https://ericsuperman.github.io/posts/gourmet/daan/sixchef/</loc>
+    <loc>https://ericsuperman.github.io/posts/gourmet/taipei/daan/sixchef/</loc>
     <lastmod>2019-05-14T22:04:48+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
