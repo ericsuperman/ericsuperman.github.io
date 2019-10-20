@@ -21,13 +21,13 @@
   </url>
   
   <url>
-    <loc>https://ericsuperman.github.io/tags/italian-food/</loc>
+    <loc>https://ericsuperman.github.io/posts/</loc>
     <lastmod>2019-10-20T16:40:41+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ericsuperman.github.io/posts/</loc>
+    <loc>https://ericsuperman.github.io/tags/seafood/</loc>
     <lastmod>2019-10-20T16:40:41+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -59,6 +59,12 @@
   
   <url>
     <loc>https://ericsuperman.github.io/tags/hsinchu/</loc>
+    <lastmod>2019-10-20T07:35:57+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/italian-food/</loc>
     <lastmod>2019-10-20T07:35:57+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -104,12 +110,6 @@
   
   <url>
     <loc>https://ericsuperman.github.io/tags/keelung/</loc>
-    <lastmod>2019-10-12T21:09:13+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/tags/seafood/</loc>
     <lastmod>2019-10-12T21:09:13+08:00</lastmod>
     <priority>0</priority>
   </url>
