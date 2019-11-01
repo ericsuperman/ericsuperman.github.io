@@ -10,7 +10,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ericsuperman.github.io/tags/" />
 
-<meta property="og:updated_time" content="2019-10-27T20:36:23&#43;08:00"/>
+<meta property="og:updated_time" content="2019-10-31T20:11:45&#43;08:00"/>
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Tags"/>
@@ -29,7 +29,7 @@
     "@type": "Person",
     "name": "Super Cat"
   },
-  "dateModified": "2019-10-27T20:36:23\x2b08:00",
+  "dateModified": "2019-10-31T20:11:45\x2b08:00",
   "keywords": "computer,gourmet,personal,american-food,beitou-district,braised-dishes,breakfast,brunch,cantonese-cuisine,chinese-food,coffee-shop,command,daan-district,dessert,french-food,guanxi,hot-pot,hsinchu,hsinchu-county,italian-food,japanese-food,keelung,korean-food,linux,mediterranean-food,midnight-snack,murmur,nankang-district,new-taipei,pet,roast,sanxia,seafood,sichuan-cuisine,steak,swedish-food,taichung,taipei,tamsui,taoyuan,thailand-food,vietnamese-food,virtual-box,windows,xinfeng,xinyi-district,zhubei,zhudong,zhunan,",
   "description": "Everything is my own murmur.\x3cbr\x3e本貓只管好不好吃，C\/P值不大在乎。沒接業配，都是花自己的錢。我行我素，不理酸民。"
 }
@@ -96,6 +96,36 @@ if (!doNotTrack) {
 
           
 
+
+
+
+
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/computer/command3/">[CMD Tutorial <sup>3</sup>&frasl;<sub>4</sub>] Path Environment Variables</a></h2>
+    <p class="blog-post-meta"><time datetime="2019-05-09T14:50:23&#43;08:00">Thu May 09, 2019</time> by Super Cat in 
+<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/computer" rel="category tag">Computer</a>
+
+
+<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/windows" rel="tag">Windows</a>, <a href="/tags/command" rel="tag">Command</a>
+
+</p>
+  </header>
+  環境變數 Windows Command Prompt 也有變數的觀念，命令在執行的時候，可以讀取特定變數，然後就像執行命令時帶參數一樣，以不同的模式執行。 例如你可以開發一個aaa程式，執行時需要兩個參數，也可以使用ENV_AAA環境變數，
+d:\&gt; aaa c:\aaa d:\bbb 以上例子，兩個參數都是路徑，如果執行很多次會打字打個很累，正好aaa的開發人員寫成也可使用ENV_AAA 環境變數，所以下列方式也可以
+d:\&gt; set ENV_AAA=&#34;c:\aaa d:\bbb&#34; 環境變數設定完成後，執行執行 aaa 就可以了，不需要打參數了。 d:\&gt; aaa
+蠻多命令，都將不常變動的參數規劃放在環境變數，省下頻繁地打一堆字。 執行一份CMD的時候，作業系統會將全部的環境變數複製一份，這些環境變數專屬於該份CMD ，結束時會自動清掉。也就是說，如果同時執行兩份CMD，Windows 是複製出兩份系統的環境變數給這兩個CMD，兩邊各改了什麼，也不會影響對方，結束時也不會影響Windows系統的環境變數。 如果不小心改壞了什麼環境變數，可以關掉CMD，重新執行一次即可。
+SET 想要看總共有哪些環境變數，可用set不帶任何參數
+d:\&gt; set set 加上參數，就是設定環境變數了，語法為 set =
+d:\&gt; set ENV_AAA=&#34;c:\aaa d:\bbb&#34; ECHO set一執行，舊式列出全部環境變數，如果只是想要看一個變數，可以用 echo 來顯示訊息。 C:\Users\Eric&gt;set ENV_AAA=&ldquo;c:\aaa d:\bbb&rdquo;
+C:\Users\Eric&gt;echo %ENV_AAA% &#34;c:\aaa d:\bbb&#34; echo 也能印普通訊息，例如印個經典的 &ldquo;Hello, World!&rdquo;
+C:\Users\Eric&gt;echo Hello, World! Hello, World! PATH 當然，有一些名稱，被保留給系統使用，例如 PATH ，就是代表系統搜尋外部命令的路徑順序，每個路徑都必須以分號隔開。這個PATH環境變數因為太常用了，所以Microsoft乾脆開發一個PATH命令，專門負責顯示及修改PATH環境變數。
+d:\&gt; path 執行結果如下:
+d:\&gt;path PATH=C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Git\cmd;C:\Users\Eric\AppData\Local\Microsoft\WindowsApps; 上面Path變數的內容，其意義為 - 假設使用者想要執行 aaa.
+  <a href='https://ericsuperman.github.io/posts/computer/command3/'>Read more →</a>
+</article> 
 
 
 
@@ -317,35 +347,6 @@ Ubuntu 安裝後，一張網卡配 191.168.1.x 的IP， 另一張網卡配 10.10
 
 
 
-
-<article class="blog-post">
-  <header>
-    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/gourmet/zhubei/bbq/">[竹北] The BBQ House 竹北店</a></h2>
-    <p class="blog-post-meta"><time datetime="2019-04-25T20:37:55&#43;08:00">Thu Apr 25, 2019</time> by Super Cat in 
-<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/gourmet" rel="category tag">Gourmet</a>
-
-
-<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/hsinchu-county" rel="tag">Hsinchu county</a>, <a href="/tags/zhubei" rel="tag">Zhubei</a>, <a href="/tags/steak" rel="tag">Steak</a>
-
-</p>
-  </header>
-  這間BBQ House，是在新竹市站穩後，開了竹北店， 食物偏貴，但食材用的不錯，算是好吃，偶而吃一次也還不錯。
-裝潢還算新!
-牆壁中間有個大大的高亮度招牌，
-第一次來，簡單試一下，小菜選炸牛肚，湯選了蘑菇卡布奇諾湯，
-湯好喝，炸牛肚普通。
-松露大寬麵
-這個麵好吃。
-牛排是這間店的特色，有個專門放肉的玻璃冷凍櫃， 先挑肉的種類，然後選擇重量，想吃幾克就幾克，
-今天挑 紐約客牛排，其實我覺得菲力牛排太瘦， 紐約客或是莎朗這種帶點油花，帶點筋的比較好吃。
-主廚蠻會煎的，直接吃就不錯了，沾他附的牛排醬汁也不錯， 我試著用桌上的玫瑰鹽，感覺並沒有比較好吃。
-  <a href='https://ericsuperman.github.io/posts/gourmet/zhubei/bbq/'>Read more →</a>
-</article> 
-
-
-
-
-
 <nav class="blog-pagination">
   
   <a class="btn btn-outline-primary" href="/tags/page/7/" rel="prev" role="button">Previous page</a>
@@ -377,6 +378,8 @@ Ubuntu 安裝後，一張網卡配 191.168.1.x 的IP， 另一張網卡配 10.10
 
 
 <li><a href="/posts/">Posts</a></li>
+
+<li><a href="/posts/gourmet/taipei/daan/toh-a/">[台北] Toh-A&rsquo;桌藏</a></li>
 
 <li><a href="/posts/gourmet/zhubei/12baskets/">[竹北] 12 Baskets 12籃</a></li>
 
@@ -413,8 +416,6 @@ Ubuntu 安裝後，一張網卡配 191.168.1.x 的IP， 另一張網卡配 10.10
 <li><a href="/posts/gourmet/zhubei/mwinhl/">[竹北] 五星小廚2.0：和樂洋食巧烹</a></li>
 
 <li><a href="/posts/gourmet/taipei/daan/stoppagetime/">[台北] Stoppage Time 補時</a></li>
-
-<li><a href="/posts/gourmet/taipei/daan/thehousebreakfast/">[台北] 好食Breakfast</a></li>
 
     </ol>
   </section>

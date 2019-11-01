@@ -3,37 +3,68 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ericsuperman.github.io/categories/</loc>
+    <lastmod>2019-10-31T20:11:45+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/daan-district/</loc>
+    <lastmod>2019-10-31T20:11:45+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/french-food/</loc>
+    <lastmod>2019-10-31T20:11:45+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/categories/gourmet/</loc>
+    <lastmod>2019-10-31T20:11:45+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/posts/</loc>
+    <lastmod>2019-10-31T20:11:45+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/</loc>
+    <lastmod>2019-10-31T20:11:45+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/taipei/</loc>
+    <lastmod>2019-10-31T20:11:45+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/posts/gourmet/taipei/daan/toh-a/</loc>
+    <lastmod>2019-10-31T20:11:45+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/</loc>
+    <lastmod>2019-10-31T20:11:45+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://ericsuperman.github.io/tags/american-food/</loc>
     <lastmod>2019-10-27T20:36:23+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ericsuperman.github.io/categories/</loc>
-    <lastmod>2019-10-27T20:36:23+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/categories/gourmet/</loc>
-    <lastmod>2019-10-27T20:36:23+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://ericsuperman.github.io/tags/hsinchu-county/</loc>
-    <lastmod>2019-10-27T20:36:23+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/posts/</loc>
-    <lastmod>2019-10-27T20:36:23+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/tags/</loc>
     <lastmod>2019-10-27T20:36:23+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -49,12 +80,6 @@
     <lastmod>2019-10-27T20:36:23+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/</loc>
-    <lastmod>2019-10-27T20:36:23+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -198,18 +223,6 @@
     <lastmod>2019-10-10T12:57:00+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/tags/daan-district/</loc>
-    <lastmod>2019-10-07T20:01:39+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/tags/taipei/</loc>
-    <lastmod>2019-10-07T20:01:39+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -649,12 +662,6 @@
     <lastmod>2019-05-23T19:38:45+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/tags/french-food/</loc>
-    <lastmod>2019-05-21T23:04:15+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
