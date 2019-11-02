@@ -7,17 +7,35 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Except where otherwise noted, content on this site is licensed under a [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/).</copyright>
-    <lastBuildDate>Thu, 31 Oct 2019 20:11:45 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 02 Nov 2019 15:40:35 +0800</lastBuildDate>
     
 	<atom:link href="https://ericsuperman.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Brunch</title>
+      <link>https://ericsuperman.github.io/tags/brunch/</link>
+      <pubDate>Sat, 02 Nov 2019 15:40:35 +0800</pubDate>
+      
+      <guid>https://ericsuperman.github.io/tags/brunch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Daan District</title>
       <link>https://ericsuperman.github.io/tags/daan-district/</link>
-      <pubDate>Thu, 31 Oct 2019 20:11:45 +0800</pubDate>
+      <pubDate>Sat, 02 Nov 2019 15:40:35 +0800</pubDate>
       
       <guid>https://ericsuperman.github.io/tags/daan-district/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Taipei</title>
+      <link>https://ericsuperman.github.io/tags/taipei/</link>
+      <pubDate>Sat, 02 Nov 2019 15:40:35 +0800</pubDate>
+      
+      <guid>https://ericsuperman.github.io/tags/taipei/</guid>
       <description></description>
     </item>
     
@@ -27,15 +45,6 @@
       <pubDate>Thu, 31 Oct 2019 20:11:45 +0800</pubDate>
       
       <guid>https://ericsuperman.github.io/tags/french-food/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Taipei</title>
-      <link>https://ericsuperman.github.io/tags/taipei/</link>
-      <pubDate>Thu, 31 Oct 2019 20:11:45 +0800</pubDate>
-      
-      <guid>https://ericsuperman.github.io/tags/taipei/</guid>
       <description></description>
     </item>
     
@@ -135,15 +144,6 @@
       <pubDate>Sat, 12 Oct 2019 08:54:39 +0800</pubDate>
       
       <guid>https://ericsuperman.github.io/tags/thailand-food/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Brunch</title>
-      <link>https://ericsuperman.github.io/tags/brunch/</link>
-      <pubDate>Fri, 11 Oct 2019 14:45:59 +0800</pubDate>
-      
-      <guid>https://ericsuperman.github.io/tags/brunch/</guid>
       <description></description>
     </item>
     
