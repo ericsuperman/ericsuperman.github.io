@@ -3,37 +3,74 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ericsuperman.github.io/tags/american-food/</loc>
+    <lastmod>2019-11-02T18:21:37+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/categories/</loc>
+    <lastmod>2019-11-02T18:21:37+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/categories/gourmet/</loc>
+    <lastmod>2019-11-02T18:21:37+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/mexican-food/</loc>
+    <lastmod>2019-11-02T18:21:37+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/posts/</loc>
+    <lastmod>2019-11-02T18:21:37+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/</loc>
+    <lastmod>2019-11-02T18:21:37+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/taoyuan/</loc>
+    <lastmod>2019-11-02T18:21:37+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/zhongli-district/</loc>
+    <lastmod>2019-11-02T18:21:37+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/posts/gourmet/taoyuan/zhongli/daviddiner/</loc>
+    <lastmod>2019-11-02T18:21:37+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/</loc>
+    <lastmod>2019-11-02T18:21:37+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://ericsuperman.github.io/tags/brunch/</loc>
     <lastmod>2019-11-02T15:40:35+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ericsuperman.github.io/categories/</loc>
-    <lastmod>2019-11-02T15:40:35+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://ericsuperman.github.io/tags/daan-district/</loc>
-    <lastmod>2019-11-02T15:40:35+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/categories/gourmet/</loc>
-    <lastmod>2019-11-02T15:40:35+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/posts/</loc>
-    <lastmod>2019-11-02T15:40:35+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/tags/</loc>
     <lastmod>2019-11-02T15:40:35+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -52,12 +89,6 @@
   </url>
   
   <url>
-    <loc>https://ericsuperman.github.io/</loc>
-    <lastmod>2019-11-02T15:40:35+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://ericsuperman.github.io/tags/french-food/</loc>
     <lastmod>2019-10-31T20:11:45+08:00</lastmod>
     <priority>0</priority>
@@ -68,12 +99,6 @@
     <lastmod>2019-10-31T20:11:45+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/tags/american-food/</loc>
-    <lastmod>2019-10-27T20:36:23+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -365,13 +390,13 @@
   </url>
   
   <url>
-    <loc>https://ericsuperman.github.io/tags/taoyuan/</loc>
+    <loc>https://ericsuperman.github.io/tags/taoyuan-district/</loc>
     <lastmod>2019-09-07T19:39:34+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ericsuperman.github.io/posts/gourmet/taoyuan/southwoodcho/</loc>
+    <loc>https://ericsuperman.github.io/posts/gourmet/taoyuan/taoyuan/southwoodcho/</loc>
     <lastmod>2019-09-07T19:39:34+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -477,7 +502,7 @@
   </url>
   
   <url>
-    <loc>https://ericsuperman.github.io/posts/gourmet/taoyuan/ikea/</loc>
+    <loc>https://ericsuperman.github.io/posts/gourmet/taoyuan/taoyuan/ikea/</loc>
     <lastmod>2019-08-10T15:23:10+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -551,7 +576,13 @@
   </url>
   
   <url>
-    <loc>https://ericsuperman.github.io/posts/gourmet/taoyuan/rightu/</loc>
+    <loc>https://ericsuperman.github.io/tags/dayuan-district/</loc>
+    <lastmod>2019-07-14T16:05:25+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/posts/gourmet/taoyuan/dayuan/rightu/</loc>
     <lastmod>2019-07-14T16:05:25+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
