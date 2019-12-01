@@ -3,28 +3,63 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://ericsuperman.github.io/posts/gourmet/zhubei/morelove/</loc>
-    <lastmod>2019-11-30T19:38:38+08:00</lastmod>
+    <loc>https://ericsuperman.github.io/posts/gourmet/hsinchu/uemiya/</loc>
+    <lastmod>2019-12-01T12:29:01+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://ericsuperman.github.io/tags/brunch/</loc>
-    <lastmod>2019-11-30T19:38:38+08:00</lastmod>
+    <lastmod>2019-12-01T12:29:01+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://ericsuperman.github.io/categories/</loc>
-    <lastmod>2019-11-30T19:38:38+08:00</lastmod>
+    <lastmod>2019-12-01T12:29:01+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://ericsuperman.github.io/categories/gourmet/</loc>
+    <lastmod>2019-12-01T12:29:01+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/hsinchu/</loc>
+    <lastmod>2019-12-01T12:29:01+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/posts/</loc>
+    <lastmod>2019-12-01T12:29:01+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/</loc>
+    <lastmod>2019-12-01T12:29:01+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/</loc>
+    <lastmod>2019-12-01T12:29:01+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/posts/gourmet/zhubei/morelove/</loc>
     <lastmod>2019-11-30T19:38:38+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -38,28 +73,7 @@
   </url>
   
   <url>
-    <loc>https://ericsuperman.github.io/posts/</loc>
-    <lastmod>2019-11-30T19:38:38+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/tags/</loc>
-    <lastmod>2019-11-30T19:38:38+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://ericsuperman.github.io/tags/zhubei/</loc>
-    <lastmod>2019-11-30T19:38:38+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/</loc>
     <lastmod>2019-11-30T19:38:38+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -186,13 +200,6 @@
   
   <url>
     <loc>https://ericsuperman.github.io/posts/gourmet/hsinchu/dengyeh/</loc>
-    <lastmod>2019-11-23T16:40:11+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/tags/hsinchu/</loc>
     <lastmod>2019-11-23T16:40:11+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -465,13 +472,6 @@
   </url>
   
   <url>
-    <loc>https://ericsuperman.github.io/tags/coffee-shop/</loc>
-    <lastmod>2019-10-04T01:05:19+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://ericsuperman.github.io/posts/gourmet/zhubei/mwinhl/</loc>
     <lastmod>2019-10-03T19:55:14+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -480,6 +480,13 @@
   
   <url>
     <loc>https://ericsuperman.github.io/posts/gourmet/taipei/daan/stoppagetime/</loc>
+    <lastmod>2019-09-21T21:12:46+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/coffee-shop/</loc>
     <lastmod>2019-09-21T21:12:46+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
