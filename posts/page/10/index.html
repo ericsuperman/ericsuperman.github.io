@@ -10,7 +10,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ericsuperman.github.io/posts/" />
 
-<meta property="og:updated_time" content="2019-12-08T20:27:24+08:00" />
+<meta property="og:updated_time" content="2019-12-25T20:53:44+08:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Posts"/>
@@ -29,7 +29,7 @@
     "@type": "Person",
     "name": "Super Cat"
   },
-  "dateModified": "2019-12-08T20:27:24\x2b08:00",
+  "dateModified": "2019-12-25T20:53:44\x2b08:00",
   "keywords": "computer,gourmet,personal,american-food,beitou-district,braised-dishes,breakfast,brunch,cafe,cantonese-cuisine,chinese-food,coffee-shop,command,daan-district,datong-district,dayuan-district,dessert,french-food,guanxi,hot-pot,hsinchu,hsinchu-county,italian-food,japanese-food,keelung,korean-food,linux,mediterranean-food,mexican-food,midnight-snack,murmur,nankang-district,new-taipei,pet,roast,sanxia,seafood,shoes,sichuan-cuisine,steak,swedish-food,taichung,taipei,takeout,tamsui,taoyuan,taoyuan-district,teppanyaki,thailand-food,tires,vietnamese-food,virtual-box,windows,xinfeng,xinyi-district,zhongli-district,zhubei,zhudong,zhunan,",
   "description": "Everything is my own murmur.\x3cbr\x3e本貓只管好不好吃，C\/P值不大在乎。沒接業配，都是花自己的錢。我行我素，不理酸民。"
 }
@@ -96,6 +96,32 @@ if (!doNotTrack) {
 
           
 
+
+
+
+
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/computer/command2/">[CMD Tutorial <sup>2</sup>&frasl;<sub>4</sub>] Command Prompt Basic Commands</a></h2>
+    <p class="blog-post-meta"><time datetime="2019-05-09T14:50:20&#43;08:00">Thu May 09, 2019</time> by Super Cat in 
+<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/computer" rel="category tag">Computer</a>
+
+
+<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/windows" rel="tag">Windows</a>, <a href="/tags/command" rel="tag">Command</a>
+
+</p>
+  </header>
+  切換工作磁碟機與路徑 Windows 沿襲DOS傳統，可將一顆硬碟切割成數個 Paritition，每一個Partition分配一個磁碟機代碼，由A到Z，最多26個磁碟，A磁碟的名稱為A:，B磁碟的名稱為B:，A磁碟與B磁碟是保留給軟碟機，雖然現在已經很難看到軟碟機了。硬碟則是C:開始，開機用的 Windows 目錄也通常位於C:。
+假設使用者規劃了一個D磁碟機，專門放資料，其中工作的目錄規劃為d:\prj 目錄，則可用下列方式切換磁碟機與路徑 -
+c:\&gt;d: d:\&gt;cd prj d:\prj&gt; 以前DOS沒下列語法，但在Windows 10 Command Prompt，可以合併為下列方式 - c:\&gt;cd d:\prj d:\prj&gt;
+顯示檔案清單 d:\prj&gt; dir 變更檔案名稱 d:\prj&gt; ren a1.txt a2.txt 上面例子中，a1.txt 是變更前的檔名，必須已經存在於目前目錄，不然會有錯誤訊息。 a2.txt 是變更後的檔名，必須不存在。如果已經存在，會有錯誤訊息。 命令執行完成後，a1.txt就不存在了，會有一個a2.txt檔案，內容跟原始的a1.txt 一樣。
+複製檔案 d:\prj&gt; copy a1.txt a2.txt 上面例子中，a1.txt 是來源檔，必須已經存在於目前目錄，不然會有錯誤訊息。 a2.txt 是目的地檔，如果已經存在，會被蓋掉，a1.txt 不會有任何變更。 命令執行完成後，a1.txt與a2.txt 同時存在，兩個檔案內容也是一樣。 簡易建立檔案
+Windows 保留一些特殊檔名，例如 con 代表 Console。有時候想要產生一個新檔案，打幾個字，叫出文字編輯器，打幾個字，存檔，實在太慢，不如用在 Command Prompt 利用 con 檔案就能輕鬆解決 -
+d:\prj&gt; copy con test.txt abc ^z 複製了 1 個檔案。 d:\prj&gt; 上面例子中，先打了abc三個字母代表內容，之後 ^Z 這個字是按了 Ctrl-Z，這是Windows 規定好的 EOF(End of File)字元，Windows看到這個字，等同於檔案結尾，因此確定了整個檔案，接著開始複製整個檔案，一個新的test.
+  <a href='https://ericsuperman.github.io/posts/computer/command2/'>Read more →</a>
+</article> 
 
 
 
@@ -174,7 +200,7 @@ c:\&gt; help dir 顯示檔案清單以列出目錄中的檔案及子目錄。 DI
 
 <article class="blog-post">
   <header>
-    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/gourmet/zhubei/hoi/">[竹北] HOI x 山語喃喃</a></h2>
+    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/gourmet/zhubei/brunch/hoi/">[竹北] HOI x 山語喃喃</a></h2>
     <p class="blog-post-meta"><time datetime="2019-05-05T11:17:37&#43;08:00">Sun May 05, 2019</time> by Super Cat in 
 <i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/gourmet" rel="category tag">Gourmet</a>
 
@@ -186,7 +212,7 @@ c:\&gt; help dir 顯示檔案清單以列出目錄中的檔案及子目錄。 DI
   餐廳名稱: HOI x 山語喃喃     地 址: 新竹縣竹北市成功十一街17號   營業時間: 週四~週一 09:00~14:00    週二，週三公休   電 話: 03 668 8036    真沒想到，在住家附近，有一間水準不錯的早午餐， 根據山語喃喃官方Facebook 粉絲頁 因為老闆娘小孩剛出生，營業時間暫時改成每天 09:00-14:00，包括星期六、日都是， 公休日為每週二、三。
 其實山語喃喃的本業是烘焙工作室，幾年前就開始提供手工麵包自取的服務， 2018年底增加經營早午餐，使用自家的麵包，搭配自製的醬料，肉品， 做成跟大量加盟的西式早餐不一樣的味道，進行市場區隔，算是挺有特色的。
 菜單如下，品項還不至於太多 - 今天兩人用餐而已，點兩份餐，兩杯飲料。 鴉片牛五花，今天的麵包是用 Bagles，都是看當天做哪些麵包，也有可能是 巧巴達，吐司等。蛋可選半熟蛋，夾蘋果切片，生菜。還行! Hakka Boy，就是 客家鹹豬肉 夾 蛋，蘋果切片，生菜。還行! 飲料我覺得有點弱，上飲料上得比餐還慢，味道也還好，顯然不是麵包店的強項。 紅色的是莓果氣泡飲，有點說不上來的人工的感覺。奶茶倒是正常不甜。都是尚可。 整體來講，就是比西式早餐連鎖店貴一點，品質好一點，但又不至於是 裝潢優美西餐廳裡動不動就兩、三百元的豪華早午餐。 如果某個假日醒來，只想吃稍微好一點的早餐，不想吃到豪華早午餐， 那 HOI x 山語喃喃 就是個好選擇。
-  <a href='https://ericsuperman.github.io/posts/gourmet/zhubei/hoi/'>Read more →</a>
+  <a href='https://ericsuperman.github.io/posts/gourmet/zhubei/brunch/hoi/'>Read more →</a>
 </article> 
 
 
@@ -320,30 +346,6 @@ Ubuntu 安裝後，一張網卡配 191.168.1.x 的IP， 另一張網卡配 10.10
 
 
 
-
-<article class="blog-post">
-  <header>
-    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/computer/vbox/">VirtualBox 6.x Shared Folder</a></h2>
-    <p class="blog-post-meta"><time datetime="2019-04-21T21:51:33&#43;08:00">Sun Apr 21, 2019</time> by Super Cat in 
-<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/computer" rel="category tag">Computer</a>
-
-
-<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/virtual-box" rel="tag">Virtual Box</a>, <a href="/tags/linux" rel="tag">Linux</a>
-
-</p>
-  </header>
-  前一版的 Ubuntu 16.04 LTS，它當 VirtualBox Guest OS 的時候， 可以安裝一個現成 virtualbox-dkms 套件，裝好之後， shared folder 就自動生效了，非常方便。
-Ubuntu 18.04 LTS 問世之後，它的 virtualbox-dkms 套件 是針對 VirtualBox 5.2.18 及之後版本，當時 VirtualBox 也 是 5.2x 左右，一切也沒問題。
-突然間，2018年12月 VirtualBox 6.0 降臨了，我直接將 VirtualBox 5.x 升級到 VirtualBox 6.0 ，跑一樣的 guest image， Shared Folder 就失效了。
-查了很久，才發現是 virtualbox-dkms 套件只支援 VirtualBox 5.x 的關係，等了一陣子，看起來 Ubuntu 18.04 是沒打算升級 dkms 套件了， 那只好回到老方法，讓 VirtualBox Host 這邊插入虛擬的 Guest Additions 光碟片。
-在 VirtualBox Host 這邊的 Menu Bar ，有一個 &ldquo;裝置&rdquo; 選項，裡面 有一個 &ldquo;插入 Guest Additions CD 映像&rdquo;。
-  <a href='https://ericsuperman.github.io/posts/computer/vbox/'>Read more →</a>
-</article> 
-
-
-
-
-
 <nav class="blog-pagination">
   
   <a class="btn btn-outline-primary" href="/posts/page/9/" rel="prev" role="button">Previous page</a>
@@ -374,9 +376,11 @@ Ubuntu 18.04 LTS 問世之後，它的 virtualbox-dkms 套件 是針對 VirtualB
     <ol class="list-unstyled">
 
 
-<li><a href="/posts/gourmet/zhubei/yamasweets/">[竹北] Yama Sweets</a></li>
+<li><a href="/posts/gourmet/zhubei/haohaoeat/">[竹北] 好好吃共享空間</a></li>
 
 <li><a href="/posts/">Posts</a></li>
+
+<li><a href="/posts/gourmet/zhubei/brunch/yamasweets/">[竹北] Yama Sweets</a></li>
 
 <li><a href="/posts/gourmet/hsinchu/matsang/">[新竹] 麻燦 淮南牛肉湯</a></li>
 
@@ -386,9 +390,9 @@ Ubuntu 18.04 LTS 問世之後，它的 virtualbox-dkms 套件 是針對 VirtualB
 
 <li><a href="/posts/gourmet/hsinchu/uemiya/">[新竹] 植美家 健康早午餐</a></li>
 
-<li><a href="/posts/gourmet/zhubei/morelove/">[竹北] 沐樂早午餐</a></li>
+<li><a href="/posts/gourmet/zhubei/brunch/morelove/">[竹北] 沐樂早午餐</a></li>
 
-<li><a href="/posts/gourmet/zhubei/mrmoon/">[竹北] Mr.Moon 月亮先生咖啡館</a></li>
+<li><a href="/posts/gourmet/zhubei/brunch/mrmoon/">[竹北] Mr.Moon 月亮先生咖啡館</a></li>
 
 <li><a href="/posts/gourmet/zhubei/2ndst/">[竹北] 二街咖啡 2nd St. Cafe</a></li>
 
@@ -402,7 +406,7 @@ Ubuntu 18.04 LTS 問世之後，它的 virtualbox-dkms 套件 是針對 VirtualB
 
 <li><a href="/posts/gourmet/hsinchu/dengyeh/">[新竹] 登野精緻鐵板料理</a></li>
 
-<li><a href="/posts/gourmet/zhubei/coffee_and_co/">[竹北] 咖啡羊行 Coffee&amp;Co. 台元店</a></li>
+<li><a href="/posts/gourmet/zhubei/brunch/coffee_and_co/">[竹北] 咖啡羊行 Coffee&amp;Co. 台元店</a></li>
 
 <li><a href="/posts/gourmet/hsinchu/masterqin/">[新竹] 秦師父水煎包小籠包</a></li>
 
@@ -411,8 +415,6 @@ Ubuntu 18.04 LTS 問世之後，它的 virtualbox-dkms 套件 是針對 VirtualB
 <li><a href="/posts/gourmet/taoyuan/zhongli/daviddiner/">[中壢] David Diner 大衛美墨料理 - 中壢中原店</a></li>
 
 <li><a href="/posts/gourmet/taipei/daan/anhaoshih/">[台北] 安好食</a></li>
-
-<li><a href="/posts/gourmet/taipei/daan/toh-a/">[台北] Toh-A&rsquo;桌藏</a></li>
 
     </ol>
   </section>
