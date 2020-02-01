@@ -3,28 +3,77 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://ericsuperman.github.io/posts/gourmet/zhubei/kuo_noodles/</loc>
-    <lastmod>2020-02-01T19:37:40+08:00</lastmod>
+    <loc>https://ericsuperman.github.io/posts/gourmet/taoyuan/luzhu/looloo/</loc>
+    <lastmod>2020-02-01T21:37:56+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://ericsuperman.github.io/categories/</loc>
-    <lastmod>2020-02-01T19:37:40+08:00</lastmod>
+    <lastmod>2020-02-01T21:37:56+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://ericsuperman.github.io/tags/chinese-food/</loc>
-    <lastmod>2020-02-01T19:37:40+08:00</lastmod>
+    <lastmod>2020-02-01T21:37:56+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/coffee-shop/</loc>
+    <lastmod>2020-02-01T21:37:56+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://ericsuperman.github.io/categories/gourmet/</loc>
+    <lastmod>2020-02-01T21:37:56+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/luzhu-district/</loc>
+    <lastmod>2020-02-01T21:37:56+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/posts/</loc>
+    <lastmod>2020-02-01T21:37:56+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/</loc>
+    <lastmod>2020-02-01T21:37:56+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/taoyuan/</loc>
+    <lastmod>2020-02-01T21:37:56+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/</loc>
+    <lastmod>2020-02-01T21:37:56+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/posts/gourmet/zhubei/kuo_noodles/</loc>
     <lastmod>2020-02-01T19:37:40+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -38,28 +87,7 @@
   </url>
   
   <url>
-    <loc>https://ericsuperman.github.io/posts/</loc>
-    <lastmod>2020-02-01T19:37:40+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/tags/</loc>
-    <lastmod>2020-02-01T19:37:40+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://ericsuperman.github.io/tags/zhubei/</loc>
-    <lastmod>2020-02-01T19:37:40+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/</loc>
     <lastmod>2020-02-01T19:37:40+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -325,13 +353,6 @@
   </url>
   
   <url>
-    <loc>https://ericsuperman.github.io/tags/taoyuan/</loc>
-    <lastmod>2019-11-02T18:21:37+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://ericsuperman.github.io/tags/zhongli-district/</loc>
     <lastmod>2019-11-02T18:21:37+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -536,13 +557,6 @@
   
   <url>
     <loc>https://ericsuperman.github.io/posts/gourmet/taipei/daan/stoppagetime/</loc>
-    <lastmod>2019-09-21T21:12:46+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/tags/coffee-shop/</loc>
     <lastmod>2019-09-21T21:12:46+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
