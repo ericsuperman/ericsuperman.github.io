@@ -3,6 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ericsuperman.github.io/posts/gourmet/zhubei/ruban/</loc>
+    <lastmod>2020-03-01T17:12:46+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://ericsuperman.github.io/categories/</loc>
     <lastmod>2020-03-01T17:12:46+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -39,13 +46,6 @@
   
   <url>
     <loc>https://ericsuperman.github.io/tags/quebec-cuisine/</loc>
-    <lastmod>2020-03-01T17:12:46+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/posts/gourmet/zhubei/ruban/</loc>
     <lastmod>2020-03-01T17:12:46+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
