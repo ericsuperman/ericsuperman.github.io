@@ -10,6 +10,20 @@
   </url>
   
   <url>
+    <loc>https://ericsuperman.github.io/tags/american-food/</loc>
+    <lastmod>2020-03-01T17:12:46+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/canadian-food/</loc>
+    <lastmod>2020-03-01T17:12:46+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://ericsuperman.github.io/categories/</loc>
     <lastmod>2020-03-01T17:12:46+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -32,6 +46,13 @@
   
   <url>
     <loc>https://ericsuperman.github.io/tags/hsinchu-county/</loc>
+    <lastmod>2020-03-01T17:12:46+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/italic-food/</loc>
     <lastmod>2020-03-01T17:12:46+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -375,13 +396,6 @@
   
   <url>
     <loc>https://ericsuperman.github.io/posts/gourmet/taoyuan/zhongli/daviddiner/</loc>
-    <lastmod>2019-11-02T18:21:37+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/tags/american-food/</loc>
     <lastmod>2019-11-02T18:21:37+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
