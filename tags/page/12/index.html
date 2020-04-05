@@ -10,7 +10,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ericsuperman.github.io/tags/" />
 
-<meta property="og:updated_time" content="2020-04-02T17:24:10+08:00" />
+<meta property="og:updated_time" content="2020-04-05T14:35:52+08:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Tags"/>
@@ -29,8 +29,8 @@
     "@type": "Person",
     "name": "Super Cat"
   },
-  "dateModified": "2020-04-02T17:24:10\x2b08:00",
-  "keywords": "computer,gourmet,personal,american-food,beitou-district,braised-dishes,breakfast,brunch,cafe,canadian-food,cantonese-cuisine,chinese-food,command,daan-district,datong-district,dayuan-district,dessert,french-food,guanxi,hot-pot,hsinchu,hsinchu-county,italian-food,japanese-food,keelung,korean-food,linux,luzhu-district,mediterranean-food,mexican-food,midnight-snack,murmur,nankang-district,new-taipei,pet,quebec-cuisine,roast,sanxia,seafood,shoes,sichuan-cuisine,steak,swedish-food,taichung,taipei,takeout,tamsui,taoyuan,taoyuan-district,teppanyaki,thailand-food,tires,vietnamese-food,virtual-box,windows,xinfeng,xinyi-district,zhongli-district,zhubei,zhudong,zhunan,",
+  "dateModified": "2020-04-05T14:35:52\x2b08:00",
+  "keywords": "computer,gourmet,personal,american-food,beitou-district,braised-dishes,breakfast,brunch,cafe,canadian-food,cantonese-cuisine,chinese-food,command,daan-district,datong-district,dayuan-district,dessert,french-food,guanxi,hot-pot,hsinchu,hsinchu-county,italian-food,japanese-food,keelung,korean-food,linux,luzhu-district,mediterranean-food,mexican-food,midnight-snack,murmur,nankang-district,new-taipei,pet,quebec-cuisine,roast,sanxia,seafood,shoes,sichuan-cuisine,steak,swedish-food,taichung,taipei,takeout,tamsui,taoyuan,taoyuan-district,teppanyaki,thailand-food,tires,vegetarian,vietnamese-food,virtual-box,windows,xinfeng,xinyi-district,zhongli-district,zhubei,zhudong,zhunan,",
   "description": "Everything is my own murmur.\x3cbr\x3e本貓只管好不好吃，C\/P值不大在乎。沒接業配，都是花自己的錢。我行我素，不理酸民。"
 }
 </script>
@@ -104,6 +104,30 @@ if (!doNotTrack) {
 
 <article class="blog-post">
   <header>
+    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/computer/vbox/">VirtualBox 6.x Shared Folder</a></h2>
+    <p class="blog-post-meta"><time datetime="2019-04-21T21:51:33&#43;08:00">Sun Apr 21, 2019</time> by Super Cat in 
+<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/computer" rel="category tag">Computer</a>
+
+
+<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/virtual-box" rel="tag">Virtual Box</a>, <a href="/tags/linux" rel="tag">Linux</a>
+
+</p>
+  </header>
+  前一版的 Ubuntu 16.04 LTS，它當 VirtualBox Guest OS 的時候， 可以安裝一個現成 virtualbox-dkms 套件，裝好之後， shared folder 就自動生效了，非常方便。
+Ubuntu 18.04 LTS 問世之後，它的 virtualbox-dkms 套件 是針對 VirtualBox 5.2.18 及之後版本，當時 VirtualBox 也 是 5.2x 左右，一切也沒問題。
+突然間，2018年12月 VirtualBox 6.0 降臨了，我直接將 VirtualBox 5.x 升級到 VirtualBox 6.0 ，跑一樣的 guest image， Shared Folder 就失效了。
+查了很久，才發現是 virtualbox-dkms 套件只支援 VirtualBox 5.x 的關係，等了一陣子，看起來 Ubuntu 18.04 是沒打算升級 dkms 套件了， 那只好回到老方法，讓 VirtualBox Host 這邊插入虛擬的 Guest Additions 光碟片。
+在 VirtualBox Host 這邊的 Menu Bar ，有一個 &ldquo;裝置&rdquo; 選項，裡面 有一個 &ldquo;插入 Guest Additions CD 映像&rdquo;。
+  <a href='https://ericsuperman.github.io/posts/computer/vbox/'>Read more →</a>
+</article> 
+
+
+
+
+
+
+<article class="blog-post">
+  <header>
     <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/personal/hello/">Hello</a></h2>
     <p class="blog-post-meta"><time datetime="2019-04-21T15:59:57&#43;08:00">Sun Apr 21, 2019</time> by Super Cat in 
 <i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/personal" rel="category tag">Personal</a>
@@ -157,9 +181,11 @@ Definition List
     <ol class="list-unstyled">
 
 
-<li><a href="/posts/gourmet/zhubei/cafetriangle/">[竹北] Café Triangle 三角咖啡館</a></li>
+<li><a href="/posts/gourmet/zhubei/shanguotang/">[竹北] 善菓堂</a></li>
 
 <li><a href="/posts/">Posts</a></li>
+
+<li><a href="/posts/gourmet/zhubei/cafetriangle/">[竹北] Café Triangle 三角咖啡館</a></li>
 
 <li><a href="/posts/gourmet/zhubei/ruban/">[竹北] Ruban Bistro Bar</a></li>
 
@@ -194,8 +220,6 @@ Definition List
 <li><a href="/posts/gourmet/zhubei/brunch/mrmoon/">[竹北] Mr.Moon 月亮先生咖啡館</a></li>
 
 <li><a href="/posts/gourmet/zhubei/2ndst/">[竹北] 二街咖啡 2nd St. Cafe</a></li>
-
-<li><a href="/posts/personal/shuanfeng/">[竹北] 炫鋒輪胎</a></li>
 
     </ol>
   </section>

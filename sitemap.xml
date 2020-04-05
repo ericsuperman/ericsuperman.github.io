@@ -3,6 +3,76 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ericsuperman.github.io/posts/gourmet/zhubei/shanguotang/</loc>
+    <lastmod>2020-04-05T14:35:52+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/categories/</loc>
+    <lastmod>2020-04-05T14:35:52+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/chinese-food/</loc>
+    <lastmod>2020-04-05T14:35:52+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/categories/gourmet/</loc>
+    <lastmod>2020-04-05T14:35:52+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/hsinchu-county/</loc>
+    <lastmod>2020-04-05T14:35:52+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/posts/</loc>
+    <lastmod>2020-04-05T14:35:52+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/</loc>
+    <lastmod>2020-04-05T14:35:52+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/vegetarian/</loc>
+    <lastmod>2020-04-05T14:35:52+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/tags/zhubei/</loc>
+    <lastmod>2020-04-05T14:35:52+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ericsuperman.github.io/</loc>
+    <lastmod>2020-04-05T14:35:52+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://ericsuperman.github.io/posts/gourmet/zhubei/cafetriangle/</loc>
     <lastmod>2020-04-02T17:24:10+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -11,55 +81,6 @@
   
   <url>
     <loc>https://ericsuperman.github.io/tags/cafe/</loc>
-    <lastmod>2020-04-02T17:24:10+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/categories/</loc>
-    <lastmod>2020-04-02T17:24:10+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/categories/gourmet/</loc>
-    <lastmod>2020-04-02T17:24:10+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/tags/hsinchu-county/</loc>
-    <lastmod>2020-04-02T17:24:10+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/posts/</loc>
-    <lastmod>2020-04-02T17:24:10+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/tags/</loc>
-    <lastmod>2020-04-02T17:24:10+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/tags/zhubei/</loc>
-    <lastmod>2020-04-02T17:24:10+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/</loc>
     <lastmod>2020-04-02T17:24:10+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -116,13 +137,6 @@
   
   <url>
     <loc>https://ericsuperman.github.io/tags/brunch/</loc>
-    <lastmod>2020-02-05T20:02:08+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ericsuperman.github.io/tags/chinese-food/</loc>
     <lastmod>2020-02-05T20:02:08+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
