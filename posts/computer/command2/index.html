@@ -27,7 +27,7 @@ c:\&gt;d: d:\&gt;cd prj d:\prj&gt; 以前DOS沒下列語法，但在Windows 10 C
 複製檔案 d:\prj&gt; copy a1.txt a2.txt 上面例子中，a1.txt 是來源檔，必須已經存在於目前目錄，不然會有錯誤訊息。 a2.txt 是目的地檔，如果已經存在，會被蓋掉，a1.txt 不會有任何變更。 命令執行完成後，a1.txt與a2.txt 同時存在，兩個檔案內容也是一樣。 簡易建立檔案
 Windows 保留一些特殊檔名，例如 con 代表 Console。有時候想要產生一個新檔案，打幾個字，叫出文字編輯器，打幾個字，存檔，實在太慢，不如用在 Command Prompt 利用 con 檔案就能輕鬆解決 -
 d:\prj&gt; copy con test.txt abc ^z 複製了 1 個檔案。 d:\prj&gt; 上面例子中，先打了abc三個字母代表內容，之後 ^Z 這個字是按了 Ctrl-Z，這是Windows 規定好的 EOF(End of File)字元，Windows看到這個字，等同於檔案結尾，因此確定了整個檔案，接著開始複製整個檔案，一個新的test."/>
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.72.0" />
 
 
     
@@ -38,8 +38,8 @@ d:\prj&gt; copy con test.txt abc ^z 複製了 1 個檔案。 d:\prj&gt; 上面�
   "headline": "[CMD Tutorial 2\/4] Command Prompt Basic Commands",
   "url": "https:\/\/ericsuperman.github.io\/posts\/computer\/command2\/",
   "wordCount": "105",
-  "datePublished": "2019-05-09T14:50:20\x2b08:00",
-  "dateModified": "2019-05-09T14:50:20\x2b08:00",
+  "datePublished": "2019-05-09T14:50:20\u002b08:00",
+  "dateModified": "2019-05-09T14:50:20\u002b08:00",
   "author": {
     "@type": "Person",
     "name": "Super Cat"
@@ -52,7 +52,7 @@ d:\prj&gt; copy con test.txt abc ^z 複製了 1 個檔案。 d:\prj&gt; 上面�
 
     <link rel="canonical" href="https://ericsuperman.github.io/posts/computer/command2/">
 
-    <title>[CMD Tutorial &lt;sup&gt;2&lt;/sup&gt;&frasl;&lt;sub&gt;4&lt;/sub&gt;] Command Prompt Basic Commands | 金牙貓的嘴砲</title>
+    <title>[CMD Tutorial 2/4] Command Prompt Basic Commands | 金牙貓的嘴砲</title>
 
     
     <!-- combined, minified CSS -->
@@ -96,7 +96,7 @@ if (!doNotTrack) {
     <header class="blog-header">
       <div class="container">
         <h1 class="blog-title" dir="auto"><a href="https://ericsuperman.github.io/" rel="home">金牙貓的嘴砲</a></h1>
-        <p class="lead blog-description" dir="auto">Everything is my own murmur.<br>本貓只管好不好吃，C/P值不大在乎。沒接業配，都是花自己的錢。我行我素，不理酸民。</p>
+        <p class="lead blog-description" dir="auto">Everything is my own murmur.<!-- raw HTML omitted -->本貓只管好不好吃，C/P值不大在乎。沒接業配，都是花自己的錢。我行我素，不理酸民。</p>
       </div>
     </header>
     
@@ -112,7 +112,7 @@ if (!doNotTrack) {
 
 <article class="blog-post">
   <header>
-    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/computer/command2/">[CMD Tutorial <sup>2</sup>&frasl;<sub>4</sub>] Command Prompt Basic Commands</a></h2>
+    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/computer/command2/">[CMD Tutorial 2/4] Command Prompt Basic Commands</a></h2>
     <p class="blog-post-meta"><time datetime="2019-05-09T14:50:20&#43;08:00">Thu May 09, 2019</time> by Super Cat in 
 <i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/computer" rel="category tag">Computer</a>
 
@@ -121,74 +121,46 @@ if (!doNotTrack) {
 
 </p>
   </header>
-  
-
-<h1 id="切換工作磁碟機與路徑">切換工作磁碟機與路徑</h1>
-
+  <h1 id="切換工作磁碟機與路徑">切換工作磁碟機與路徑</h1>
 <p>Windows 沿襲DOS傳統，可將一顆硬碟切割成數個 Paritition，每一個Partition分配一個磁碟機代碼，由A到Z，最多26個磁碟，A磁碟的名稱為A:，B磁碟的名稱為B:，A磁碟與B磁碟是保留給軟碟機，雖然現在已經很難看到軟碟機了。硬碟則是C:開始，開機用的 Windows 目錄也通常位於C:。</p>
-
 <p>假設使用者規劃了一個D磁碟機，專門放資料，其中工作的目錄規劃為d:\prj 目錄，則可用下列方式切換磁碟機與路徑 -</p>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-BASH" data-lang="BASH">c:<span style="color:#ae81ff">\&gt;</span>d:
 d:<span style="color:#ae81ff">\&gt;</span>cd prj
 d:<span style="color:#ae81ff">\p</span>rj&gt;</code></pre></div>
-
 <p>以前DOS沒下列語法，但在Windows 10 Command Prompt，可以合併為下列方式 -
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-BASH" data-lang="BASH">c:<span style="color:#ae81ff">\&gt;</span>cd d:<span style="color:#ae81ff">\p</span>rj
 d:<span style="color:#ae81ff">\p</span>rj&gt;</code></pre></div></p>
-
 <h1 id="顯示檔案清單">顯示檔案清單</h1>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-BASH" data-lang="BASH">d:<span style="color:#ae81ff">\p</span>rj&gt; dir</code></pre></div>
-
 <h1 id="變更檔案名稱">變更檔案名稱</h1>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-BASH" data-lang="BASH">d:<span style="color:#ae81ff">\p</span>rj&gt; ren a1.txt a2.txt</code></pre></div>
-
 <p>上面例子中，a1.txt 是變更前的檔名，必須已經存在於目前目錄，不然會有錯誤訊息。
 a2.txt 是變更後的檔名，必須不存在。如果已經存在，會有錯誤訊息。
 命令執行完成後，a1.txt就不存在了，會有一個a2.txt檔案，內容跟原始的a1.txt 一樣。</p>
-
 <h1 id="複製檔案">複製檔案</h1>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-BASH" data-lang="BASH">d:<span style="color:#ae81ff">\p</span>rj&gt; copy a1.txt a2.txt</code></pre></div>
-
 <p>上面例子中，a1.txt 是來源檔，必須已經存在於目前目錄，不然會有錯誤訊息。
 a2.txt 是目的地檔，如果已經存在，會被蓋掉，a1.txt 不會有任何變更。
 命令執行完成後，a1.txt與a2.txt 同時存在，兩個檔案內容也是一樣。
 簡易建立檔案</p>
-
 <p>Windows 保留一些特殊檔名，例如 con 代表 Console。有時候想要產生一個新檔案，打幾個字，叫出文字編輯器，打幾個字，存檔，實在太慢，不如用在 Command Prompt 利用 con 檔案就能輕鬆解決 -</p>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-BASH" data-lang="BASH">d:<span style="color:#ae81ff">\p</span>rj&gt; copy con test.txt
 abc
 ^z
 複製了         <span style="color:#ae81ff">1</span> 個檔案。
 
 d:<span style="color:#ae81ff">\p</span>rj&gt;</code></pre></div>
-
 <p>上面例子中，先打了abc三個字母代表內容，之後 ^Z 這個字是按了 Ctrl-Z，這是Windows 規定好的 EOF(End of File)字元，Windows看到這個字，等同於檔案結尾，因此確定了整個檔案，接著開始複製整個檔案，一個新的test.txt檔案就此產生。</p>
-
 <h1 id="刪除檔案">刪除檔案</h1>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-BASH" data-lang="BASH">d:<span style="color:#ae81ff">\p</span>rj&gt; del test.txt</code></pre></div>
-
 <h1 id="建立目錄">建立目錄</h1>
-
 <p>mkdir 或是其簡寫 md都可以</p>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-BASH" data-lang="BASH">d:<span style="color:#ae81ff">\p</span>rj&gt; mkdir prj01</code></pre></div>
-
 <h1 id="刪除目錄">刪除目錄</h1>
-
 <p>rmdir 或是其簡寫 rd都可以</p>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-BASH" data-lang="BASH">d:<span style="color:#ae81ff">\p</span>rj&gt; rmdir prj01</code></pre></div>
-
 <h1 id="help-命令">HELP 命令</h1>
-
-<p>再提醒一次，Command Prompt 提供的許多命令，都有許多參數可以設定，那些資訊也不需要死背，要用的時候，可以用 HELP <cmd> 的方式，叫出該命令的詳細說明即可。</p>
-
+<p>再提醒一次，Command Prompt 提供的許多命令，都有許多參數可以設定，那些資訊也不需要死背，要用的時候，可以用 HELP <!-- raw HTML omitted --> 的方式，叫出該命令的詳細說明即可。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-BASH" data-lang="BASH">d:<span style="color:#ae81ff">\p</span>rj&gt; help dir</code></pre></div>
 
 
@@ -245,8 +217,7 @@ d:<span style="color:#ae81ff">\p</span>rj&gt;</code></pre></div>
   
   <section class="sidebar-module sidebar-module-inset">
     <h4>About</h4>
-    <p dir="auto"><p>住在竹北，對重口味偏心，通常假日發文。沒業配，本貓只管好不好吃，便宜或貴的餐點都有可能吃，只是要好吃， C/P 值不大在乎。<br>都說了這些是我的嘴砲，愛看不看隨你，有空就來點鼓勵吧。<p> <img src="https://placekitten.com/202/301" alt="" /> <p> I am highly interested in Computer Science and Gourmet.</p>
-</p>
+    <p dir="auto">住在竹北，對重口味偏心，通常假日發文。沒業配，本貓只管好不好吃，便宜或貴的餐點都有可能吃，只是要好吃， C/P 值不大在乎。<!-- raw HTML omitted -->都說了這些是我的嘴砲，愛看不看隨你，有空就來點鼓勵吧。<!-- raw HTML omitted --> <img src="https://placekitten.com/202/301" alt="" title=""> <!-- raw HTML omitted --> I am highly interested in Computer Science and Gourmet.</p>
   </section>
   
 
@@ -256,9 +227,11 @@ d:<span style="color:#ae81ff">\p</span>rj&gt;</code></pre></div>
     <ol class="list-unstyled">
 
 
-<li><a href="/posts/gourmet/zhubei/shanguotang/">[竹北] 善菓堂</a></li>
+<li><a href="/posts/gourmet/zhubei/saute/">[竹北] Sauté Restaurant 索鉄</a></li>
 
 <li><a href="/posts/">Posts</a></li>
+
+<li><a href="/posts/gourmet/zhubei/shanguotang/">[竹北] 善菓堂</a></li>
 
 <li><a href="/posts/gourmet/zhubei/cafetriangle/">[竹北] Café Triangle 三角咖啡館</a></li>
 
@@ -293,8 +266,6 @@ d:<span style="color:#ae81ff">\p</span>rj&gt;</code></pre></div>
 <li><a href="/posts/gourmet/zhubei/brunch/morelove/">[竹北] 沐樂早午餐</a></li>
 
 <li><a href="/posts/gourmet/zhubei/brunch/mrmoon/">[竹北] Mr.Moon 月亮先生咖啡館</a></li>
-
-<li><a href="/posts/gourmet/zhubei/2ndst/">[竹北] 二街咖啡 2nd St. Cafe</a></li>
 
     </ol>
   </section>

@@ -25,7 +25,7 @@ net.ipv4.ip_forward=1 現在 Linux 網路卡都不叫 eth0, eth1 了， 反而�
 所以改成 &ldquo;enp0s3&rdquo; ， &ldquo;enp0s8&rdquo; 這些名字，再多插幾張網路卡，名字也不會變。
 假設 enp0s3 是對外的網路， enp0s8 是對內的網路，
 Ubuntu 19.04 Server 剛裝好時，沒有 /etc/rc.local 。 所以就叫出文字編輯器，編輯 /etc/rc.local 如下， 最後用 exit 0 結尾。"/>
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.72.0" />
 
 
     
@@ -36,8 +36,8 @@ Ubuntu 19.04 Server 剛裝好時，沒有 /etc/rc.local 。 所以就叫出文�
   "headline": "Ubuntu 19.04 as a NAT Router",
   "url": "https:\/\/ericsuperman.github.io\/posts\/computer\/ub19nat\/",
   "wordCount": "121",
-  "datePublished": "2019-05-09T19:35:20\x2b08:00",
-  "dateModified": "2019-05-09T19:35:20\x2b08:00",
+  "datePublished": "2019-05-09T19:35:20\u002b08:00",
+  "dateModified": "2019-05-09T19:35:20\u002b08:00",
   "author": {
     "@type": "Person",
     "name": "Super Cat"
@@ -94,7 +94,7 @@ if (!doNotTrack) {
     <header class="blog-header">
       <div class="container">
         <h1 class="blog-title" dir="auto"><a href="https://ericsuperman.github.io/" rel="home">金牙貓的嘴砲</a></h1>
-        <p class="lead blog-description" dir="auto">Everything is my own murmur.<br>本貓只管好不好吃，C/P值不大在乎。沒接業配，都是花自己的錢。我行我素，不理酸民。</p>
+        <p class="lead blog-description" dir="auto">Everything is my own murmur.<!-- raw HTML omitted -->本貓只管好不好吃，C/P值不大在乎。沒接業配，都是花自己的錢。我行我素，不理酸民。</p>
       </div>
     </header>
     
@@ -122,11 +122,8 @@ if (!doNotTrack) {
   <p>之前，在用VirtualBox 開箱 Ubuntu 19.04 的時候，
 就刻意弄成兩張網卡，這次來玩一下 NAT Router ，
 紀錄整個過程。</p>
-
 <p>首先 /etc/sysctl.conf 找到下面這行，把 # 拿掉。</p>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-BASH" data-lang="BASH">net.ipv4.ip_forward<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span></code></pre></div>
-
 <p>現在 Linux 網路卡都不叫 eth0, eth1 了，
 反而是 &ldquo;enp0s3&rdquo; ， &ldquo;enp0s8&rdquo; 這些怪名字，
 這是因為
@@ -135,16 +132,12 @@ if (!doNotTrack) {
 簡單地說，就是 Linux 原本是根據找到網卡的先後順序，命名為 eth0、 eth1 等。
 可是一旦多插一張網卡，可能會導致 原本叫 eth1 的網卡，改名為 eth2 ，
 萬一許多系統的script 寫死 eth0, eth1 ，那就會非常困擾。</p>
-
 <p>所以改成 &ldquo;enp0s3&rdquo; ， &ldquo;enp0s8&rdquo; 這些名字，再多插幾張網路卡，名字也不會變。</p>
-
 <p>假設 enp0s3 是對外的網路，
 enp0s8 是對內的網路，</p>
-
 <p>Ubuntu 19.04 Server 剛裝好時，沒有 /etc/rc.local 。
 所以就叫出文字編輯器，編輯 /etc/rc.local 如下，
 最後用 exit 0 結尾。</p>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-BASH" data-lang="BASH"><span style="color:#75715e">#!/bin/bash
 </span><span style="color:#75715e"></span>
 EXTIF<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;enp0s3&#34;</span>
@@ -156,11 +149,8 @@ iptables -A FORWARD -i $INTIF -o $EXTIF -j ACCEPT
 
 <span style="color:#75715e"># rc.local needs to exit with 0</span>
 exit <span style="color:#ae81ff">0</span></code></pre></div>
-
 <p>最後，記得將  /etc/rc.local 的檔案屬性，變成可執行。</p>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-BASH" data-lang="BASH">chmod <span style="color:#ae81ff">755</span> /etc/rc.local</code></pre></div>
-
 <p>重開機，NAT 就生效了。</p>
 
 
@@ -217,8 +207,7 @@ exit <span style="color:#ae81ff">0</span></code></pre></div>
   
   <section class="sidebar-module sidebar-module-inset">
     <h4>About</h4>
-    <p dir="auto"><p>住在竹北，對重口味偏心，通常假日發文。沒業配，本貓只管好不好吃，便宜或貴的餐點都有可能吃，只是要好吃， C/P 值不大在乎。<br>都說了這些是我的嘴砲，愛看不看隨你，有空就來點鼓勵吧。<p> <img src="https://placekitten.com/202/301" alt="" /> <p> I am highly interested in Computer Science and Gourmet.</p>
-</p>
+    <p dir="auto">住在竹北，對重口味偏心，通常假日發文。沒業配，本貓只管好不好吃，便宜或貴的餐點都有可能吃，只是要好吃， C/P 值不大在乎。<!-- raw HTML omitted -->都說了這些是我的嘴砲，愛看不看隨你，有空就來點鼓勵吧。<!-- raw HTML omitted --> <img src="https://placekitten.com/202/301" alt="" title=""> <!-- raw HTML omitted --> I am highly interested in Computer Science and Gourmet.</p>
   </section>
   
 
@@ -228,9 +217,11 @@ exit <span style="color:#ae81ff">0</span></code></pre></div>
     <ol class="list-unstyled">
 
 
-<li><a href="/posts/gourmet/zhubei/shanguotang/">[竹北] 善菓堂</a></li>
+<li><a href="/posts/gourmet/zhubei/saute/">[竹北] Sauté Restaurant 索鉄</a></li>
 
 <li><a href="/posts/">Posts</a></li>
+
+<li><a href="/posts/gourmet/zhubei/shanguotang/">[竹北] 善菓堂</a></li>
 
 <li><a href="/posts/gourmet/zhubei/cafetriangle/">[竹北] Café Triangle 三角咖啡館</a></li>
 
@@ -265,8 +256,6 @@ exit <span style="color:#ae81ff">0</span></code></pre></div>
 <li><a href="/posts/gourmet/zhubei/brunch/morelove/">[竹北] 沐樂早午餐</a></li>
 
 <li><a href="/posts/gourmet/zhubei/brunch/mrmoon/">[竹北] Mr.Moon 月亮先生咖啡館</a></li>
-
-<li><a href="/posts/gourmet/zhubei/2ndst/">[竹北] 二街咖啡 2nd St. Cafe</a></li>
 
     </ol>
   </section>

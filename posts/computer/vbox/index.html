@@ -23,7 +23,7 @@ Ubuntu 18.04 LTS 問世之後，它的 virtualbox-dkms 套件 是針對 VirtualB
 突然間，2018年12月 VirtualBox 6.0 降臨了，我直接將 VirtualBox 5.x 升級到 VirtualBox 6.0 ，跑一樣的 guest image， Shared Folder 就失效了。
 查了很久，才發現是 virtualbox-dkms 套件只支援 VirtualBox 5.x 的關係，等了一陣子，看起來 Ubuntu 18.04 是沒打算升級 dkms 套件了， 那只好回到老方法，讓 VirtualBox Host 這邊插入虛擬的 Guest Additions 光碟片。
 在 VirtualBox Host 這邊的 Menu Bar ，有一個 &ldquo;裝置&rdquo; 選項，裡面 有一個 &ldquo;插入 Guest Additions CD 映像&rdquo;。"/>
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.72.0" />
 
 
     
@@ -34,8 +34,8 @@ Ubuntu 18.04 LTS 問世之後，它的 virtualbox-dkms 套件 是針對 VirtualB
   "headline": "VirtualBox 6.x Shared Folder",
   "url": "https:\/\/ericsuperman.github.io\/posts\/computer\/vbox\/",
   "wordCount": "448",
-  "datePublished": "2019-04-21T21:51:33\x2b08:00",
-  "dateModified": "2019-04-21T21:51:33\x2b08:00",
+  "datePublished": "2019-04-21T21:51:33\u002b08:00",
+  "dateModified": "2019-04-21T21:51:33\u002b08:00",
   "author": {
     "@type": "Person",
     "name": "Super Cat"
@@ -92,7 +92,7 @@ if (!doNotTrack) {
     <header class="blog-header">
       <div class="container">
         <h1 class="blog-title" dir="auto"><a href="https://ericsuperman.github.io/" rel="home">金牙貓的嘴砲</a></h1>
-        <p class="lead blog-description" dir="auto">Everything is my own murmur.<br>本貓只管好不好吃，C/P值不大在乎。沒接業配，都是花自己的錢。我行我素，不理酸民。</p>
+        <p class="lead blog-description" dir="auto">Everything is my own murmur.<!-- raw HTML omitted -->本貓只管好不好吃，C/P值不大在乎。沒接業配，都是花自己的錢。我行我素，不理酸民。</p>
       </div>
     </header>
     
@@ -120,55 +120,47 @@ if (!doNotTrack) {
   <p>前一版的 Ubuntu 16.04 LTS，它當 VirtualBox Guest OS 的時候，
 可以安裝一個現成 virtualbox-dkms 套件，裝好之後，
 shared folder 就自動生效了，非常方便。</p>
-
 <p>Ubuntu 18.04 LTS 問世之後，它的 virtualbox-dkms 套件
 是針對 VirtualBox 5.2.18 及之後版本，當時 VirtualBox 也
 是 5.2x 左右，一切也沒問題。</p>
-
 <p>突然間，2018年12月 VirtualBox 6.0 降臨了，我直接將
 VirtualBox 5.x 升級到 VirtualBox 6.0 ，跑一樣的 guest
 image， Shared Folder 就失效了。</p>
-
 <p>查了很久，才發現是 virtualbox-dkms 套件只支援 VirtualBox 5.x
 的關係，等了一陣子，看起來 Ubuntu 18.04 是沒打算升級 dkms 套件了，
 那只好回到老方法，讓 VirtualBox Host 這邊插入虛擬的 Guest Additions
 光碟片。</p>
-
 <p>在 VirtualBox Host 這邊的 Menu Bar ，有一個 &ldquo;裝置&rdquo; 選項，裡面
 有一個 &ldquo;插入 Guest Additions CD 映像&rdquo;。</p>
-
 <p>虛擬機此時已經完成模擬一台光碟機，並插好光碟片了，
 這時在 Guest Ubuntu 18.04 裡面，先 mount 該光碟片，
 看看有哪些檔案 -</p>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">root@ub18:/mnt# mount /dev/cdrom /mnt
 mount: /mnt: WARNING: device write-protected, mounted read-only.
 root@ub18:/mnt# cd /mnt
 root@ub18:/mnt# ls -al
 total <span style="color:#ae81ff">71758</span>
-dr-xr-xr-x  <span style="color:#ae81ff">5</span> root root     <span style="color:#ae81ff">2408</span> Apr <span style="color:#ae81ff">16</span> <span style="color:#ae81ff">18</span>:03 .
-drwxr-xr-x <span style="color:#ae81ff">23</span> root root     <span style="color:#ae81ff">4096</span> Apr <span style="color:#ae81ff">13</span> <span style="color:#ae81ff">13</span>:42 ..
--r--r--r--  <span style="color:#ae81ff">1</span> root root      <span style="color:#ae81ff">763</span> Jan <span style="color:#ae81ff">22</span> <span style="color:#ae81ff">01</span>:01 AUTORUN.INF
--r-xr-xr-x  <span style="color:#ae81ff">1</span> root root     <span style="color:#ae81ff">6384</span> Apr <span style="color:#ae81ff">16</span> <span style="color:#ae81ff">17</span>:56 autorun.sh
-dr-xr-xr-x  <span style="color:#ae81ff">2</span> root root      <span style="color:#ae81ff">792</span> Apr <span style="color:#ae81ff">16</span> <span style="color:#ae81ff">18</span>:03 cert
-dr-xr-xr-x  <span style="color:#ae81ff">2</span> root root     <span style="color:#ae81ff">1824</span> Apr <span style="color:#ae81ff">16</span> <span style="color:#ae81ff">18</span>:03 NT3x
-dr-xr-xr-x  <span style="color:#ae81ff">2</span> root root     <span style="color:#ae81ff">2652</span> Apr <span style="color:#ae81ff">16</span> <span style="color:#ae81ff">18</span>:03 OS2
--r-xr-xr-x  <span style="color:#ae81ff">1</span> root root     <span style="color:#ae81ff">4821</span> Apr <span style="color:#ae81ff">16</span> <span style="color:#ae81ff">17</span>:56 runasroot.sh
--r--r--r--  <span style="color:#ae81ff">1</span> root root      <span style="color:#ae81ff">547</span> Apr <span style="color:#ae81ff">16</span> <span style="color:#ae81ff">18</span>:03 TRANS.TBL
--r--r--r--  <span style="color:#ae81ff">1</span> root root  <span style="color:#ae81ff">3710817</span> Apr <span style="color:#ae81ff">16</span> <span style="color:#ae81ff">17</span>:56 VBoxDarwinAdditions.pkg
--r--r--r--  <span style="color:#ae81ff">1</span> root root     <span style="color:#ae81ff">3949</span> Apr <span style="color:#ae81ff">16</span> <span style="color:#ae81ff">17</span>:56 VBoxDarwinAdditionsUninstall.tool
--r-xr-xr-x  <span style="color:#ae81ff">1</span> root root  <span style="color:#ae81ff">9665969</span> Apr <span style="color:#ae81ff">16</span> <span style="color:#ae81ff">17</span>:57 VBoxLinuxAdditions.run
--r--r--r--  <span style="color:#ae81ff">1</span> root root <span style="color:#ae81ff">20608000</span> Apr <span style="color:#ae81ff">16</span> <span style="color:#ae81ff">17</span>:58 VBoxSolarisAdditions.pkg
--r-xr-xr-x  <span style="color:#ae81ff">1</span> root root <span style="color:#ae81ff">26216000</span> Apr <span style="color:#ae81ff">16</span> <span style="color:#ae81ff">18</span>:02 VBoxWindowsAdditions-amd64.exe
--r-xr-xr-x  <span style="color:#ae81ff">1</span> root root   <span style="color:#ae81ff">270104</span> Apr <span style="color:#ae81ff">16</span> <span style="color:#ae81ff">17</span>:57 VBoxWindowsAdditions.exe
--r-xr-xr-x  <span style="color:#ae81ff">1</span> root root <span style="color:#ae81ff">12977032</span> Apr <span style="color:#ae81ff">16</span> <span style="color:#ae81ff">18</span>:00 VBoxWindowsAdditions-x86.exe</code></pre></div>
-
+dr-xr-xr-x  <span style="color:#ae81ff">5</span> root root     <span style="color:#ae81ff">2408</span> Apr <span style="color:#ae81ff">16</span> 18:03 .
+drwxr-xr-x <span style="color:#ae81ff">23</span> root root     <span style="color:#ae81ff">4096</span> Apr <span style="color:#ae81ff">13</span> 13:42 ..
+-r--r--r--  <span style="color:#ae81ff">1</span> root root      <span style="color:#ae81ff">763</span> Jan <span style="color:#ae81ff">22</span> 01:01 AUTORUN.INF
+-r-xr-xr-x  <span style="color:#ae81ff">1</span> root root     <span style="color:#ae81ff">6384</span> Apr <span style="color:#ae81ff">16</span> 17:56 autorun.sh
+dr-xr-xr-x  <span style="color:#ae81ff">2</span> root root      <span style="color:#ae81ff">792</span> Apr <span style="color:#ae81ff">16</span> 18:03 cert
+dr-xr-xr-x  <span style="color:#ae81ff">2</span> root root     <span style="color:#ae81ff">1824</span> Apr <span style="color:#ae81ff">16</span> 18:03 NT3x
+dr-xr-xr-x  <span style="color:#ae81ff">2</span> root root     <span style="color:#ae81ff">2652</span> Apr <span style="color:#ae81ff">16</span> 18:03 OS2
+-r-xr-xr-x  <span style="color:#ae81ff">1</span> root root     <span style="color:#ae81ff">4821</span> Apr <span style="color:#ae81ff">16</span> 17:56 runasroot.sh
+-r--r--r--  <span style="color:#ae81ff">1</span> root root      <span style="color:#ae81ff">547</span> Apr <span style="color:#ae81ff">16</span> 18:03 TRANS.TBL
+-r--r--r--  <span style="color:#ae81ff">1</span> root root  <span style="color:#ae81ff">3710817</span> Apr <span style="color:#ae81ff">16</span> 17:56 VBoxDarwinAdditions.pkg
+-r--r--r--  <span style="color:#ae81ff">1</span> root root     <span style="color:#ae81ff">3949</span> Apr <span style="color:#ae81ff">16</span> 17:56 VBoxDarwinAdditionsUninstall.tool
+-r-xr-xr-x  <span style="color:#ae81ff">1</span> root root  <span style="color:#ae81ff">9665969</span> Apr <span style="color:#ae81ff">16</span> 17:57 VBoxLinuxAdditions.run
+-r--r--r--  <span style="color:#ae81ff">1</span> root root <span style="color:#ae81ff">20608000</span> Apr <span style="color:#ae81ff">16</span> 17:58 VBoxSolarisAdditions.pkg
+-r-xr-xr-x  <span style="color:#ae81ff">1</span> root root <span style="color:#ae81ff">26216000</span> Apr <span style="color:#ae81ff">16</span> 18:02 VBoxWindowsAdditions-amd64.exe
+-r-xr-xr-x  <span style="color:#ae81ff">1</span> root root   <span style="color:#ae81ff">270104</span> Apr <span style="color:#ae81ff">16</span> 17:57 VBoxWindowsAdditions.exe
+-r-xr-xr-x  <span style="color:#ae81ff">1</span> root root <span style="color:#ae81ff">12977032</span> Apr <span style="color:#ae81ff">16</span> 18:00 VBoxWindowsAdditions-x86.exe</code></pre></div>
 <p>這些檔案，就是針對一些常見的作業系統 的 VirtualBox Guest Additions 。</p>
-
 <p>看起來，既然Guest OS 是 Ubuntu，那就是執行 VBoxLinuxAdditions.run 了。
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">root@ub18:/mnt# ./VBoxLinuxAdditions.run
 Verifying archive integrity... All good.
-Uncompressing VirtualBox <span style="color:#ae81ff">6</span>.0.6 Guest Additions <span style="color:#66d9ef">for</span> Linux........
+Uncompressing VirtualBox 6.0.6 Guest Additions <span style="color:#66d9ef">for</span> Linux........
 VirtualBox Guest Additions installer
 Copying additional installer modules ...
 Installing additional modules ...
@@ -179,33 +171,26 @@ VirtualBox Guest Additions: To build modules <span style="color:#66d9ef">for</sp
 VirtualBox Guest Additions:   /sbin/rcvboxadd quicksetup &lt;version&gt;
 VirtualBox Guest Additions: or
 VirtualBox Guest Additions:   /sbin/rcvboxadd quicksetup all
-VirtualBox Guest Additions: Building the modules <span style="color:#66d9ef">for</span> kernel <span style="color:#ae81ff">4</span>.15.0-47-generic.
+VirtualBox Guest Additions: Building the modules <span style="color:#66d9ef">for</span> kernel 4.15.0-47-generic.
 update-initramfs: Generating /boot/initrd.img-4.15.0-47-generic
 VirtualBox Guest Additions: Running kernel modules will not be replaced <span style="color:#66d9ef">until</span>
 the system is restarted
 root@ub18:/mnt#</code></pre></div></p>
-
 <p>執行完，最新的Guest Additions 已經編出 kernel module，增加了屬於 VirtualBox 的
 unix user 與 group 了。 它也提示要重開機，才能生效。趁這時候，趕快把 Virtual Box
 Host 這邊的 shaered folder 設定先完成，再來重開機。</p>
-
-<p><img src="vbox_shared_folder_setup.png" alt="Alt shared folder" title="VirtualBox shared folder" /></p>
-
+<p><img src="vbox_shared_folder_setup.png" alt="Alt shared folder" title="VirtualBox shared folder"></p>
 <p>VirtualBox 6 的 Shared Folder 可以設定 Guest OS 裡面要自動 Mount 到哪裡了，
 這是蠻方便的改進。Host端設定好之後，Guest OS 就能重開機了。</p>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">web@ub18:/media$ ls -al
 total <span style="color:#ae81ff">8</span>
-drwxr-xr-x  <span style="color:#ae81ff">3</span> root root   <span style="color:#ae81ff">4096</span> Apr <span style="color:#ae81ff">21</span> <span style="color:#ae81ff">21</span>:42 .
-drwxr-xr-x <span style="color:#ae81ff">23</span> root root   <span style="color:#ae81ff">4096</span> Apr <span style="color:#ae81ff">13</span> <span style="color:#ae81ff">13</span>:42 ..
-drwxrwx---  <span style="color:#ae81ff">1</span> root vboxsf    <span style="color:#ae81ff">0</span> Apr <span style="color:#ae81ff">21</span> <span style="color:#ae81ff">22</span>:04 sf_vbox
+drwxr-xr-x  <span style="color:#ae81ff">3</span> root root   <span style="color:#ae81ff">4096</span> Apr <span style="color:#ae81ff">21</span> 21:42 .
+drwxr-xr-x <span style="color:#ae81ff">23</span> root root   <span style="color:#ae81ff">4096</span> Apr <span style="color:#ae81ff">13</span> 13:42 ..
+drwxrwx---  <span style="color:#ae81ff">1</span> root vboxsf    <span style="color:#ae81ff">0</span> Apr <span style="color:#ae81ff">21</span> 22:04 sf_vbox
 web@ub18:/media$</code></pre></div>
-
 <p>重開機之後，看一下 /media/sf_vbox 已經自動產生，屬於 vboxsf 群組的使用者都能讀寫，
 假設Unix使用者web 要加入 vboxsf 群組，須執行下列命令 -</p>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo adduser web vboxsf</code></pre></div>
-
 <p>以上，Shared Folder 就可以開始用了，而且使用者web就能直接用了，不需要root才
 能用。</p>
 
@@ -263,8 +248,7 @@ web@ub18:/media$</code></pre></div>
   
   <section class="sidebar-module sidebar-module-inset">
     <h4>About</h4>
-    <p dir="auto"><p>住在竹北，對重口味偏心，通常假日發文。沒業配，本貓只管好不好吃，便宜或貴的餐點都有可能吃，只是要好吃， C/P 值不大在乎。<br>都說了這些是我的嘴砲，愛看不看隨你，有空就來點鼓勵吧。<p> <img src="https://placekitten.com/202/301" alt="" /> <p> I am highly interested in Computer Science and Gourmet.</p>
-</p>
+    <p dir="auto">住在竹北，對重口味偏心，通常假日發文。沒業配，本貓只管好不好吃，便宜或貴的餐點都有可能吃，只是要好吃， C/P 值不大在乎。<!-- raw HTML omitted -->都說了這些是我的嘴砲，愛看不看隨你，有空就來點鼓勵吧。<!-- raw HTML omitted --> <img src="https://placekitten.com/202/301" alt="" title=""> <!-- raw HTML omitted --> I am highly interested in Computer Science and Gourmet.</p>
   </section>
   
 
@@ -274,9 +258,11 @@ web@ub18:/media$</code></pre></div>
     <ol class="list-unstyled">
 
 
-<li><a href="/posts/gourmet/zhubei/shanguotang/">[竹北] 善菓堂</a></li>
+<li><a href="/posts/gourmet/zhubei/saute/">[竹北] Sauté Restaurant 索鉄</a></li>
 
 <li><a href="/posts/">Posts</a></li>
+
+<li><a href="/posts/gourmet/zhubei/shanguotang/">[竹北] 善菓堂</a></li>
 
 <li><a href="/posts/gourmet/zhubei/cafetriangle/">[竹北] Café Triangle 三角咖啡館</a></li>
 
@@ -311,8 +297,6 @@ web@ub18:/media$</code></pre></div>
 <li><a href="/posts/gourmet/zhubei/brunch/morelove/">[竹北] 沐樂早午餐</a></li>
 
 <li><a href="/posts/gourmet/zhubei/brunch/mrmoon/">[竹北] Mr.Moon 月亮先生咖啡館</a></li>
-
-<li><a href="/posts/gourmet/zhubei/2ndst/">[竹北] 二街咖啡 2nd St. Cafe</a></li>
 
     </ol>
   </section>

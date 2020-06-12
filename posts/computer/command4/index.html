@@ -19,7 +19,7 @@ C:\Users\Eric&gt;copy con a.bat set msg=hello echo %msg% echo world ^Z 複製了
 <meta name="twitter:description" content="如果某個任務，需要執行數個命令，都可以用文字檔集結成數行，該文字檔副檔名必須為 .bat ，CMD可以執行 bat 檔案，執行順序就是循序一行執行完成，再換下一行。 我們利用之前介紹的 CON 系統檔案，產生一個簡單的 bat 檔案，接著執行它，看結果是什麼。
 C:\Users\Eric&gt;copy con a.bat set msg=hello echo %msg% echo world ^Z 複製了 1 個檔案。 C:\Users\Eric&gt;a C:\Users\Eric&gt;set msg=hello C:\Users\Eric&gt;echo hello hello C:\Users\Eric&gt;echo world world C:\Users\Eric&gt; 上面例子就是簡單的三行，第一行設定變數msg，第二行印出msg的內容，第三行印出普通訊息。可以看到，a.bat 執行到第二行的時候，CMD 已經將變數內容都換好了才執行。
 通常在開發程式的時候，需要的工具包括了文字編輯器或是IDE(Integrated Development Environments，整合開發環境)，編譯程式，Make自動化編譯工具&hellip;等，所以即使叫出了 Command Prompt，也許還需要設定一堆環境變數，讓全部的工具程式，都能正確執行。而且每次叫出Command Prompt，執行的內容幾乎沒什麼變化，那當然就是準備好一個設定環境變數的批次檔，叫出Command Prompt的時候執行一次，這樣才比較有效率。"/>
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.72.0" />
 
 
     
@@ -30,8 +30,8 @@ C:\Users\Eric&gt;copy con a.bat set msg=hello echo %msg% echo world ^Z 複製了
   "headline": "[CMD Tutorial 4\/4] Batch Files",
   "url": "https:\/\/ericsuperman.github.io\/posts\/computer\/command4\/",
   "wordCount": "43",
-  "datePublished": "2019-05-09T14:50:29\x2b08:00",
-  "dateModified": "2019-05-09T14:50:29\x2b08:00",
+  "datePublished": "2019-05-09T14:50:29\u002b08:00",
+  "dateModified": "2019-05-09T14:50:29\u002b08:00",
   "author": {
     "@type": "Person",
     "name": "Super Cat"
@@ -44,7 +44,7 @@ C:\Users\Eric&gt;copy con a.bat set msg=hello echo %msg% echo world ^Z 複製了
 
     <link rel="canonical" href="https://ericsuperman.github.io/posts/computer/command4/">
 
-    <title>[CMD Tutorial &lt;sup&gt;4&lt;/sup&gt;&frasl;&lt;sub&gt;4&lt;/sub&gt;] Batch Files | 金牙貓的嘴砲</title>
+    <title>[CMD Tutorial 4/4] Batch Files | 金牙貓的嘴砲</title>
 
     
     <!-- combined, minified CSS -->
@@ -88,7 +88,7 @@ if (!doNotTrack) {
     <header class="blog-header">
       <div class="container">
         <h1 class="blog-title" dir="auto"><a href="https://ericsuperman.github.io/" rel="home">金牙貓的嘴砲</a></h1>
-        <p class="lead blog-description" dir="auto">Everything is my own murmur.<br>本貓只管好不好吃，C/P值不大在乎。沒接業配，都是花自己的錢。我行我素，不理酸民。</p>
+        <p class="lead blog-description" dir="auto">Everything is my own murmur.<!-- raw HTML omitted -->本貓只管好不好吃，C/P值不大在乎。沒接業配，都是花自己的錢。我行我素，不理酸民。</p>
       </div>
     </header>
     
@@ -104,7 +104,7 @@ if (!doNotTrack) {
 
 <article class="blog-post">
   <header>
-    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/computer/command4/">[CMD Tutorial <sup>4</sup>&frasl;<sub>4</sub>] Batch Files</a></h2>
+    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/computer/command4/">[CMD Tutorial 4/4] Batch Files</a></h2>
     <p class="blog-post-meta"><time datetime="2019-05-09T14:50:29&#43;08:00">Thu May 09, 2019</time> by Super Cat in 
 <i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/computer" rel="category tag">Computer</a>
 
@@ -115,7 +115,6 @@ if (!doNotTrack) {
   </header>
   <p>如果某個任務，需要執行數個命令，都可以用文字檔集結成數行，該文字檔副檔名必須為 .bat ，CMD可以執行 bat 檔案，執行順序就是循序一行執行完成，再換下一行。
 我們利用之前介紹的 CON 系統檔案，產生一個簡單的 bat 檔案，接著執行它，看結果是什麼。</p>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-BASH" data-lang="BASH">C:<span style="color:#ae81ff">\U</span>sers<span style="color:#ae81ff">\E</span>ric&gt;copy con a.bat
 set msg<span style="color:#f92672">=</span>hello
 echo %msg%
@@ -134,9 +133,7 @@ C:<span style="color:#ae81ff">\U</span>sers<span style="color:#ae81ff">\E</span>
 world
 
 C:<span style="color:#ae81ff">\U</span>sers<span style="color:#ae81ff">\E</span>ric&gt;</code></pre></div>
-
 <p>上面例子就是簡單的三行，第一行設定變數msg，第二行印出msg的內容，第三行印出普通訊息。可以看到，a.bat 執行到第二行的時候，CMD 已經將變數內容都換好了才執行。</p>
-
 <p>通常在開發程式的時候，需要的工具包括了文字編輯器或是IDE(Integrated Development Environments，整合開發環境)，編譯程式，Make自動化編譯工具&hellip;等，所以即使叫出了 Command Prompt，也許還需要設定一堆環境變數，讓全部的工具程式，都能正確執行。而且每次叫出Command Prompt，執行的內容幾乎沒什麼變化，那當然就是準備好一個設定環境變數的批次檔，叫出Command Prompt的時候執行一次，這樣才比較有效率。</p>
 
 
@@ -193,8 +190,7 @@ C:<span style="color:#ae81ff">\U</span>sers<span style="color:#ae81ff">\E</span>
   
   <section class="sidebar-module sidebar-module-inset">
     <h4>About</h4>
-    <p dir="auto"><p>住在竹北，對重口味偏心，通常假日發文。沒業配，本貓只管好不好吃，便宜或貴的餐點都有可能吃，只是要好吃， C/P 值不大在乎。<br>都說了這些是我的嘴砲，愛看不看隨你，有空就來點鼓勵吧。<p> <img src="https://placekitten.com/202/301" alt="" /> <p> I am highly interested in Computer Science and Gourmet.</p>
-</p>
+    <p dir="auto">住在竹北，對重口味偏心，通常假日發文。沒業配，本貓只管好不好吃，便宜或貴的餐點都有可能吃，只是要好吃， C/P 值不大在乎。<!-- raw HTML omitted -->都說了這些是我的嘴砲，愛看不看隨你，有空就來點鼓勵吧。<!-- raw HTML omitted --> <img src="https://placekitten.com/202/301" alt="" title=""> <!-- raw HTML omitted --> I am highly interested in Computer Science and Gourmet.</p>
   </section>
   
 
@@ -204,9 +200,11 @@ C:<span style="color:#ae81ff">\U</span>sers<span style="color:#ae81ff">\E</span>
     <ol class="list-unstyled">
 
 
-<li><a href="/posts/gourmet/zhubei/shanguotang/">[竹北] 善菓堂</a></li>
+<li><a href="/posts/gourmet/zhubei/saute/">[竹北] Sauté Restaurant 索鉄</a></li>
 
 <li><a href="/posts/">Posts</a></li>
+
+<li><a href="/posts/gourmet/zhubei/shanguotang/">[竹北] 善菓堂</a></li>
 
 <li><a href="/posts/gourmet/zhubei/cafetriangle/">[竹北] Café Triangle 三角咖啡館</a></li>
 
@@ -241,8 +239,6 @@ C:<span style="color:#ae81ff">\U</span>sers<span style="color:#ae81ff">\E</span>
 <li><a href="/posts/gourmet/zhubei/brunch/morelove/">[竹北] 沐樂早午餐</a></li>
 
 <li><a href="/posts/gourmet/zhubei/brunch/mrmoon/">[竹北] Mr.Moon 月亮先生咖啡館</a></li>
-
-<li><a href="/posts/gourmet/zhubei/2ndst/">[竹北] 二街咖啡 2nd St. Cafe</a></li>
 
     </ol>
   </section>

@@ -21,7 +21,7 @@ Free DNS Hosting Providers 又根據不同的公司有不同的限制。 幾年�
 所使用的 domain 註冊公司，不外乎是 namecheap.com 或是 Godaddy.com 為大宗，因為通常他們兩家最便宜。 然後就需要處理專屬於自己的 domain 的 Master DNS Server 了。
 Master DNS Server 可以建在自己的固定 IP，但是我想大多數人 大概就是開個小網站，不會租超大頻寬。所以還是使用知名的 Free DNS Hosting Providers 服務，不但節省頻寬，載入網頁也 因為解析域名超快而整體快一點點。
 Free DNS Hosting Providers 又根據不同的公司有不同的限制。 幾年前， namecheap.com 有提供 Free DNS Server，結果我域名 搬去namecheap.com 時，Free DNS Server 反而不能用，似乎是要 另外花錢買服務才有，(最近 namecheap.com 才推出 basic dns server 選項)，所以當時我就搬到 freedns.afraid.org。可是 麻煩又來了，freedns.afraid.org 會希望使用者贊助，或是半年 登入一次，不然就賣不然就賣給亂七八糟的人增加幾個 hosts。 例如，假設我擁有 example."/>
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.72.0" />
 
 
     
@@ -32,8 +32,8 @@ Free DNS Hosting Providers 又根據不同的公司有不同的限制。 幾年�
   "headline": "Ubuntu 19.04 and CloudFlare Free DNS",
   "url": "https:\/\/ericsuperman.github.io\/posts\/computer\/ub19dns\/",
   "wordCount": "593",
-  "datePublished": "2019-05-10T12:40:23\x2b08:00",
-  "dateModified": "2019-05-10T12:40:23\x2b08:00",
+  "datePublished": "2019-05-10T12:40:23\u002b08:00",
+  "dateModified": "2019-05-10T12:40:23\u002b08:00",
   "author": {
     "@type": "Person",
     "name": "Super Cat"
@@ -90,7 +90,7 @@ if (!doNotTrack) {
     <header class="blog-header">
       <div class="container">
         <h1 class="blog-title" dir="auto"><a href="https://ericsuperman.github.io/" rel="home">金牙貓的嘴砲</a></h1>
-        <p class="lead blog-description" dir="auto">Everything is my own murmur.<br>本貓只管好不好吃，C/P值不大在乎。沒接業配，都是花自己的錢。我行我素，不理酸民。</p>
+        <p class="lead blog-description" dir="auto">Everything is my own murmur.<!-- raw HTML omitted -->本貓只管好不好吃，C/P值不大在乎。沒接業配，都是花自己的錢。我行我素，不理酸民。</p>
       </div>
     </header>
     
@@ -115,23 +115,18 @@ if (!doNotTrack) {
 
 </p>
   </header>
-  
-
-<p>目前許多公司或個人，在租用ADSL或光纖時，選擇固定IP，
+  <p>目前許多公司或個人，在租用ADSL或光纖時，選擇固定IP，
 或是去雲端主機商，例如Amazon, Linode, Digital Ocean 租
 一台 VPS (Virtual Private Server)，也會有固定IP。
 有了固定IP，通常會去申請一個自己的 domain name，好做
 一些個人網站或電子商務等。</p>
-
 <p>所使用的 domain 註冊公司，不外乎是 namecheap.com
 或是 Godaddy.com 為大宗，因為通常他們兩家最便宜。
 然後就需要處理專屬於自己的 domain 的 Master DNS Server 了。</p>
-
 <p>Master DNS Server 可以建在自己的固定 IP，但是我想大多數人
 大概就是開個小網站，不會租超大頻寬。所以還是使用知名的
 Free DNS Hosting Providers 服務，不但節省頻寬，載入網頁也
 因為解析域名超快而整體快一點點。</p>
-
 <p>Free DNS Hosting Providers 又根據不同的公司有不同的限制。
 幾年前， namecheap.com 有提供 Free DNS Server，結果我域名
 搬去namecheap.com 時，Free DNS Server 反而不能用，似乎是要
@@ -141,47 +136,34 @@ server 選項)，所以當時我就搬到  freedns.afraid.org。可是
 登入一次，不然就賣不然就賣給亂七八糟的人增加幾個 hosts。
 例如，假設我擁有 example.com，就莫名其妙被加了一台
 z.example.com ，然後指向很奇怪的IP 。</p>
-
 <p>到了今天，Free DNS Hosting Providers 的選擇就更多了，評估了一下，決定
 搬到 CloudFlare 的 Free DNS ，因為CloudFlare 是兵強馬壯的
 賺錢公司，又大又快，而且不是靠 Free DNS 賺錢，
 這個服務應該是可以用很久。</p>
-
 <p>嚴格說起來， CloudFlare 願意免費提供的是 Secondary DNS Server，
 所以自己還是要先建一次 Master DNS Server 。</p>
-
 <h1 id="installing-bind9">Installing BIND9</h1>
-
 <p>DNS server 可以設定成 Master, Slave, Forward 三種，這次就只
 介紹 Master 這種。 DNS server 目前最多人用的，功能最完整的
 是 Bind 9 (Berkeley Internet Name Domain version 9.0)。
 另外針對 embedded system，有一些體積比較小的DNS server，那些
 就暫時不討論了。</p>
-
 <p>在 Ubuntu 19.04 安裝 Bind9，可以用 apt 裝好幾個 packages ，
 不過我們已經介紹過tasksel 了，就用 tasksel 安裝。 如下，用 root
 身分或 sudo 執行 tasksel -</p>
-
-<p><img src="tasksel_dns.png" alt="" /></p>
-
+<p><img src="tasksel_dns.png" alt="" title=""></p>
 <p>把 DNS server 打星號，然後按 OK ，就輕輕鬆鬆裝好了，不用去記
 bind9 總共需要幾個 packages 才算完整。</p>
-
 <h1 id="master-dns-server">Master DNS Server</h1>
-
 <p>剛裝好的 bind9 ， 設定檔的進入點為 /etc/bind/named.conf，內容如
 下，將所有的設定分為三塊，所以 named.conf 完全不用改。</p>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-BASH" data-lang="BASH">include <span style="color:#e6db74">&#34;/etc/bind/named.conf.options&#34;</span>;
 include <span style="color:#e6db74">&#34;/etc/bind/named.conf.local&#34;</span>;
 include <span style="color:#e6db74">&#34;/etc/bind/named.conf.default-zones&#34;</span>;</code></pre></div>
-
 <p><strong>本篇文章，example.com 與 125.99.8.230 都是假的。請讀者自行改成您申請的網域名稱與固定IP。</strong></p>
-
 <p>假設所申請的域名為 example.com ，準備一個全新檔案，
 放 example.com 的所有資料，檔案名稱就叫 db.example.com，
 內容差不多像下面 -</p>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-BASH" data-lang="BASH">; Start of the DNS zone file
 $ORIGIN example.com.
 ; Default cache expiration time <span style="color:#66d9ef">for</span> resource records
@@ -197,7 +179,7 @@ $TTL    <span style="color:#ae81ff">86400</span>
 ;
 ; Domain IP Address
 ;
-@					IN		A			<span style="color:#ae81ff">125</span>.99.8.230
+@					IN		A			125.99.8.230
 
 ;
 ; Name Servers
@@ -208,14 +190,12 @@ example.com.		IN      NS			ns2.example.com.
 ;
 ; IP Adresses <span style="color:#66d9ef">for</span> Name Servers
 ;
-ns1                     IN      A               <span style="color:#ae81ff">125</span>.99.8.230
-ns2                     IN      A               <span style="color:#ae81ff">125</span>.99.8.230
+ns1                     IN      A               125.99.8.230
+ns2                     IN      A               125.99.8.230
 
-www.example.com.		IN		A				<span style="color:#ae81ff">125</span>.99.8.230</code></pre></div>
-
+www.example.com.		IN		A				125.99.8.230</code></pre></div>
 <p>而 named.conf.options 改成如下內容，主要是讓這份 DNS 每個網路
 介面都要 聽 Port 53 ，不然會只從 127.0.0.1 聽 Port 53 。</p>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-BASH" data-lang="BASH">options <span style="color:#f92672">{</span>
     directory <span style="color:#e6db74">&#34;/var/cache/bind&#34;</span>;
 
@@ -227,20 +207,15 @@ www.example.com.		IN		A				<span style="color:#ae81ff">125</span>.99.8.230</code
     dnssec-validation auto;
     auth-nxdomain no;
 <span style="color:#f92672">}</span>;</code></pre></div>
-
 <p>而 named.conf.local 增加 example.com 的 Master Zone 的描述，指向
 剛剛建好的 &ldquo;db.example.com&rdquo;  -</p>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-BASH" data-lang="BASH">zone <span style="color:#e6db74">&#34;example.com&#34;</span>	<span style="color:#f92672">{</span>
     type master;
     notify yes;
     file <span style="color:#e6db74">&#34;/etc/bind/db.example.com&#34;</span>;
 <span style="color:#f92672">}</span>;</code></pre></div>
-
 <p>然後就執行 &ldquo;systemctl restart bind9&rdquo; 或是重開機，都可以。</p>
-
 <h1 id="namecheap-settings-before">Namecheap Settings Before</h1>
-
 <p>這時候，已經有一份 DNS server 跑在你申請的固定IP了，
 它知道要負責解析 example.com 所有 域名的 IP Address。
 本來每一個網域，都至少需要提供兩台有跑 DNS server 的機器，
@@ -248,69 +223,47 @@ www.example.com.		IN		A				<span style="color:#ae81ff">125</span>.99.8.230</code
 先安排他們叫 ns1.example.com 與 ns2.example.com ，
 IP 都先定為 125.99.8.230 ， 如同 db.example.com 裡面寫的
 一樣。</p>
-
 <p>先告訴 domain 註冊公司，目前由 ns1.example.com 與 ns2.example.com
 解析 example.com 的所有 domain name 。 以 namecheap.com 為例，
 先去 namecheap.com 的 dashboard，如果還沒登入，namecheap.com 就會
 先跳去登入頁面，登入後，自動轉回 dashboard 。</p>
-
-<p><img src="namecheap_dash.png" alt="" /></p>
-
+<p><img src="namecheap_dash.png" alt="" title=""></p>
 <p>上圖可以看到，該 namecheap.com 使用者擁有一個 domain ，按下 &ldquo;Manage&rdquo; 按鈕，
 來到 Domain Detail 頁面，有4個 TAB - &ldquo;Domain&rdquo;, &ldquo;Products&rdquo; ，
 &ldquo;Sharing &amp; Transfer&rdquo; ， &ldquo;Advanced DNS&rdquo;。</p>
-
 <p>下圖，先設定 &ldquo;Domain&rdquo; Tab 的資料 - DNS 型態選 &ldquo;Custom DNS&rdquo; ，
 同時填入 ns1.example.com 與 ns2.example.com 兩個名字 。</p>
-
-<p><img src="namecheap_before.png" alt="" /></p>
-
+<p><img src="namecheap_before.png" alt="" title=""></p>
 <p>那 ns1.example.com 與 ns2.example.com 的實際 IP address
 還是得講啊 - 切到 &ldquo;Advanced DNS&rdquo; tab ， 先用 &ldquo;Register Nameserver - ADD NAMESERVER&rdquo;
 填入 ns1.example.com 與 125.99.8.230 ，
 再一次 填入 ns2.example.com 與 125.99.8.230 。</p>
-
 <p>填完後，按下 &ldquo;Find Nameservers - Standard Nameservers - Search&rdquo; ，
 理論上，系統就查出 ns1.example.com 與 ns2.example.com 。</p>
-
-<p><img src="namecheap_reg_ns.png" alt="" /></p>
-
+<p><img src="namecheap_reg_ns.png" alt="" title=""></p>
 <p>此刻，Domain 與 相關的 DNS server 設定，已經可以正常運作了，
 就只有兩個缺點 -</p>
-
 <ul>
 <li>跑在自己的 固定IP ，可能比較慢。</li>
 <li>兩個dns server 其實都是同一台，沒有備援。</li>
 </ul>
-
 <p>接下來就是安排 CloudFlare 來接手，以上兩個問題就解決了。</p>
-
 <h1 id="cloudflare-settings">CloudFlare Settings</h1>
-
 <p>登入 CloudFlare 網站，如果還沒註冊就先註冊 。
 然後輸入你的 Domain ，按下 &ldquo;+ Add a Site&rdquo; ， CloudFlare 自動去讀
 整個 DNS server 的內容。</p>
-
 <p>第一次增加網站，有可能選 Price Plan ，選 Free 方案，就有 DNS 了。</p>
-
-<p><img src="cloudflare_plan.png" alt="" /></p>
-
+<p><img src="cloudflare_plan.png" alt="" title=""></p>
 <p>在 DNS tab ，它先顯示從你的 DNS server 讀到的 每一台機器的 IP Address
 等域名資訊，CloudFlare 的 DNS server 如果被查詢到，就會回應這些資料。
 更厲害的是，你的 Master DNS Server 改了什麼內容，CloudFlare 內部知道
 原始的 DNS Server 是哪一台，相當快地更新資料，使用者按照過去
 方式維護 舊的  Master DNS Server 即可。</p>
-
 <p>然後下方就是 CloudFlare 希望你去 domain 註冊公司修改的兩台 Name Server。</p>
-
-<p><img src="cloudflare_ns.png" alt="" /></p>
-
+<p><img src="cloudflare_ns.png" alt="" title=""></p>
 <h1 id="namecheap-settings-after">Namecheap Settings After</h1>
-
 <p>最後，重回 Namecheap 網站，輸入上面那兩台 Name Server ，就完成了。</p>
-
-<p><img src="namecheap_after.png" alt="" /></p>
-
+<p><img src="namecheap_after.png" alt="" title=""></p>
 <p>以上，你的 Domain 的解析，從此進入高速的時代。</p>
 
 
@@ -367,8 +320,7 @@ IP 都先定為 125.99.8.230 ， 如同 db.example.com 裡面寫的
   
   <section class="sidebar-module sidebar-module-inset">
     <h4>About</h4>
-    <p dir="auto"><p>住在竹北，對重口味偏心，通常假日發文。沒業配，本貓只管好不好吃，便宜或貴的餐點都有可能吃，只是要好吃， C/P 值不大在乎。<br>都說了這些是我的嘴砲，愛看不看隨你，有空就來點鼓勵吧。<p> <img src="https://placekitten.com/202/301" alt="" /> <p> I am highly interested in Computer Science and Gourmet.</p>
-</p>
+    <p dir="auto">住在竹北，對重口味偏心，通常假日發文。沒業配，本貓只管好不好吃，便宜或貴的餐點都有可能吃，只是要好吃， C/P 值不大在乎。<!-- raw HTML omitted -->都說了這些是我的嘴砲，愛看不看隨你，有空就來點鼓勵吧。<!-- raw HTML omitted --> <img src="https://placekitten.com/202/301" alt="" title=""> <!-- raw HTML omitted --> I am highly interested in Computer Science and Gourmet.</p>
   </section>
   
 
@@ -378,9 +330,11 @@ IP 都先定為 125.99.8.230 ， 如同 db.example.com 裡面寫的
     <ol class="list-unstyled">
 
 
-<li><a href="/posts/gourmet/zhubei/shanguotang/">[竹北] 善菓堂</a></li>
+<li><a href="/posts/gourmet/zhubei/saute/">[竹北] Sauté Restaurant 索鉄</a></li>
 
 <li><a href="/posts/">Posts</a></li>
+
+<li><a href="/posts/gourmet/zhubei/shanguotang/">[竹北] 善菓堂</a></li>
 
 <li><a href="/posts/gourmet/zhubei/cafetriangle/">[竹北] Café Triangle 三角咖啡館</a></li>
 
@@ -415,8 +369,6 @@ IP 都先定為 125.99.8.230 ， 如同 db.example.com 裡面寫的
 <li><a href="/posts/gourmet/zhubei/brunch/morelove/">[竹北] 沐樂早午餐</a></li>
 
 <li><a href="/posts/gourmet/zhubei/brunch/mrmoon/">[竹北] Mr.Moon 月亮先生咖啡館</a></li>
-
-<li><a href="/posts/gourmet/zhubei/2ndst/">[竹北] 二街咖啡 2nd St. Cafe</a></li>
 
     </ol>
   </section>
