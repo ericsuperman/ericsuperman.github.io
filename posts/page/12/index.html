@@ -9,12 +9,12 @@
 <meta property="og:description" content="Everything is my own murmur.&lt;br&gt;本貓只管好不好吃，C/P值不大在乎。沒接業配，都是花自己的錢。我行我素，不理酸民。" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ericsuperman.github.io/posts/" />
-<meta property="og:updated_time" content="2020-08-01T18:53:42+08:00" />
+<meta property="og:updated_time" content="2020-11-07T18:44:17+08:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Posts"/>
 <meta name="twitter:description" content="Everything is my own murmur.&lt;br&gt;本貓只管好不好吃，C/P值不大在乎。沒接業配，都是花自己的錢。我行我素，不理酸民。"/>
-<meta name="generator" content="Hugo 0.72.0" />
+<meta name="generator" content="Hugo 0.78.1" />
 
 
     
@@ -28,7 +28,7 @@
     "@type": "Person",
     "name": "Super Cat"
   },
-  "dateModified": "2020-08-01T18:53:42\u002b08:00",
+  "dateModified": "2020-11-07T18:44:17\u002b08:00",
   "keywords": "computer,gourmet,personal,american-food,beitou-district,braised-dishes,breakfast,brunch,cafe,canadian-food,cantonese-cuisine,chinese-food,command,daan-district,datong-district,dayuan-district,dessert,french-food,guanxi,hot-pot,hsinchu,hsinchu-county,italian-food,japanese-food,keelung,korean-food,linux,luzhu-district,mediterranean-food,mexican-food,midnight-snack,murmur,nankang-district,new-taipei,pet,quebec-cuisine,roast,sanxia,seafood,shoes,sichuan-cuisine,steak,swedish-food,taichung,taipei,takeout,tamsui,taoyuan,taoyuan-district,teppanyaki,thailand-food,tires,vegetarian,vietnamese-food,virtual-box,windows,xinfeng,xinyi-district,zhongli-district,zhubei,zhudong,zhunan,",
   "description": "Everything is my own murmur.\u003cbr\u003e本貓只管好不好吃，C\/P值不大在乎。沒接業配，都是花自己的錢。我行我素，不理酸民。"
 }
@@ -82,7 +82,7 @@ if (!doNotTrack) {
     <header class="blog-header">
       <div class="container">
         <h1 class="blog-title" dir="auto"><a href="https://ericsuperman.github.io/" rel="home">金牙貓的嘴砲</a></h1>
-        <p class="lead blog-description" dir="auto">Everything is my own murmur.<!-- raw HTML omitted -->本貓只管好不好吃，C/P值不大在乎。沒接業配，都是花自己的錢。我行我素，不理酸民。</p>
+        <p class="lead blog-description" dir="auto">Everything is my own murmur.<br>本貓只管好不好吃，C/P值不大在乎。沒接業配，都是花自己的錢。我行我素，不理酸民。</p>
       </div>
     </header>
     
@@ -95,6 +95,32 @@ if (!doNotTrack) {
 
           
 
+
+
+
+
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/computer/ub19/">Ubuntu 19.04 開箱</a></h2>
+    <p class="blog-post-meta"><time datetime="2019-05-04T10:52:52&#43;08:00">Sat May 04, 2019</time> by Super Cat in 
+<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/computer" rel="category tag">Computer</a>
+
+
+<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/linux" rel="tag">Linux</a>
+
+</p>
+  </header>
+  Ubuntu 19.04 正式推出了，這一版不是 Long Term Support 版， 不過還是用 VirtualBox 玩玩看 Ubuntu Server好了， 看看那些東西進步了。
+先新增一台虛擬PC，我的Host PC裝了很多ram， 所以這裡就很大方地給這台虛擬PC 4GB ram。
+硬碟則是配了 128GB，反正VirtualBox對虛擬硬碟是 實際用多少才配置多少，一開始不會太大。如果想要玩 編譯 Linux Kernel 或 OpenWRT 的話，預設的10GB是不夠的。
+再來，反正是在家裡隨便玩玩，我習慣模擬兩張網卡， 都用Bridge方式接到內網，
+Ubuntu 安裝後，一張網卡配 191.168.1.x 的IP， 另一張網卡配 10.10.10.x 的IP， 如果要測試 NAT 功能，或是其他 gateway的功能， 兩張網卡才能做。
+最後，虛擬光碟機要接到 ubuntu-19.04-live-server-amd64.iso 檔案，就能開機了。 第一次開機，從虛擬光碟boot，進入安裝程式， 安裝步驟雖然有14步，大部分預設值都沒問題， 通常都直接按Enter進到下一步。
+第0步，選英文，直接按下去。 第1步，安裝程式 在 GitHub 有新版，問要不要換。 這個安裝光碟在開機時就利用DHCP連上網路了， 所以可以去GitHub看看有無新版， 網路都連好了，安裝程式也不大，當然就換新的安裝程式啊! Enter按下去。 第2步，是否確認是英文鍵盤， Enter按下去。 第3步，Enter按下去。 第4步，兩張網卡預設為用 DHCP 。這個我要改 &hellip;&hellip; 我玩這份 Ubuntu 就是要當 Server ，必須是固定IP。 選 Manual 進入 static IP 設定頁。 如下圖，把每個欄位都填一填。 第二張網卡也如法炮製，但是就不要跟第一張網卡同網段了， 未來利用這兩張網卡，兩個網段，可以來玩一些閘道器的功能。 第5步，Enter直接按下去，除非你的網路需要 proxy 才能連到 Internet。 第6步，Enter直接按下去，除非你知道有更快的 Ubuntu Mirror 站台。 我目前的設定，讓安裝程式跳過第7步了，我也不知道那是啥。
+  <a href='https://ericsuperman.github.io/posts/computer/ub19/'>Read more →</a>
+</article> 
 
 
 
@@ -191,13 +217,11 @@ Ubuntu 18.04 LTS 問世之後，它的 virtualbox-dkms 套件 是針對 VirtualB
   </header>
   懶惰好久了，要開始寫Blog囉!
 以下為測試 Markdown 語法 -
-     Name Age     Bob 27   Alice 23     Heading Level 1 Some test
+   Name Age     John 27   Mary 23        Name Age     Bob 27   Alice 23     Heading Level 1 Some test
  Heading Level 2 Some more test
  Regular Paragraph!
  Definition List
- Cat Fluffy animal everyone likes Internet Vector of transmission for pictures of cats   This is a footnote.1
- CodeBlock
-#include &lt;stdio.h&gt; int main() { printf(&#34;Hello,World!
+ Cat Fluffy animal everyone likes Internet Vector of transmission for pictures of cats   This is a footnote.
   <a href='https://ericsuperman.github.io/posts/personal/hello/'>Read more →</a>
 </article> 
 
@@ -224,7 +248,8 @@ Ubuntu 18.04 LTS 問世之後，它的 virtualbox-dkms 套件 是針對 VirtualB
   
   <section class="sidebar-module sidebar-module-inset">
     <h4>About</h4>
-    <p dir="auto">住在竹北，對重口味偏心，通常假日發文。沒業配，本貓只管好不好吃，便宜或貴的餐點都有可能吃，只是要好吃， C/P 值不大在乎。<!-- raw HTML omitted -->都說了這些是我的嘴砲，愛看不看隨你，有空就來點鼓勵吧。<!-- raw HTML omitted --> <img src="https://placekitten.com/202/301" alt="" title=""> <!-- raw HTML omitted --> I am highly interested in Computer Science and Gourmet.</p>
+    <p dir="auto"><p>住在竹北，對重口味偏心，通常假日發文。沒業配，本貓只管好不好吃，便宜或貴的餐點都有可能吃，只是要好吃， C/P 值不大在乎。<br>都說了這些是我的嘴砲，愛看不看隨你，有空就來點鼓勵吧。<p> <img src="https://placekitten.com/202/301" alt="" title=""> <p> I am highly interested in Computer Science and Gourmet.</p>
+</p>
   </section>
   
 
@@ -234,9 +259,11 @@ Ubuntu 18.04 LTS 問世之後，它的 virtualbox-dkms 套件 是針對 VirtualB
     <ol class="list-unstyled">
 
 
-<li><a href="/posts/gourmet/zhubei/tonysbrasserie/">[竹北] 坊間家傳麵食(坊間小館)</a></li>
+<li><a href="/posts/gourmet/zhubei/lin_tuna/">[竹北] 林家 東港鮪魚飯湯</a></li>
 
 <li><a href="/posts/">Posts</a></li>
+
+<li><a href="/posts/gourmet/zhubei/tonysbrasserie/">[竹北] 坊間家傳麵食(坊間小館)</a></li>
 
 <li><a href="/posts/gourmet/zhubei/saute/">[竹北] Sauté Restaurant 索鉄</a></li>
 
@@ -271,8 +298,6 @@ Ubuntu 18.04 LTS 問世之後，它的 virtualbox-dkms 套件 是針對 VirtualB
 <li><a href="/posts/gourmet/zhubei/nightmarket/">[竹北] 竹北夜市</a></li>
 
 <li><a href="/posts/gourmet/hsinchu/uemiya/">[新竹] 植美家 健康早午餐</a></li>
-
-<li><a href="/posts/gourmet/zhubei/brunch/morelove/">[竹北] 沐樂早午餐</a></li>
 
     </ol>
   </section>

@@ -9,12 +9,12 @@
 <meta property="og:description" content="Everything is my own murmur.&lt;br&gt;本貓只管好不好吃，C/P值不大在乎。沒接業配，都是花自己的錢。我行我素，不理酸民。" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ericsuperman.github.io/" />
-<meta property="og:updated_time" content="2020-08-01T18:53:42+08:00" />
+<meta property="og:updated_time" content="2020-11-07T18:44:17+08:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="金牙貓的嘴砲"/>
 <meta name="twitter:description" content="Everything is my own murmur.&lt;br&gt;本貓只管好不好吃，C/P值不大在乎。沒接業配，都是花自己的錢。我行我素，不理酸民。"/>
-<meta name="generator" content="Hugo 0.72.0" />
+<meta name="generator" content="Hugo 0.78.1" />
 
 
     
@@ -28,7 +28,7 @@
     "@type": "Person",
     "name": "Super Cat"
   },
-  "dateModified": "2020-08-01T18:53:42\u002b08:00",
+  "dateModified": "2020-11-07T18:44:17\u002b08:00",
   "keywords": "computer,gourmet,personal,american-food,beitou-district,braised-dishes,breakfast,brunch,cafe,canadian-food,cantonese-cuisine,chinese-food,command,daan-district,datong-district,dayuan-district,dessert,french-food,guanxi,hot-pot,hsinchu,hsinchu-county,italian-food,japanese-food,keelung,korean-food,linux,luzhu-district,mediterranean-food,mexican-food,midnight-snack,murmur,nankang-district,new-taipei,pet,quebec-cuisine,roast,sanxia,seafood,shoes,sichuan-cuisine,steak,swedish-food,taichung,taipei,takeout,tamsui,taoyuan,taoyuan-district,teppanyaki,thailand-food,tires,vegetarian,vietnamese-food,virtual-box,windows,xinfeng,xinyi-district,zhongli-district,zhubei,zhudong,zhunan,",
   "description": "Everything is my own murmur.\u003cbr\u003e本貓只管好不好吃，C\/P值不大在乎。沒接業配，都是花自己的錢。我行我素，不理酸民。"
 }
@@ -82,7 +82,7 @@ if (!doNotTrack) {
     <header class="blog-header">
       <div class="container">
         <h1 class="blog-title" dir="auto"><a href="https://ericsuperman.github.io/" rel="home">金牙貓的嘴砲</a></h1>
-        <p class="lead blog-description" dir="auto">Everything is my own murmur.<!-- raw HTML omitted -->本貓只管好不好吃，C/P值不大在乎。沒接業配，都是花自己的錢。我行我素，不理酸民。</p>
+        <p class="lead blog-description" dir="auto">Everything is my own murmur.<br>本貓只管好不好吃，C/P值不大在乎。沒接業配，都是花自己的錢。我行我素，不理酸民。</p>
       </div>
     </header>
     
@@ -95,6 +95,31 @@ if (!doNotTrack) {
 
           
 
+
+
+
+
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/computer/ub19nat/">Ubuntu 19.04 as a NAT Router</a></h2>
+    <p class="blog-post-meta"><time datetime="2019-05-09T19:35:20&#43;08:00">Thu May 09, 2019</time> by Super Cat in 
+<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/computer" rel="category tag">Computer</a>
+
+
+<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/linux" rel="tag">Linux</a>
+
+</p>
+  </header>
+  之前，在用VirtualBox 開箱 Ubuntu 19.04 的時候， 就刻意弄成兩張網卡，這次來玩一下 NAT Router ， 紀錄整個過程。
+首先 /etc/sysctl.conf 找到下面這行，把 # 拿掉。
+net.ipv4.ip_forward=1 現在 Linux 網路卡都不叫 eth0, eth1 了， 反而是 &ldquo;enp0s3&rdquo; ， &ldquo;enp0s8&rdquo; 這些怪名字， 這是因為 一致性網路設備命名規則 所規範的。 簡單地說，就是 Linux 原本是根據找到網卡的先後順序，命名為 eth0、 eth1 等。 可是一旦多插一張網卡，可能會導致 原本叫 eth1 的網卡，改名為 eth2 ， 萬一許多系統的script 寫死 eth0, eth1 ，那就會非常困擾。
+所以改成 &ldquo;enp0s3&rdquo; ， &ldquo;enp0s8&rdquo; 這些名字，再多插幾張網路卡，名字也不會變。
+假設 enp0s3 是對外的網路， enp0s8 是對內的網路，
+Ubuntu 19.04 Server 剛裝好時，沒有 /etc/rc.local 。 所以就叫出文字編輯器，編輯 /etc/rc.local 如下， 最後用 exit 0 結尾。
+  <a href='https://ericsuperman.github.io/posts/computer/ub19nat/'>Read more →</a>
+</article> 
 
 
 
@@ -139,11 +164,12 @@ d:\&gt; aaa c:\aaa d:\bbb 以上例子，兩個參數都是路徑，如果執行
 d:\&gt; set ENV_AAA=&#34;c:\aaa d:\bbb&#34; 環境變數設定完成後，執行執行 aaa 就可以了，不需要打參數了。 d:\&gt; aaa
 蠻多命令，都將不常變動的參數規劃放在環境變數，省下頻繁地打一堆字。 執行一份CMD的時候，作業系統會將全部的環境變數複製一份，這些環境變數專屬於該份CMD ，結束時會自動清掉。也就是說，如果同時執行兩份CMD，Windows 是複製出兩份系統的環境變數給這兩個CMD，兩邊各改了什麼，也不會影響對方，結束時也不會影響Windows系統的環境變數。 如果不小心改壞了什麼環境變數，可以關掉CMD，重新執行一次即可。
 SET 想要看總共有哪些環境變數，可用set不帶任何參數
-d:\&gt; set set 加上參數，就是設定環境變數了，語法為 set =d:\&gt; set ENV_AAA=&#34;c:\aaa d:\bbb&#34; ECHO set一執行，舊式列出全部環境變數，如果只是想要看一個變數，可以用 echo 來顯示訊息。 C:\Users\Eric&gt;set ENV_AAA=&quot;c:\aaa d:\bbb&rdquo;
+d:\&gt; set set 加上參數，就是設定環境變數了，語法為 set =
+d:\&gt; set ENV_AAA=&#34;c:\aaa d:\bbb&#34; ECHO set一執行，舊式列出全部環境變數，如果只是想要看一個變數，可以用 echo 來顯示訊息。 C:\Users\Eric&gt;set ENV_AAA=&ldquo;c:\aaa d:\bbb&rdquo;
 C:\Users\Eric&gt;echo %ENV_AAA% &#34;c:\aaa d:\bbb&#34; echo 也能印普通訊息，例如印個經典的 &ldquo;Hello, World!&rdquo;
 C:\Users\Eric&gt;echo Hello, World! Hello, World! PATH 當然，有一些名稱，被保留給系統使用，例如 PATH ，就是代表系統搜尋外部命令的路徑順序，每個路徑都必須以分號隔開。這個PATH環境變數因為太常用了，所以Microsoft乾脆開發一個PATH命令，專門負責顯示及修改PATH環境變數。
 d:\&gt; path 執行結果如下:
-d:\&gt;path PATH=C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Git\cmd;C:\Users\Eric\AppData\Local\Microsoft\WindowsApps; 上面Path變數的內容，其意義為 - 假設使用者想要執行 aaa.exe 執行檔，CMD 先看目前所在路徑，如果該檔案位於目前所在路徑，就載入記憶體執行，如果不在，則接著嚐試在 c:\windows\system32路徑找找看有無 aaa.
+d:\&gt;path PATH=C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Git\cmd;C:\Users\Eric\AppData\Local\Microsoft\WindowsApps; 上面Path變數的內容，其意義為 - 假設使用者想要執行 aaa.
   <a href='https://ericsuperman.github.io/posts/computer/command3/'>Read more →</a>
 </article> 
 
@@ -189,11 +215,11 @@ d:\prj&gt; copy con test.txt abc ^z 複製了 1 個檔案。 d:\prj&gt; 上面�
 
 </p>
   </header>
-  Windows Command Prompt 在Windows被發明之前，當時主流的電腦作業系統是 MS-DOS (Microsoft Disk Operating System)，以文字下命令的方式跟電腦溝通。雖然沒有圖形化介面友善，但其實主流的電腦作業系統熟悉MS-DOS命令的人，能夠飛快地打字，迅速地做很多事情。例如刪除一個檔案，Windows 需要叫出檔案管理員，用滑鼠找到該檔案，按右鍵，選刪除，如果在 DOS 環境，敲鍵盤 &ldquo;del &rdquo;，同時利用鍵自動補齊檔名的功能，很快地就能刪除檔案。所以Windows發展了這麼多代，都還是保留一個類似的介面。
+  Windows Command Prompt 在Windows被發明之前，當時主流的電腦作業系統是 MS-DOS (Microsoft Disk Operating System)，以文字下命令的方式跟電腦溝通。雖然沒有圖形化介面友善，但其實主流的電腦作業系統熟悉MS-DOS命令的人，能夠飛快地打字，迅速地做很多事情。例如刪除一個檔案，Windows 需要叫出檔案管理員，用滑鼠找到該檔案，按右鍵，選刪除，如果在 DOS 環境，敲鍵盤 &ldquo;del &quot;，同時利用鍵自動補齊檔名的功能，很快地就能刪除檔案。所以Windows發展了這麼多代，都還是保留一個類似的介面。
 到現在，大部分使用者偏好這種幾乎不用學習的圖形化介面，日常生活操作也幾乎都能用圖形化介面完成，文字介面就很少人用了。大概只剩下少數場合，例如學習程式設計，撰寫程式碼仍然利用圖形化介面的文字編輯器，可是編譯程式碼、執行，使用 Command Prompt 會比較方便。
 那在Windows 10環境，如何執行 Command Prompt呢? 在左下角搜尋功能裡面打 &ldquo;CMD&rdquo; ，系統會找出&quot;命令提示字元&rdquo; ，執行該命令，就進入了command line模式了。如果近期內會常用 CMD，可以釘選到工具列，比較方便。
 進入 Command Prompt 後，通常會先打個 DIR ，看看有哪些檔案，位於什麼路徑。
-c:\&gt; dir DIR 其實有很多參數可做變化，例如列出隱藏檔、用別的欄位排序顯示等，詳細用法可以用 Help DIR 來看。其他命令也可以用 &ldquo;HELP &quot;來看該命令的詳細說明。
+c:\&gt; dir DIR 其實有很多參數可做變化，例如列出隱藏檔、用別的欄位排序顯示等，詳細用法可以用 Help DIR 來看。其他命令也可以用 &ldquo;HELP &ldquo;來看該命令的詳細說明。
 c:\&gt; help dir 顯示檔案清單以列出目錄中的檔案及子目錄。 DIR [drive:][path][filename] [/A[[:]attributes]] [/B] [/C] [/D] [/L] [/N] [/O[[:]sortorder]] [/P] [/Q] [/R] [/S] [/T[[:]timefield]] [/W] [/X] [/4] [drive:][path][filename] 指定要顯示的磁碟機、目錄或檔案。 /A 顯示具有指定之屬性的檔案。 attributes D 目錄 R 唯讀檔案 H 隱藏檔案 A 待封存檔案 S 系統檔案 I 非內容索引檔案 L 重新分析點 O 離線檔案 - 首碼表示否定 /B 使用單純格式 (沒有標頭資訊或摘要)。 /C 在檔案大小中顯示千位分隔符號。這是預設值。使用 /-C 可停用 分隔符號的顯示。 /D 與寬的列表格式相同，但是依照欄來排序。 /L 使用小寫顯示。 /N 使用新的長列表格式，檔名會顯示在最右方。 /O 依照指定的排序順序來列出檔案。 sortorder N 依名稱 (英文字母) S 依大小 (最小的在前) E 依副檔名 (英文字母) D 依日期/時間 (日期較早的在前) G 先列出子目錄 - 首碼表示相反的順序 /P 當資料填滿整個螢幕時暫停顯示。 /Q 顯示檔案擁有者。 /R 顯示檔案的替代資料流。 /S 顯示指定目錄及所有子目錄中的檔案。 /T 控制用來顯示或排序的時間欄位 timefield C 建立 A 上次檔案存取時間 W 上次寫入檔案時間 /W 使用寬的列表格式。 /X 顯示對非 8.
   <a href='https://ericsuperman.github.io/posts/computer/command1/'>Read more →</a>
 </article> 
@@ -281,12 +307,10 @@ c:\&gt; help dir 顯示檔案清單以列出目錄中的檔案及子目錄。 DI
 
 </p>
   </header>
-  餐廳名稱: HiStory 故事小館     地 址: 新竹縣竹北市縣政12街27號   營業時間: 週五至週三 11:00 - 16:30 17:30 - 21:30   週四 公休    電話 : 03 657 2290    這間位於竹北的 HiStory 故事小館，品質很優，我們全家去了許多次了， 招待朋友也常約在這間。它在 Facebook, Google 的評價都很不錯， 而且是貨真價實的好評價，評分人數多的情況下，FB 能 4.9 分，很厲害。
+  餐廳名稱: HiStory 故事小館     地 址: 新竹縣竹北市縣政12街27號   營業時間: 週五至週三 11:00 - 16:30 17:30 - 21:30   週四 公休    電話 : 03 657 2290     於 Aug 17, 2019 再編輯。 這間位於竹北的 HiStory 故事小館，品質很優，我們全家去了許多次了， 招待朋友也常約在這間。它在 Facebook, Google 的評價都很不錯， 而且是貨真價實的好評價，評分人數多的情況下，FB 能 4.9 分，很厲害。
 但很無奈，也許是地點或是一些其他因素，生意就是平平， 感覺老闆，老闆娘很努力在撐。他們都有在台北高級餐廳歷練過一段時間， 有台北的職業水準，決定返鄉發展，落腳在竹北偏僻的地方， 讓房租不至於太貴，然後利用FB累積粉絲行銷。
 今天略餓，吃到一半才想起拍照，真是抱歉啦。 下圖左邊是 松露奶油雞肉鳥巢麵，右邊是快吃完的鮪魚布列斯特。 鳥巢麵 與 雞肉，蘑菇，白醬，松露醬 炒在一起，再加上自己風乾的番茄，整體表現不錯。
 鮪魚布列斯特是 某種類似甜甜圈的麵包，圓形的，表面很多杏仁片，中間塗上自製的鮪魚醬， 是不常吃到的食物，適合嚐鮮，不難吃。這是單點，如果當主餐還會加生菜沙拉，比較像是早餐吃的。 下圖是 西班牙海鮮烤飯，應該是不錯，但我沒吃，這幾年吃了三四間餐廳的西班牙烤飯，略膩。 有些店飯後甜點是免費的，當然就是一些簡單便宜的甜點。 這間店女主人做的甜點超棒的，非吃不可，加錢也要吃。
-左邊是覆盆子馬卡龍，很優。
-中間是檸檬塔，又酸又甜，通常來 HiStory 都會點，跟 達利咖啡 並列目前我心目中的竹北檸檬塔冠軍。
   <a href='https://ericsuperman.github.io/posts/gourmet/zhubei/history/'>Read more →</a>
 </article> 
 
@@ -318,32 +342,6 @@ c:\&gt; help dir 顯示檔案清單以列出目錄中的檔案及子目錄。 DI
 
 
 
-
-<article class="blog-post">
-  <header>
-    <h2 class="blog-post-title" dir="auto"><a href="https://ericsuperman.github.io/posts/computer/ub19/">Ubuntu 19.04 開箱</a></h2>
-    <p class="blog-post-meta"><time datetime="2019-05-04T10:52:52&#43;08:00">Sat May 04, 2019</time> by Super Cat in 
-<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/computer" rel="category tag">Computer</a>
-
-
-<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/linux" rel="tag">Linux</a>
-
-</p>
-  </header>
-  Ubuntu 19.04 正式推出了，這一版不是 Long Term Support 版， 不過還是用 VirtualBox 玩玩看 Ubuntu Server好了， 看看那些東西進步了。
-先新增一台虛擬PC，我的Host PC裝了很多ram， 所以這裡就很大方地給這台虛擬PC 4GB ram。
-硬碟則是配了 128GB，反正VirtualBox對虛擬硬碟是 實際用多少才配置多少，一開始不會太大。如果想要玩 編譯 Linux Kernel 或 OpenWRT 的話，預設的10GB是不夠的。
-再來，反正是在家裡隨便玩玩，我習慣模擬兩張網卡， 都用Bridge方式接到內網，
-Ubuntu 安裝後，一張網卡配 191.168.1.x 的IP， 另一張網卡配 10.10.10.x 的IP， 如果要測試 NAT 功能，或是其他 gateway的功能， 兩張網卡才能做。
-最後，虛擬光碟機要接到 ubuntu-19.04-live-server-amd64.iso 檔案，就能開機了。 第一次開機，從虛擬光碟boot，進入安裝程式， 安裝步驟雖然有14步，大部分預設值都沒問題， 通常都直接按Enter進到下一步。
-第0步，選英文，直接按下去。 第1步，安裝程式 在 GitHub 有新版，問要不要換。 這個安裝光碟在開機時就利用DHCP連上網路了， 所以可以去GitHub看看有無新版， 網路都連好了，安裝程式也不大，當然就換新的安裝程式啊! Enter按下去。 第2步，是否確認是英文鍵盤， Enter按下去。 第3步，Enter按下去。 第4步，兩張網卡預設為用 DHCP 。這個我要改 &hellip;&hellip; 我玩這份 Ubuntu 就是要當 Server ，必須是固定IP。 選 Manual 進入 static IP 設定頁。 如下圖，把每個欄位都填一填。 第二張網卡也如法炮製，但是就不要跟第一張網卡同網段了， 未來利用這兩張網卡，兩個網段，可以來玩一些閘道器的功能。 第5步，Enter直接按下去，除非你的網路需要 proxy 才能連到 Internet。 第6步，Enter直接按下去，除非你知道有更快的 Ubuntu Mirror 站台。 我目前的設定，讓安裝程式跳過第7步了，我也不知道那是啥。
-  <a href='https://ericsuperman.github.io/posts/computer/ub19/'>Read more →</a>
-</article> 
-
-
-
-
-
 <nav class="blog-pagination">
   
   <a class="btn btn-outline-primary" href="/page/10/" rel="prev" role="button">Previous page</a>
@@ -363,7 +361,8 @@ Ubuntu 安裝後，一張網卡配 191.168.1.x 的IP， 另一張網卡配 10.10
   
   <section class="sidebar-module sidebar-module-inset">
     <h4>About</h4>
-    <p dir="auto">住在竹北，對重口味偏心，通常假日發文。沒業配，本貓只管好不好吃，便宜或貴的餐點都有可能吃，只是要好吃， C/P 值不大在乎。<!-- raw HTML omitted -->都說了這些是我的嘴砲，愛看不看隨你，有空就來點鼓勵吧。<!-- raw HTML omitted --> <img src="https://placekitten.com/202/301" alt="" title=""> <!-- raw HTML omitted --> I am highly interested in Computer Science and Gourmet.</p>
+    <p dir="auto"><p>住在竹北，對重口味偏心，通常假日發文。沒業配，本貓只管好不好吃，便宜或貴的餐點都有可能吃，只是要好吃， C/P 值不大在乎。<br>都說了這些是我的嘴砲，愛看不看隨你，有空就來點鼓勵吧。<p> <img src="https://placekitten.com/202/301" alt="" title=""> <p> I am highly interested in Computer Science and Gourmet.</p>
+</p>
   </section>
   
 
@@ -373,9 +372,11 @@ Ubuntu 安裝後，一張網卡配 191.168.1.x 的IP， 另一張網卡配 10.10
     <ol class="list-unstyled">
 
 
-<li><a href="/posts/gourmet/zhubei/tonysbrasserie/">[竹北] 坊間家傳麵食(坊間小館)</a></li>
+<li><a href="/posts/gourmet/zhubei/lin_tuna/">[竹北] 林家 東港鮪魚飯湯</a></li>
 
 <li><a href="/posts/">Posts</a></li>
+
+<li><a href="/posts/gourmet/zhubei/tonysbrasserie/">[竹北] 坊間家傳麵食(坊間小館)</a></li>
 
 <li><a href="/posts/gourmet/zhubei/saute/">[竹北] Sauté Restaurant 索鉄</a></li>
 
@@ -410,8 +411,6 @@ Ubuntu 安裝後，一張網卡配 191.168.1.x 的IP， 另一張網卡配 10.10
 <li><a href="/posts/gourmet/zhubei/nightmarket/">[竹北] 竹北夜市</a></li>
 
 <li><a href="/posts/gourmet/hsinchu/uemiya/">[新竹] 植美家 健康早午餐</a></li>
-
-<li><a href="/posts/gourmet/zhubei/brunch/morelove/">[竹北] 沐樂早午餐</a></li>
 
     </ol>
   </section>

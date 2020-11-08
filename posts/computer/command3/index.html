@@ -11,11 +11,12 @@ d:\&gt; aaa c:\aaa d:\bbb 以上例子，兩個參數都是路徑，如果執行
 d:\&gt; set ENV_AAA=&#34;c:\aaa d:\bbb&#34; 環境變數設定完成後，執行執行 aaa 就可以了，不需要打參數了。 d:\&gt; aaa
 蠻多命令，都將不常變動的參數規劃放在環境變數，省下頻繁地打一堆字。 執行一份CMD的時候，作業系統會將全部的環境變數複製一份，這些環境變數專屬於該份CMD ，結束時會自動清掉。也就是說，如果同時執行兩份CMD，Windows 是複製出兩份系統的環境變數給這兩個CMD，兩邊各改了什麼，也不會影響對方，結束時也不會影響Windows系統的環境變數。 如果不小心改壞了什麼環境變數，可以關掉CMD，重新執行一次即可。
 SET 想要看總共有哪些環境變數，可用set不帶任何參數
-d:\&gt; set set 加上參數，就是設定環境變數了，語法為 set =d:\&gt; set ENV_AAA=&#34;c:\aaa d:\bbb&#34; ECHO set一執行，舊式列出全部環境變數，如果只是想要看一個變數，可以用 echo 來顯示訊息。 C:\Users\Eric&gt;set ENV_AAA=&quot;c:\aaa d:\bbb&rdquo;
+d:\&gt; set set 加上參數，就是設定環境變數了，語法為 set =
+d:\&gt; set ENV_AAA=&#34;c:\aaa d:\bbb&#34; ECHO set一執行，舊式列出全部環境變數，如果只是想要看一個變數，可以用 echo 來顯示訊息。 C:\Users\Eric&gt;set ENV_AAA=&ldquo;c:\aaa d:\bbb&rdquo;
 C:\Users\Eric&gt;echo %ENV_AAA% &#34;c:\aaa d:\bbb&#34; echo 也能印普通訊息，例如印個經典的 &ldquo;Hello, World!&rdquo;
 C:\Users\Eric&gt;echo Hello, World! Hello, World! PATH 當然，有一些名稱，被保留給系統使用，例如 PATH ，就是代表系統搜尋外部命令的路徑順序，每個路徑都必須以分號隔開。這個PATH環境變數因為太常用了，所以Microsoft乾脆開發一個PATH命令，專門負責顯示及修改PATH環境變數。
 d:\&gt; path 執行結果如下:
-d:\&gt;path PATH=C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Git\cmd;C:\Users\Eric\AppData\Local\Microsoft\WindowsApps; 上面Path變數的內容，其意義為 - 假設使用者想要執行 aaa.exe 執行檔，CMD 先看目前所在路徑，如果該檔案位於目前所在路徑，就載入記憶體執行，如果不在，則接著嚐試在 c:\windows\system32路徑找找看有無 aaa." />
+d:\&gt;path PATH=C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Git\cmd;C:\Users\Eric\AppData\Local\Microsoft\WindowsApps; 上面Path變數的內容，其意義為 - 假設使用者想要執行 aaa." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ericsuperman.github.io/posts/computer/command3/" />
 <meta property="article:published_time" content="2019-05-09T14:50:23+08:00" />
@@ -28,12 +29,13 @@ d:\&gt; aaa c:\aaa d:\bbb 以上例子，兩個參數都是路徑，如果執行
 d:\&gt; set ENV_AAA=&#34;c:\aaa d:\bbb&#34; 環境變數設定完成後，執行執行 aaa 就可以了，不需要打參數了。 d:\&gt; aaa
 蠻多命令，都將不常變動的參數規劃放在環境變數，省下頻繁地打一堆字。 執行一份CMD的時候，作業系統會將全部的環境變數複製一份，這些環境變數專屬於該份CMD ，結束時會自動清掉。也就是說，如果同時執行兩份CMD，Windows 是複製出兩份系統的環境變數給這兩個CMD，兩邊各改了什麼，也不會影響對方，結束時也不會影響Windows系統的環境變數。 如果不小心改壞了什麼環境變數，可以關掉CMD，重新執行一次即可。
 SET 想要看總共有哪些環境變數，可用set不帶任何參數
-d:\&gt; set set 加上參數，就是設定環境變數了，語法為 set =d:\&gt; set ENV_AAA=&#34;c:\aaa d:\bbb&#34; ECHO set一執行，舊式列出全部環境變數，如果只是想要看一個變數，可以用 echo 來顯示訊息。 C:\Users\Eric&gt;set ENV_AAA=&quot;c:\aaa d:\bbb&rdquo;
+d:\&gt; set set 加上參數，就是設定環境變數了，語法為 set =
+d:\&gt; set ENV_AAA=&#34;c:\aaa d:\bbb&#34; ECHO set一執行，舊式列出全部環境變數，如果只是想要看一個變數，可以用 echo 來顯示訊息。 C:\Users\Eric&gt;set ENV_AAA=&ldquo;c:\aaa d:\bbb&rdquo;
 C:\Users\Eric&gt;echo %ENV_AAA% &#34;c:\aaa d:\bbb&#34; echo 也能印普通訊息，例如印個經典的 &ldquo;Hello, World!&rdquo;
 C:\Users\Eric&gt;echo Hello, World! Hello, World! PATH 當然，有一些名稱，被保留給系統使用，例如 PATH ，就是代表系統搜尋外部命令的路徑順序，每個路徑都必須以分號隔開。這個PATH環境變數因為太常用了，所以Microsoft乾脆開發一個PATH命令，專門負責顯示及修改PATH環境變數。
 d:\&gt; path 執行結果如下:
-d:\&gt;path PATH=C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Git\cmd;C:\Users\Eric\AppData\Local\Microsoft\WindowsApps; 上面Path變數的內容，其意義為 - 假設使用者想要執行 aaa.exe 執行檔，CMD 先看目前所在路徑，如果該檔案位於目前所在路徑，就載入記憶體執行，如果不在，則接著嚐試在 c:\windows\system32路徑找找看有無 aaa."/>
-<meta name="generator" content="Hugo 0.72.0" />
+d:\&gt;path PATH=C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Git\cmd;C:\Users\Eric\AppData\Local\Microsoft\WindowsApps; 上面Path變數的內容，其意義為 - 假設使用者想要執行 aaa."/>
+<meta name="generator" content="Hugo 0.78.1" />
 
 
     
@@ -43,7 +45,7 @@ d:\&gt;path PATH=C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Wind
   "@type": "BlogPosting",
   "headline": "[CMD Tutorial 3\/4] Path Environment Variables",
   "url": "https:\/\/ericsuperman.github.io\/posts\/computer\/command3\/",
-  "wordCount": "120",
+  "wordCount": "122",
   "datePublished": "2019-05-09T14:50:23\u002b08:00",
   "dateModified": "2019-05-09T14:50:23\u002b08:00",
   "author": {
@@ -102,7 +104,7 @@ if (!doNotTrack) {
     <header class="blog-header">
       <div class="container">
         <h1 class="blog-title" dir="auto"><a href="https://ericsuperman.github.io/" rel="home">金牙貓的嘴砲</a></h1>
-        <p class="lead blog-description" dir="auto">Everything is my own murmur.<!-- raw HTML omitted -->本貓只管好不好吃，C/P值不大在乎。沒接業配，都是花自己的錢。我行我素，不理酸民。</p>
+        <p class="lead blog-description" dir="auto">Everything is my own murmur.<br>本貓只管好不好吃，C/P值不大在乎。沒接業配，都是花自己的錢。我行我素，不理酸民。</p>
       </div>
     </header>
     
@@ -141,11 +143,11 @@ if (!doNotTrack) {
 <h1 id="set">SET</h1>
 <p>想要看總共有哪些環境變數，可用set不帶任何參數</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-BASH" data-lang="BASH">d:<span style="color:#ae81ff">\&gt;</span> set</code></pre></div>
-<p>set 加上參數，就是設定環境變數了，語法為 set <!-- raw HTML omitted -->=<!-- raw HTML omitted --></p>
+<p>set 加上參數，就是設定環境變數了，語法為 set <name>=<value></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-BASH" data-lang="BASH">d:<span style="color:#ae81ff">\&gt;</span> set ENV_AAA<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;c:\aaa d:\bbb&#34;</span></code></pre></div>
 <h1 id="echo">ECHO</h1>
 <p>set一執行，舊式列出全部環境變數，如果只是想要看一個變數，可以用 echo 來顯示訊息。
-C:\Users\Eric&gt;set ENV_AAA=&quot;c:\aaa d:\bbb&rdquo;</p>
+C:\Users\Eric&gt;set ENV_AAA=&ldquo;c:\aaa d:\bbb&rdquo;</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-BASH" data-lang="BASH">C:<span style="color:#ae81ff">\U</span>sers<span style="color:#ae81ff">\E</span>ric&gt;echo %ENV_AAA%
 <span style="color:#e6db74">&#34;c:\aaa d:\bbb&#34;</span></code></pre></div>
 <p>echo 也能印普通訊息，例如印個經典的 &ldquo;Hello, World!&rdquo;</p>
@@ -168,7 +170,7 @@ d:<span style="color:#ae81ff">\&gt;</span>path
 PATH<span style="color:#f92672">=</span>C:<span style="color:#ae81ff">\P</span>ython<span style="color:#ae81ff">\S</span>cripts<span style="color:#ae81ff">\;</span>C:<span style="color:#ae81ff">\P</span>ython<span style="color:#ae81ff">\;</span>C:<span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\s</span>ystem32;C:<span style="color:#ae81ff">\W</span>indows;C:<span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\S</span>ystem32<span style="color:#ae81ff">\W</span>bem;C:<span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\S</span>ystem32<span style="color:#ae81ff">\W</span>indowsPowerShell<span style="color:#ae81ff">\v</span>1.0<span style="color:#ae81ff">\;</span>C:<span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\S</span>ystem32<span style="color:#ae81ff">\O</span>penSSH<span style="color:#ae81ff">\;</span>C:<span style="color:#ae81ff">\G</span>it<span style="color:#ae81ff">\c</span>md;C:<span style="color:#ae81ff">\U</span>sers<span style="color:#ae81ff">\E</span>ric<span style="color:#ae81ff">\A</span>ppData<span style="color:#ae81ff">\L</span>ocal<span style="color:#ae81ff">\M</span>icrosoft<span style="color:#ae81ff">\W</span>indowsApps;</code></pre></div>
 <p>上面執行了三行命令，先顯示path 環境變數更改前的狀態，然後設定 path 環境變數的內容，最後再顯示path 環境變數更改後的狀態，則可看到 &ldquo;C:\Python\Scripts;C:\Python;&rdquo; 已經加到前面了。</p>
 <h1 id="使用環境變數">使用環境變數</h1>
-<p>前面說過，Path是環境變數之一，所以用 set 顯示全部環境變數時，path 也在其中，而 path <!-- raw HTML omitted --> 跟  set path=<!-- raw HTML omitted --> 是一樣的。</p>
+<p>前面說過，Path是環境變數之一，所以用 set 顯示全部環境變數時，path 也在其中，而 path <value> 跟  set path=<value> 是一樣的。</p>
 <p>而且 Path 最常做的動作，就是增加一個路徑到既有 Path變數，老是要打滿或是copy paste這麼多路徑，未免不太實際，所以要利用 %符號 來使用環境變數了，用%符號加在環境變數前後，CMD在執行時，自動會將環境變數內容替換掉。
 看下面例子，第一行先顯示舊的Path變數，第二行就是將 c:\python 加在既有 Path變數的最前面，第三行再看一次Path變數更動過後的內容，可以看到，已經成功地將 c:\python 加到最前面了，而且是利用Path變數，不是真的靠打字打了那麼多路徑。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-BASH" data-lang="BASH">C:<span style="color:#ae81ff">\U</span>sers<span style="color:#ae81ff">\E</span>ric&gt;path
@@ -233,7 +235,8 @@ PATH<span style="color:#f92672">=</span>c:<span style="color:#ae81ff">\p</span>y
   
   <section class="sidebar-module sidebar-module-inset">
     <h4>About</h4>
-    <p dir="auto">住在竹北，對重口味偏心，通常假日發文。沒業配，本貓只管好不好吃，便宜或貴的餐點都有可能吃，只是要好吃， C/P 值不大在乎。<!-- raw HTML omitted -->都說了這些是我的嘴砲，愛看不看隨你，有空就來點鼓勵吧。<!-- raw HTML omitted --> <img src="https://placekitten.com/202/301" alt="" title=""> <!-- raw HTML omitted --> I am highly interested in Computer Science and Gourmet.</p>
+    <p dir="auto"><p>住在竹北，對重口味偏心，通常假日發文。沒業配，本貓只管好不好吃，便宜或貴的餐點都有可能吃，只是要好吃， C/P 值不大在乎。<br>都說了這些是我的嘴砲，愛看不看隨你，有空就來點鼓勵吧。<p> <img src="https://placekitten.com/202/301" alt="" title=""> <p> I am highly interested in Computer Science and Gourmet.</p>
+</p>
   </section>
   
 
@@ -243,9 +246,11 @@ PATH<span style="color:#f92672">=</span>c:<span style="color:#ae81ff">\p</span>y
     <ol class="list-unstyled">
 
 
-<li><a href="/posts/gourmet/zhubei/tonysbrasserie/">[竹北] 坊間家傳麵食(坊間小館)</a></li>
+<li><a href="/posts/gourmet/zhubei/lin_tuna/">[竹北] 林家 東港鮪魚飯湯</a></li>
 
 <li><a href="/posts/">Posts</a></li>
+
+<li><a href="/posts/gourmet/zhubei/tonysbrasserie/">[竹北] 坊間家傳麵食(坊間小館)</a></li>
 
 <li><a href="/posts/gourmet/zhubei/saute/">[竹北] Sauté Restaurant 索鉄</a></li>
 
@@ -280,8 +285,6 @@ PATH<span style="color:#f92672">=</span>c:<span style="color:#ae81ff">\p</span>y
 <li><a href="/posts/gourmet/zhubei/nightmarket/">[竹北] 竹北夜市</a></li>
 
 <li><a href="/posts/gourmet/hsinchu/uemiya/">[新竹] 植美家 健康早午餐</a></li>
-
-<li><a href="/posts/gourmet/zhubei/brunch/morelove/">[竹北] 沐樂早午餐</a></li>
 
     </ol>
   </section>
