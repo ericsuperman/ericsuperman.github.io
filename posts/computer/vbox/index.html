@@ -12,9 +12,10 @@ Ubuntu 18.04 LTS 問世之後，它的 virtualbox-dkms 套件 是針對 VirtualB
 查了很久，才發現是 virtualbox-dkms 套件只支援 VirtualBox 5.x 的關係，等了一陣子，看起來 Ubuntu 18.04 是沒打算升級 dkms 套件了， 那只好回到老方法，讓 VirtualBox Host 這邊插入虛擬的 Guest Additions 光碟片。
 在 VirtualBox Host 這邊的 Menu Bar ，有一個 &ldquo;裝置&rdquo; 選項，裡面 有一個 &ldquo;插入 Guest Additions CD 映像&rdquo;。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ericsuperman.github.io/posts/computer/vbox/" />
+<meta property="og:url" content="https://ericsuperman.github.io/posts/computer/vbox/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2019-04-21T21:51:33+08:00" />
 <meta property="article:modified_time" content="2019-04-21T21:51:33+08:00" />
+
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="VirtualBox 6.x Shared Folder"/>
@@ -23,7 +24,7 @@ Ubuntu 18.04 LTS 問世之後，它的 virtualbox-dkms 套件 是針對 VirtualB
 突然間，2018年12月 VirtualBox 6.0 降臨了，我直接將 VirtualBox 5.x 升級到 VirtualBox 6.0 ，跑一樣的 guest image， Shared Folder 就失效了。
 查了很久，才發現是 virtualbox-dkms 套件只支援 VirtualBox 5.x 的關係，等了一陣子，看起來 Ubuntu 18.04 是沒打算升級 dkms 套件了， 那只好回到老方法，讓 VirtualBox Host 這邊插入虛擬的 Guest Additions 光碟片。
 在 VirtualBox Host 這邊的 Menu Bar ，有一個 &ldquo;裝置&rdquo; 選項，裡面 有一個 &ldquo;插入 Guest Additions CD 映像&rdquo;。"/>
-<meta name="generator" content="Hugo 0.78.1" />
+<meta name="generator" content="Hugo 0.92.1" />
 
 
     
@@ -135,7 +136,7 @@ image， Shared Folder 就失效了。</p>
 <p>虛擬機此時已經完成模擬一台光碟機，並插好光碟片了，
 這時在 Guest Ubuntu 18.04 裡面，先 mount 該光碟片，
 看看有哪些檔案 -</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">root@ub18:/mnt# mount /dev/cdrom /mnt
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">root@ub18:/mnt# mount /dev/cdrom /mnt
 mount: /mnt: WARNING: device write-protected, mounted read-only.
 root@ub18:/mnt# cd /mnt
 root@ub18:/mnt# ls -al
@@ -158,7 +159,7 @@ dr-xr-xr-x  <span style="color:#ae81ff">2</span> root root     <span style="colo
 -r-xr-xr-x  <span style="color:#ae81ff">1</span> root root <span style="color:#ae81ff">12977032</span> Apr <span style="color:#ae81ff">16</span> 18:00 VBoxWindowsAdditions-x86.exe</code></pre></div>
 <p>這些檔案，就是針對一些常見的作業系統 的 VirtualBox Guest Additions 。</p>
 <p>看起來，既然Guest OS 是 Ubuntu，那就是執行 VBoxLinuxAdditions.run 了。
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">root@ub18:/mnt# ./VBoxLinuxAdditions.run
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">root@ub18:/mnt# ./VBoxLinuxAdditions.run
 Verifying archive integrity... All good.
 Uncompressing VirtualBox 6.0.6 Guest Additions <span style="color:#66d9ef">for</span> Linux........
 VirtualBox Guest Additions installer
@@ -182,7 +183,7 @@ Host 這邊的 shaered folder 設定先完成，再來重開機。</p>
 <p><img src="vbox_shared_folder_setup.png" alt="Alt shared folder" title="VirtualBox shared folder"></p>
 <p>VirtualBox 6 的 Shared Folder 可以設定 Guest OS 裡面要自動 Mount 到哪裡了，
 這是蠻方便的改進。Host端設定好之後，Guest OS 就能重開機了。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">web@ub18:/media$ ls -al
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">web@ub18:/media$ ls -al
 total <span style="color:#ae81ff">8</span>
 drwxr-xr-x  <span style="color:#ae81ff">3</span> root root   <span style="color:#ae81ff">4096</span> Apr <span style="color:#ae81ff">21</span> 21:42 .
 drwxr-xr-x <span style="color:#ae81ff">23</span> root root   <span style="color:#ae81ff">4096</span> Apr <span style="color:#ae81ff">13</span> 13:42 ..
@@ -190,7 +191,7 @@ drwxrwx---  <span style="color:#ae81ff">1</span> root vboxsf    <span style="col
 web@ub18:/media$</code></pre></div>
 <p>重開機之後，看一下 /media/sf_vbox 已經自動產生，屬於 vboxsf 群組的使用者都能讀寫，
 假設Unix使用者web 要加入 vboxsf 群組，須執行下列命令 -</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo adduser web vboxsf</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo adduser web vboxsf</code></pre></div>
 <p>以上，Shared Folder 就可以開始用了，而且使用者web就能直接用了，不需要root才
 能用。</p>
 

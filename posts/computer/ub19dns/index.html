@@ -11,9 +11,10 @@
 Master DNS Server 可以建在自己的固定 IP，但是我想大多數人 大概就是開個小網站，不會租超大頻寬。所以還是使用知名的 Free DNS Hosting Providers 服務，不但節省頻寬，載入網頁也 因為解析域名超快而整體快一點點。
 Free DNS Hosting Providers 又根據不同的公司有不同的限制。 幾年前， namecheap.com 有提供 Free DNS Server，結果我域名 搬去namecheap.com 時，Free DNS Server 反而不能用，似乎是要 另外花錢買服務才有，(最近 namecheap.com 才推出 basic dns server 選項)，所以當時我就搬到 freedns.afraid.org。可是 麻煩又來了，freedns.afraid.org 會希望使用者贊助，或是半年 登入一次，不然就賣不然就賣給亂七八糟的人增加幾個 hosts。 例如，假設我擁有 example." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ericsuperman.github.io/posts/computer/ub19dns/" />
+<meta property="og:url" content="https://ericsuperman.github.io/posts/computer/ub19dns/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2019-05-10T12:40:23+08:00" />
 <meta property="article:modified_time" content="2019-05-10T12:40:23+08:00" />
+
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Ubuntu 19.04 and CloudFlare Free DNS"/>
@@ -21,7 +22,7 @@ Free DNS Hosting Providers 又根據不同的公司有不同的限制。 幾年�
 所使用的 domain 註冊公司，不外乎是 namecheap.com 或是 Godaddy.com 為大宗，因為通常他們兩家最便宜。 然後就需要處理專屬於自己的 domain 的 Master DNS Server 了。
 Master DNS Server 可以建在自己的固定 IP，但是我想大多數人 大概就是開個小網站，不會租超大頻寬。所以還是使用知名的 Free DNS Hosting Providers 服務，不但節省頻寬，載入網頁也 因為解析域名超快而整體快一點點。
 Free DNS Hosting Providers 又根據不同的公司有不同的限制。 幾年前， namecheap.com 有提供 Free DNS Server，結果我域名 搬去namecheap.com 時，Free DNS Server 反而不能用，似乎是要 另外花錢買服務才有，(最近 namecheap.com 才推出 basic dns server 選項)，所以當時我就搬到 freedns.afraid.org。可是 麻煩又來了，freedns.afraid.org 會希望使用者贊助，或是半年 登入一次，不然就賣不然就賣給亂七八糟的人增加幾個 hosts。 例如，假設我擁有 example."/>
-<meta name="generator" content="Hugo 0.78.1" />
+<meta name="generator" content="Hugo 0.92.1" />
 
 
     
@@ -157,14 +158,14 @@ bind9 總共需要幾個 packages 才算完整。</p>
 <h1 id="master-dns-server">Master DNS Server</h1>
 <p>剛裝好的 bind9 ， 設定檔的進入點為 /etc/bind/named.conf，內容如
 下，將所有的設定分為三塊，所以 named.conf 完全不用改。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-BASH" data-lang="BASH">include <span style="color:#e6db74">&#34;/etc/bind/named.conf.options&#34;</span>;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-BASH" data-lang="BASH">include <span style="color:#e6db74">&#34;/etc/bind/named.conf.options&#34;</span>;
 include <span style="color:#e6db74">&#34;/etc/bind/named.conf.local&#34;</span>;
 include <span style="color:#e6db74">&#34;/etc/bind/named.conf.default-zones&#34;</span>;</code></pre></div>
 <p><strong>本篇文章，example.com 與 125.99.8.230 都是假的。請讀者自行改成您申請的網域名稱與固定IP。</strong></p>
 <p>假設所申請的域名為 example.com ，準備一個全新檔案，
 放 example.com 的所有資料，檔案名稱就叫 db.example.com，
 內容差不多像下面 -</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-BASH" data-lang="BASH">; Start of the DNS zone file
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-BASH" data-lang="BASH">; Start of the DNS zone file
 $ORIGIN example.com.
 ; Default cache expiration time <span style="color:#66d9ef">for</span> resource records
 $TTL    <span style="color:#ae81ff">86400</span>
@@ -196,7 +197,7 @@ ns2                     IN      A               125.99.8.230
 www.example.com.		IN		A				125.99.8.230</code></pre></div>
 <p>而 named.conf.options 改成如下內容，主要是讓這份 DNS 每個網路
 介面都要 聽 Port 53 ，不然會只從 127.0.0.1 聽 Port 53 。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-BASH" data-lang="BASH">options <span style="color:#f92672">{</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-BASH" data-lang="BASH">options <span style="color:#f92672">{</span>
     directory <span style="color:#e6db74">&#34;/var/cache/bind&#34;</span>;
 
     listen-on-v6 <span style="color:#f92672">{</span> any; <span style="color:#f92672">}</span>;
@@ -209,7 +210,7 @@ www.example.com.		IN		A				125.99.8.230</code></pre></div>
 <span style="color:#f92672">}</span>;</code></pre></div>
 <p>而 named.conf.local 增加 example.com 的 Master Zone 的描述，指向
 剛剛建好的 &ldquo;db.example.com&rdquo;  -</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-BASH" data-lang="BASH">zone <span style="color:#e6db74">&#34;example.com&#34;</span>	<span style="color:#f92672">{</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-BASH" data-lang="BASH">zone <span style="color:#e6db74">&#34;example.com&#34;</span>	<span style="color:#f92672">{</span>
     type master;
     notify yes;
     file <span style="color:#e6db74">&#34;/etc/bind/db.example.com&#34;</span>;
