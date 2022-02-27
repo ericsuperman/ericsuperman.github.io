@@ -2,17 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://ericsuperman.github.io/posts/gourmet/hsinchu/tzung/</loc>
-    <lastmod>2022-02-07T20:11:22+08:00</lastmod>
+    <loc>https://ericsuperman.github.io/posts/gourmet/zhubei/brunch/8hz/</loc>
+    <lastmod>2022-02-27T18:55:31+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://ericsuperman.github.io/tags/brunch/</loc>
+    <lastmod>2022-02-27T18:55:31+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://ericsuperman.github.io/tags/cafe/</loc>
+    <lastmod>2022-02-27T18:55:31+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://ericsuperman.github.io/categories/</loc>
-    <lastmod>2022-02-07T20:11:22+08:00</lastmod>
+    <lastmod>2022-02-27T18:55:31+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://ericsuperman.github.io/categories/gourmet/</loc>
+    <lastmod>2022-02-27T18:55:31+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://ericsuperman.github.io/tags/hsinchu-county/</loc>
+    <lastmod>2022-02-27T18:55:31+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://ericsuperman.github.io/posts/</loc>
+    <lastmod>2022-02-27T18:55:31+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://ericsuperman.github.io/tags/</loc>
+    <lastmod>2022-02-27T18:55:31+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://ericsuperman.github.io/tags/zhubei/</loc>
+    <lastmod>2022-02-27T18:55:31+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://ericsuperman.github.io/</loc>
+    <lastmod>2022-02-27T18:55:31+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://ericsuperman.github.io/posts/gourmet/hsinchu/tzung/</loc>
     <lastmod>2022-02-07T20:11:22+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -32,37 +72,7 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ericsuperman.github.io/posts/</loc>
-    <lastmod>2022-02-07T20:11:22+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://ericsuperman.github.io/tags/</loc>
-    <lastmod>2022-02-07T20:11:22+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://ericsuperman.github.io/</loc>
-    <lastmod>2022-02-07T20:11:22+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://ericsuperman.github.io/posts/gourmet/zhubei/brunch/peach/</loc>
-    <lastmod>2021-10-06T21:29:49+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://ericsuperman.github.io/tags/brunch/</loc>
-    <lastmod>2021-10-06T21:29:49+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://ericsuperman.github.io/tags/hsinchu-county/</loc>
-    <lastmod>2021-10-06T21:29:49+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://ericsuperman.github.io/tags/zhubei/</loc>
     <lastmod>2021-10-06T21:29:49+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -118,11 +128,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://ericsuperman.github.io/posts/gourmet/zhubei/cafetriangle/</loc>
-    <lastmod>2020-04-02T17:24:10+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://ericsuperman.github.io/tags/cafe/</loc>
     <lastmod>2020-04-02T17:24:10+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -234,26 +239,6 @@
   </url><url>
     <loc>https://ericsuperman.github.io/posts/gourmet/zhubei/2ndst/</loc>
     <lastmod>2019-11-24T15:22:59+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://ericsuperman.github.io/posts/personal/shuanfeng/</loc>
-    <lastmod>2019-11-24T01:58:36+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://ericsuperman.github.io/tags/murmur/</loc>
-    <lastmod>2019-11-24T01:58:36+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://ericsuperman.github.io/categories/personal/</loc>
-    <lastmod>2019-11-24T01:58:36+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://ericsuperman.github.io/tags/tires/</loc>
-    <lastmod>2019-11-24T01:58:36+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -542,11 +527,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ericsuperman.github.io/posts/personal/glasscontainer/</loc>
-    <lastmod>2019-09-07T18:21:43+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://ericsuperman.github.io/posts/gourmet/zhubei/chuhome/</loc>
     <lastmod>2019-09-07T17:12:52+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -757,16 +737,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ericsuperman.github.io/posts/personal/shoes/</loc>
-    <lastmod>2019-05-19T19:58:56+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://ericsuperman.github.io/tags/shoes/</loc>
-    <lastmod>2019-05-19T19:58:56+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://ericsuperman.github.io/posts/gourmet/miaoli/zhunan/dr.ice/</loc>
     <lastmod>2019-05-19T19:58:37+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -822,56 +792,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ericsuperman.github.io/categories/computer/</loc>
-    <lastmod>2019-05-10T12:40:23+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://ericsuperman.github.io/tags/linux/</loc>
-    <lastmod>2019-05-10T12:40:23+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://ericsuperman.github.io/posts/computer/ub19dns/</loc>
-    <lastmod>2019-05-10T12:40:23+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://ericsuperman.github.io/posts/computer/ub19nat/</loc>
-    <lastmod>2019-05-09T19:35:20+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://ericsuperman.github.io/posts/computer/command4/</loc>
-    <lastmod>2019-05-09T14:50:29+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://ericsuperman.github.io/tags/command/</loc>
-    <lastmod>2019-05-09T14:50:29+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://ericsuperman.github.io/tags/windows/</loc>
-    <lastmod>2019-05-09T14:50:29+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://ericsuperman.github.io/posts/computer/command3/</loc>
-    <lastmod>2019-05-09T14:50:23+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://ericsuperman.github.io/posts/computer/command2/</loc>
-    <lastmod>2019-05-09T14:50:20+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://ericsuperman.github.io/posts/computer/command1/</loc>
-    <lastmod>2019-05-09T14:50:16+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://ericsuperman.github.io/posts/gourmet/guanxi/oldtime_bun/</loc>
     <lastmod>2019-05-05T16:37:08+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -902,11 +822,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ericsuperman.github.io/posts/computer/ub19/</loc>
-    <lastmod>2019-05-04T10:52:52+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://ericsuperman.github.io/posts/gourmet/hsinchu/iing/</loc>
     <lastmod>2019-04-30T21:06:37+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -914,21 +829,6 @@
   </url><url>
     <loc>https://ericsuperman.github.io/posts/gourmet/zhubei/bbq/</loc>
     <lastmod>2019-04-25T20:37:55+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://ericsuperman.github.io/tags/virtual-box/</loc>
-    <lastmod>2019-04-21T21:51:33+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://ericsuperman.github.io/posts/computer/vbox/</loc>
-    <lastmod>2019-04-21T21:51:33+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://ericsuperman.github.io/posts/personal/hello/</loc>
-    <lastmod>2019-04-21T15:59:57+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
